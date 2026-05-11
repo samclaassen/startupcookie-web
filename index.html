@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StartupCookie — Thought Leadership for Startups</title>
+  <link rel="icon" href="assets/cookie-hero.svg" type="image/svg+xml">
+  <meta name="description" content="StartupCookie is a thought leadership agency for startups. We create and distribute high-quality content — social media, blog posts, webinars, case studies, and more — so your team can focus on building.">
+  <meta property="og:title" content="StartupCookie — Thought Leadership for Startups">
+  <meta property="og:description" content="Hand-crafted thought leadership content and distribution for startups. Month-to-month pricing, stop or pause anytime.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+  <meta property="og:image:width" content="1456">
+  <meta property="og:image:height" content="816">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="StartupCookie — Thought Leadership for Startups">
+  <meta name="twitter:description" content="Hand-crafted thought leadership content and distribution for startups. Month-to-month pricing, stop or pause anytime.">
+  <meta name="twitter:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+          },
+          colors: {
+            'green-highlight': '#f9fff4',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
+
+  <!-- Navigation (Fix 1: top-[60px], no rounded corners) -->
+  <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
+    <div class="flex items-center justify-between">
+      <a href="#" class="shrink-0">
+        <img src="assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
+      </a>
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      <ul class="hidden md:flex items-center gap-[23px]">
+        <li><a href="#clients" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Clients</a></li>
+        <li><a href="#process" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Process</a></li>
+        <li><a href="#why-us" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Us</a></li>
+        <li><a href="#content" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Our Work</a></li>
+        <li><a href="#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Pricing</a></li>
+        <li><a href="#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Contact</a></li>
+      </ul>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
+    <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="#clients" class="text-[24px] text-[rgba(0,0,0,0.8)]">Clients</a></li>
+      <li><a href="#process" class="text-[24px] text-[rgba(0,0,0,0.8)]">Process</a></li>
+      <li><a href="#why-us" class="text-[24px] text-[rgba(0,0,0,0.8)]">Us</a></li>
+      <li><a href="#content" class="text-[24px] text-[rgba(0,0,0,0.8)]">Our Work</a></li>
+      <li><a href="#pricing" class="text-[24px] text-[rgba(0,0,0,0.8)]">Pricing</a></li>
+      <li><a href="#contact" class="text-[24px] text-[rgba(0,0,0,0.8)]">Contact</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="pt-[200px] md:pt-[200px] pb-[40px] md:pb-[40px]">
+    <div class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] flex flex-col items-center gap-[60px] md:gap-[80px]">
+      <img src="assets/cookie-hero.svg" alt="StartupCookie" class="w-[90px] h-[90px] md:w-[150px] md:h-[150px]">
+      <div class="flex flex-col items-center gap-[20px] md:gap-[30px] text-center">
+        <span class="inline-block border border-[rgba(0,0,0,0.2)] rounded-full px-[16px] py-[6px] text-[13px] md:text-[15px] text-[rgba(0,0,0,0.6)] tracking-[-0.3px]">✨ AI-Native Agency</span>
+        <h1 class="text-[30px] md:text-[70px] font-normal text-black tracking-[-0.6px] md:tracking-[-1.4px] leading-[1.18]">Content & distribution<br>that drives revenue.</h1>
+        <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Thought Leadership as a Growth Channel</p>
+      </div>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="inline-block border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-[rgba(0,0,0,0.05)] transition-colors">Book a call</a>
+    </div>
+  </section>
+
+  <!-- Clients -->
+  <section id="clients" class="pb-[80px] md:pb-[100px] flex flex-col items-center gap-[40px] md:gap-[60px]">
+    <div class="logo-marquee-wrapper">
+      <div class="logo-marquee">
+        <div class="logo-marquee-track">
+          <img src="assets/favi-logo.svg" alt="Favi" style="height:40px;width:auto;">
+          <img src="assets/venn-logo-1.svg" alt="Venn" style="height:40px;width:auto;">
+          <img src="assets/venn-logo-2.svg" alt="" style="height:40px;width:auto;">
+          <img src="assets/puzzle-logo.png" alt="Puzzle" style="height:40px;width:auto;">
+          <img src="assets/seomonitor-logo.svg" alt="SEOmonitor" style="height:40px;width:auto;">
+          <img src="assets/acaisoft-logo-black.jpeg" alt="Acaisoft" style="height:40px;width:auto;">
+          <img src="assets/client-logo-icon.svg" alt="" style="height:40px;width:40px;">
+          <img src="assets/client-logo-text.svg" alt="Client" style="height:40px;width:auto;">
+          <img src="assets/ycombinator-logo.svg" alt="Y Combinator" style="height:40px;width:auto;">
+        </div>
+        <div class="logo-marquee-track" aria-hidden="true">
+          <img src="assets/favi-logo.svg" alt="" style="height:40px;width:auto;">
+          <img src="assets/venn-logo-1.svg" alt="" style="height:40px;width:auto;">
+          <img src="assets/venn-logo-2.svg" alt="" style="height:40px;width:auto;">
+          <img src="assets/puzzle-logo.png" alt="" style="height:40px;width:auto;">
+          <img src="assets/seomonitor-logo.svg" alt="" style="height:40px;width:auto;">
+          <img src="assets/acaisoft-logo-black.jpeg" alt="" style="height:40px;width:auto;">
+          <img src="assets/client-logo-icon.svg" alt="" style="height:40px;width:40px;">
+          <img src="assets/client-logo-text.svg" alt="" style="height:40px;width:auto;">
+          <img src="assets/ycombinator-logo.svg" alt="" style="height:40px;width:auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About + Process (Fix 2: merged into one section, two-column layout) -->
+  <section id="about" class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px] flex flex-col gap-[60px] md:gap-[100px]">
+    <!-- Two-column: How It Works (left) + Process Steps (right) -->
+    <div id="process" class="flex flex-col md:flex-row gap-[40px] md:gap-0">
+      <!-- Left column: How It Works -->
+      <div class="flex flex-col gap-[10px] md:w-[372px] md:shrink-0">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">How It Works</span>
+        <div class="flex flex-col gap-[20px]">
+          <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">An end-to-end process:</h2>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">The only thing we need from you is your industry expertise.</p>
+        </div>
+      </div>
+      <!-- Right column: Process Steps (Fix 3: gaps 30px icon-text, 15px title-desc) -->
+      <div class="flex flex-col md:flex-row gap-[40px] md:gap-0 md:ml-[calc(33.33%-338px)] md:flex-1 relative">
+        <!-- Step 1 -->
+        <div class="w-full md:w-1/3 md:pr-[20px] flex flex-col gap-[30px]">
+          <img src="assets/icon-extract.svg" alt="Extract Insights icon" class="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
+          <div class="flex flex-col gap-[15px]">
+            <h3 class="text-[18px] md:text-[25px] font-normal text-black tracking-[-0.36px] md:tracking-[-0.5px]">1. Extract Insights</h3>
+            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">We conduct insight calls and webinars with the founders and leaders on your team.</p>
+          </div>
+        </div>
+        <!-- Step 2 -->
+        <div class="w-full md:w-1/3 md:px-[20px] flex flex-col gap-[30px] md:mt-[109px]">
+          <img src="assets/icon-craft.svg" alt="Craft Content icon" class="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
+          <div class="flex flex-col gap-[15px]">
+            <h3 class="text-[18px] md:text-[25px] font-normal text-black tracking-[-0.36px] md:tracking-[-0.5px]">2. Craft Content</h3>
+            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Your insights and personality become the foundation of your thought leadership.</p>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="w-full md:w-1/3 md:pl-[20px] flex flex-col gap-[30px] md:mt-[219px]">
+          <img src="assets/icon-distribute.svg" alt="Distribute Outputs icon" class="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
+          <div class="flex flex-col gap-[15px]">
+            <h3 class="text-[18px] md:text-[25px] font-normal text-black tracking-[-0.36px] md:tracking-[-0.5px]">3. Distribute Outputs</h3>
+            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Once we publish your content, we'll get it in front of your ICP with LinkedIn automation campaigns.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Team / Video (Fix 4: two-column, text left, media right; Fix 5: gaps) -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col md:flex-row gap-[40px] md:gap-0">
+      <!-- Left column: text -->
+      <div class="flex flex-col gap-[10px] md:w-[372px] md:shrink-0">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Meet us</span>
+        <div class="flex flex-col gap-[20px]">
+          <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Learn about our approach</h2>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Barbara walks the Hubspot team through exactly how we turn thought leadership into a growth channel in what is now their most watched episode!</p>
+        </div>
+      </div>
+      <!-- Right column: HubSpot + Video -->
+      <div class="flex flex-col md:ml-[calc(33.33%-338px)] md:flex-1">
+        <div class="w-full max-w-[1058px]">
+          <div id="yt-player" class="w-full aspect-[1058/595] rounded-[8px] md:rounded-[20px] overflow-hidden relative cursor-pointer bg-cover bg-center" style="background-image: url('assets/video-thumbnail.png')" onclick="this.innerHTML='<iframe src=\'https://www.youtube.com/embed/9QbFg4kiNpY?autoplay=1\' class=\'w-full h-full absolute inset-0\' frameborder=\'0\' allow=\'autoplay; encrypted-media\' allowfullscreen></iframe>';this.style.cursor='default';">
+            <div class="absolute inset-0 bg-[rgba(0,0,0,0.3)] flex items-center justify-center hover:bg-[rgba(0,0,0,0.4)] transition-colors">
+              <img src="assets/play-button.svg" alt="Play" class="w-[48px] h-[55px] md:w-[72px] md:h-[83px]">
+            </div>
+            <!-- HubSpot branding + view count overlay -->
+            <div class="absolute bottom-[12px] md:bottom-[20px] left-[12px] md:left-[20px] flex items-center gap-[10px] z-10 bg-[rgba(255,255,255,0.9)] backdrop-blur-[8px] rounded-[8px] md:rounded-[10px] px-[12px] md:px-[16px] py-[8px] md:py-[10px]">
+              <span class="text-[12px] md:text-[16px] text-[rgba(0,0,0,0.7)] tracking-[-0.3px] flex items-center gap-[6px]"><img src="assets/hubspot-logo.png" alt="HubSpot" class="inline h-[20px] md:h-[28px] w-auto"> Marketing Against the Grain</span>
+              <span class="text-[rgba(0,0,0,0.2)]">|</span>
+              <div class="flex items-center gap-[4px]">
+                <img src="assets/eye-icon.svg" alt="" class="w-[14px] h-[14px] md:w-[18px] md:h-[18px]">
+                <span id="view-count" class="text-[12px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.3px]">151k views</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Us -->
+  <section id="why-us" class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px] flex flex-col gap-[60px] md:gap-[100px]">
+    <div class="flex flex-col gap-[10px] md:w-[647px]">
+      <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Why us</span>
+      <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Like having a full-stack content team at your fingertips.</h2>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full border-collapse table-fixed">
+        <thead>
+          <tr>
+            <th class="w-[121px] md:w-[430px] border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-left text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]"></th>
+            <th class="w-[120px] md:w-auto border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-left bg-green-highlight text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">StartupCookie</th>
+            <th class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-left text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">SaaS Tool</th>
+            <th class="hidden md:table-cell border border-border-gray p-[25px] text-[18px] font-normal text-left text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">Full-time Hire</th>
+            <th class="hidden md:table-cell border border-border-gray p-[25px] text-[18px] font-normal text-left text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">Other Agencies</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">Cost</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal bg-green-highlight text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">$$</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">$</td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] text-[18px] font-normal text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">$$$$</td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] text-[18px] font-normal text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">$$$</td>
+          </tr>
+          <tr>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">Quality of output</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal bg-green-highlight text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">Exceptional</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">Low</td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] text-[18px] font-normal text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">High</td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] text-[18px] font-normal text-[rgba(0,0,0,0.6)] leading-[1.3] h-[75px]">Fair</td>
+          </tr>
+          <tr>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">Content creation<br>+ distribution</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] bg-green-highlight h-[75px] align-middle"><img src="assets/checkmark.svg" alt="Yes" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[20px] h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[20px] h-[20px]"></td>
+          </tr>
+          <tr>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">AI Expertise and Taste</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] bg-green-highlight h-[75px] align-middle"><img src="assets/checkmark.svg" alt="Yes" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/checkmark.svg" alt="Yes" class="w-[20px] h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[20px] h-[20px]"></td>
+          </tr>
+          <tr>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">Works with your systems</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] bg-green-highlight h-[75px] align-middle"><img src="assets/checkmark.svg" alt="Yes" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[20px] h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/checkmark.svg" alt="Yes" class="w-[20px] h-[20px]"></td>
+          </tr>
+          <tr>
+            <td class="border border-border-gray p-[12px] md:p-[25px] text-[12px] md:text-[18px] font-normal text-[rgba(0,0,0,0.8)] leading-[1.3] h-[75px]">Get started right away</td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] bg-green-highlight h-[75px] align-middle"><img src="assets/checkmark.svg" alt="Yes" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="border border-border-gray p-[12px] md:p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[16px] h-[16px] md:w-[20px] md:h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[20px] h-[20px]"></td>
+            <td class="hidden md:table-cell border border-border-gray p-[25px] h-[75px] align-middle"><img src="assets/x-icon.svg" alt="No" class="w-[20px] h-[20px]"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Content (Fix 6: header left, content right; Fix 7: sub-label color + gap; Fix 11: card gaps) -->
+  <section id="content" class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col md:flex-row gap-[40px] md:gap-0">
+      <!-- Left: section header -->
+      <div class="flex flex-col gap-[10px] md:w-[372px] md:shrink-0">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Content</span>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">What do we produce?</h2>
+        <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Everything from LinkedIn posts to webinars, newsletters and videos.</p>
+      </div>
+
+      <!-- Right: content sub-sections -->
+      <div class="flex flex-col gap-[60px] md:ml-[calc(33.33%-338px)] md:flex-1">
+        <!-- Social Media -->
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">High performing social media content</h3>
+            <div class="w-full h-px bg-border-gray"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <!-- Card 1 -->
+            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between min-h-[350px] md:min-h-[410px]">
+              <div class="flex flex-col gap-[30px]">
+                <div class="flex items-center gap-[12px]">
+                  <img src="assets/josh-davey-avatar.png" alt="Josh Davey" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full object-cover">
+                  <div class="flex flex-col gap-[4px]">
+                    <span class="text-[18px] text-[rgba(0,0,0,0.8)]">Josh Davey</span>
+                    <span class="text-[14px] text-[rgba(0,0,0,0.5)]">AI-moderated research | Founder & CTO</span>
+                  </div>
+                </div>
+                <p class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] leading-[1.4]">A recent <span class="text-blue-link">Anthropic</span> study found that AI models are now better at generating hypotheses than the majority of human researchers...</p>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <div class="flex items-center gap-[8px]">
+                  <div class="flex">
+                    <img src="assets/reaction-1.svg" alt="" class="w-[20px] h-[20px] rounded-full -mr-[4px]">
+                    <img src="assets/reaction-2.svg" alt="" class="w-[20px] h-[20px] rounded-full -mr-[4px]">
+                    <img src="assets/reaction-3.svg" alt="" class="w-[20px] h-[20px] rounded-full">
+                  </div>
+                  <span class="text-[14px] text-[rgba(0,0,0,0.5)]">745</span>
+                </div>
+                <span class="text-[14px] text-[rgba(0,0,0,0.5)]">84 Comments &middot; 89 Reposts</span>
+                <a href="https://www.linkedin.com/posts/joshua-davey_anthropic-claude-ai-activity-7404264793957974016-3EGF" target="_blank" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Post</a>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between min-h-[350px] md:min-h-[410px]">
+              <div class="flex flex-col gap-[30px]">
+                <div class="flex items-center gap-[12px]">
+                  <img src="assets/ahmed-shafik-avatar.png" alt="Ahmed Shafik" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full object-cover">
+                  <div class="flex flex-col gap-[4px]">
+                    <span class="text-[18px] text-[rgba(0,0,0,0.8)]">Ahmed Shafik</span>
+                    <span class="text-[14px] text-[rgba(0,0,0,0.5)]">Co-Founder @ Venn</span>
+                  </div>
+                </div>
+                <p class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] leading-[1.4]">Everyone asks why I'm building in Canada. A lot of the best companies in the world were built right here 🇨🇦...</p>
+              </div>
+              <div class="flex flex-col gap-[10px]">
+                <div class="flex items-center gap-[8px]">
+                  <div class="flex">
+                    <img src="assets/reaction-1.svg" alt="" class="w-[20px] h-[20px] rounded-full -mr-[4px]">
+                    <img src="assets/reaction-2.svg" alt="" class="w-[20px] h-[20px] rounded-full -mr-[4px]">
+                    <img src="assets/reaction-3.svg" alt="" class="w-[20px] h-[20px] rounded-full">
+                  </div>
+                  <span class="text-[14px] text-[rgba(0,0,0,0.5)]">736</span>
+                </div>
+                <span class="text-[14px] text-[rgba(0,0,0,0.5)]">45 Comments</span>
+                <a href="https://www.linkedin.com/posts/shafikahmed_everyone-asks-why-im-building-in-canada-activity-7432817426473549824-R2dF/" target="_blank" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Post</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Long-form -->
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Long-form thought leadership content</h3>
+            <div class="w-full h-px bg-border-gray"></div>
+          </div>
+          <div class="bg-white border border-border-gray p-[20px] flex flex-col md:flex-row gap-[20px] md:gap-[30px] min-h-[350px] md:min-h-[410px]">
+            <div class="shrink-0 md:w-[290px]">
+              <div class="flex items-center gap-[12px]">
+                <img src="assets/sasha-orloff-avatar.png" alt="Sasha Orloff" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px] rounded-full object-cover">
+                <div class="flex flex-col gap-[4px]">
+                  <span class="text-[18px] text-[rgba(0,0,0,0.8)]">Sasha Orloff</span>
+                  <span class="text-[14px] text-[rgba(0,0,0,0.5)]">10/28/25</span>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-between flex-1">
+              <div class="flex flex-col gap-[30px]">
+                <h3 class="text-[24px] md:text-[40px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Our Continued Commitment to Accounting Firms</h3>
+                <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] leading-[1.4]">The accounting industry is undergoing a significant transformation, driven by advances in technology, shifting client expectations, and the need for more efficient workflows...</p>
+              </div>
+              <a href="https://puzzle.io/blog/our-commitment-to-accounting-firms" target="_blank" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end mt-[20px]">View Blog Post</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Webinar -->
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Webinar Organization</h3>
+            <div class="w-full h-px bg-border-gray"></div>
+          </div>
+          <div class="w-full md:max-w-[1059px]">
+            <img src="assets/webinar-screenshot.png" alt="Webinar" class="w-full rounded-[8px] md:rounded-[20px]">
+          </div>
+        </div>
+
+        <!-- Case Studies (Fix 12: card heights + gaps) -->
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">User Case Studies</h3>
+            <div class="w-full h-px bg-border-gray"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+              <div class="flex flex-col gap-[30px]">
+                <img src="assets/venn-logo-color.png" alt="Venn" class="h-[30px] md:h-[40px] w-auto object-contain self-start">
+                <h3 class="text-[24px] md:text-[40px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">How Stan simplified global payments for its creator platform with Venn</h3>
+              </div>
+              <a href="#" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</a>
+            </div>
+            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+              <div class="flex flex-col gap-[30px]">
+                <img src="assets/favi-case-study.svg" alt="Favi" class="h-[30px] md:h-[40px] w-auto object-contain self-start">
+                <h3 class="text-[24px] md:text-[40px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Accelerating digital adoption</h3>
+              </div>
+              <a href="#" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</a>
+            </div>
+            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+              <div class="flex flex-col gap-[30px]">
+                <img src="assets/puzzle-logo.png" alt="Puzzle" class="h-[30px] md:h-[40px] w-auto object-contain self-start mix-blend-multiply">
+                <h3 class="text-[24px] md:text-[40px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">How Paradigm (YC W24) Simplified Financial Management with Puzzle</h3>
+              </div>
+              <a href="#" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</a>
+            </div>
+            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+              <div class="flex flex-col gap-[30px]">
+                <div class="flex items-center gap-[10px]">
+                  <img src="assets/client-cs4-icon.svg" alt="" class="w-[30px] md:w-[40px] h-[30px] md:h-[40px]">
+                  <img src="assets/client-cs4-text.svg" alt="Client" class="h-[22px] md:h-[28px] w-auto">
+                </div>
+                <h3 class="text-[24px] md:text-[40px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">HSM Solutions Unlocks $20M in Savings with Global COE</h3>
+              </div>
+              <a href="#" class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Videos -->
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Videos</h3>
+            <div class="w-full h-px bg-border-gray"></div>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+            <a href="https://www.linkedin.com/posts/vennca_still-waiting-half-the-week-for-your-bank-activity-7404188666878840832-qnUb" target="_blank" class="rounded-[24px] aspect-[516.5/290] flex items-center justify-center cursor-pointer relative overflow-hidden group bg-cover bg-center" style="background-image: url('assets/venn-video-thumbnail.jpg')">
+              <div class="absolute inset-0 bg-[rgba(0,0,0,0.25)] group-hover:bg-[rgba(0,0,0,0.35)] transition-colors"></div>
+              <div class="flex flex-col items-center gap-[8px] relative z-10">
+                <img src="assets/play-button-2.svg" alt="Play" class="w-[50px] h-[58px]">
+                <span class="text-white text-[14px] md:text-[16px] opacity-90 group-hover:opacity-100 transition-opacity">Watch on LinkedIn</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/posts/propane_healthtech-healthcaredesign-patientjourney-activity-7415099510584139776-a7E6" target="_blank" class="rounded-[24px] aspect-[516.5/290] flex items-center justify-center cursor-pointer relative overflow-hidden group bg-cover bg-center" style="background-image: url('assets/propane-video-thumbnail.jpg')">
+              <div class="absolute inset-0 bg-[rgba(0,0,0,0.25)] group-hover:bg-[rgba(0,0,0,0.35)] transition-colors"></div>
+              <div class="flex flex-col items-center gap-[8px] relative z-10">
+                <img src="assets/play-button-2.svg" alt="Play" class="w-[50px] h-[58px]">
+                <span class="text-white text-[14px] md:text-[16px] opacity-90 group-hover:opacity-100 transition-opacity">Watch on LinkedIn</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing & Contact -->
+  <section id="pricing" class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col md:flex-row gap-[30px] md:gap-[40px] md:items-stretch">
+      <!-- Left: Pricing card -->
+      <div class="border border-[rgba(0,0,0,0.08)] rounded-[16px] bg-[#fafafa] px-[30px] md:px-[48px] py-[36px] md:py-[48px] md:flex-1">
+        <div class="flex flex-col gap-[10px]">
+          <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Pricing</span>
+          <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Starting at $5,000/mo</h2>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[10px]">Custom-scoped to your growth goals. Every engagement is tailored to what moves the needle.</p>
+          <div class="flex flex-col gap-[10px] mt-[20px]">
+            <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Capabilities:</span>
+            <ul class="flex flex-col gap-[6px]">
+              <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Content & Social Media</li>
+              <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Distribution & Outbound</li>
+              <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">AI Systems & Automation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Right: Get in touch card -->
+      <div id="contact" class="border border-[rgba(0,0,0,0.08)] rounded-[16px] bg-[#fafafa] px-[30px] md:px-[48px] py-[36px] md:py-[48px] md:flex-1">
+        <div class="flex flex-col gap-[10px]">
+          <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Contact</span>
+          <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Get in touch</h2>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[10px]">Let's plan your startup's growth strategy.</p>
+          <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="inline-block bg-black text-white rounded-[10px] py-[15px] px-[30px] text-[14px] md:text-[18px] text-center tracking-[-0.36px] hover:bg-[#222] transition-colors mt-[20px] self-start">Book a call</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (Fix 10: white button with dark text, gap-[23px]) -->
+  <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
+      <div class="flex flex-col gap-[23px]">
+        <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <a href="#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
+        <a href="#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
+        <a href="#content" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Content</a>
+        <a href="#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
+        <a href="#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+      </div>
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[24px] md:text-[32px]">🌁</span>
+        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Fetch real YouTube view count for the HubSpot video
+    (function() {
+      var videoId = '9QbFg4kiNpY';
+      // Use noembed to get basic info, then fall back to YouTube oEmbed
+      // YouTube doesn't expose view count via oEmbed, so we use the public
+      // YouTube Data API v3 endpoint (requires API key for reliable access).
+      // Alternative: use the page's returned HTML via a proxy.
+      // Simplest reliable method: YouTube iframe API + a lightweight proxy.
+      // For now, use the free returnyoutubedislike API which includes view counts.
+      fetch('https://returnyoutubedislikeapi.com/votes?videoId=' + videoId)
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+          if (data && data.viewCount) {
+            var views = data.viewCount;
+            var display;
+            if (views >= 1000000) {
+              display = (views / 1000000).toFixed(1).replace(/\.0$/, '') + 'M';
+            } else if (views >= 1000) {
+              display = Math.round(views / 1000) + 'k';
+            } else {
+              display = views;
+            }
+            var el = document.getElementById('view-count');
+            if (el) el.textContent = display + ' views';
+          }
+        })
+        .catch(function() {
+          // Silently fail — keeps the fallback "151k views" in the HTML
+        });
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="xMidYMid meet" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Eye" clip-path="url(#clip0_0_4)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M17 7.4375C6.375 7.4375 2.125 17 2.125 17C2.125 17 6.375 26.5625 17 26.5625C27.625 26.5625 31.875 17 31.875 17C31.875 17 27.625 7.4375 17 7.4375Z" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M17 22.3125C19.934 22.3125 22.3125 19.934 22.3125 17C22.3125 14.066 19.934 11.6875 17 11.6875C14.066 11.6875 11.6875 14.066 11.6875 17C11.6875 19.934 14.066 22.3125 17 22.3125Z" stroke="black" stroke-opacity="0.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_0_4">
+<rect width="34" height="34" fill="white"/>
+</clipPath>
+</defs>
+</svg>

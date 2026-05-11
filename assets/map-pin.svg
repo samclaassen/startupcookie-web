@@ -1,0 +1,13 @@
+<svg preserveAspectRatio="xMidYMid meet" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="MapPinSimple" clip-path="url(#clip0_0_181)">
+<g id="Vector">
+</g>
+<path id="Vector_2" d="M12 11.25C14.4853 11.25 16.5 9.23528 16.5 6.75C16.5 4.26472 14.4853 2.25 12 2.25C9.51472 2.25 7.5 4.26472 7.5 6.75C7.5 9.23528 9.51472 11.25 12 11.25Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+<path id="Vector_3" d="M12 21.75V11.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_0_181">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>
