@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build a Content Agent for Your B2B SaaS | StartupCookie | StartupCookie</title>
+  <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
+  <meta name="description" content="StartupCookie builds custom content agents for B2B SaaS startups. Fixed-scope 4-6 week buildout. The agent ships AEO-built content end to end; you own the code.">
+  <link rel="canonical" href="https://startupcookie.com/services/content-agents/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Build a Content Agent for Your B2B SaaS | StartupCookie">
+  <meta property="og:description" content="StartupCookie builds custom content agents for B2B SaaS startups. Fixed-scope 4-6 week buildout. The agent ships AEO-built content end to end; you own the code.">
+  <meta property="og:image" content="https://startupcookie.com/services/content-agents/hero.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="864">
+  <meta property="og:url" content="https://startupcookie.com/services/content-agents/">
+  <meta property="og:site_name" content="StartupCookie">
+  <meta property="article:published_time" content="2026-05-14T09:00:00-07:00">
+  <meta property="article:modified_time" content="2026-05-14T09:00:00-07:00">
+  <meta property="article:author" content="Sam Claassen">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Build a Content Agent for Your B2B SaaS | StartupCookie">
+  <meta name="twitter:description" content="StartupCookie builds custom content agents for B2B SaaS startups. Fixed-scope 4-6 week buildout. The agent ships AEO-built content end to end; you own the code.">
+  <meta name="twitter:image" content="https://startupcookie.com/services/content-agents/hero.png">
+
+  <!-- Fonts + Tailwind (matches index.html) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+            sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            'green-highlight': '#f9fff4',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    /* Article-specific styles. Keep small, defer to Tailwind. */
+    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 56px; margin-bottom: 20px; color: rgba(0,0,0,0.9); }
+    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 32px; margin-bottom: 12px; color: rgba(0,0,0,0.9); }
+    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin-bottom: 16px; }
+    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin: 16px 0 20px 24px; }
+    .article-body ul li { list-style: disc; margin-bottom: 6px; }
+    .article-body ol li { list-style: decimal; margin-bottom: 6px; }
+    .article-body a { color: #4F69EB; text-decoration: underline; }
+    .article-body a:hover { opacity: 0.8; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body th, .article-body td { border: 1px solid #DCDCDC; padding: 10px 14px; text-align: left; vertical-align: top; }
+    .article-body th { background: #F9FFF4; font-weight: 600; }
+    .article-body figure { margin: 32px 0; }
+    .article-body figure img { width: 100%; height: auto; border: 1px solid #DCDCDC; border-radius: 8px; display: block; }
+    .article-body figure figcaption { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 8px; text-align: center; }
+    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 20px 0; font-style: italic; color: rgba(0,0,0,0.7); }
+    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 24px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
+    .article-body aside.cta-block { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 32px; border-radius: 12px; margin: 48px 0 24px; }
+    .article-body aside.cta-block h2 { margin-top: 0; }
+    .article-body aside.cta-block a { display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-family: 'Lustria', serif; font-size: 16px; }
+    .article-body aside.cta-block a:hover { opacity: 0.85; }
+    .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
+    .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
+  </style>
+</head>
+<body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
+
+  <!-- Navigation (matches index.html) -->
+  <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
+    <div class="flex items-center justify-between">
+      <a href="/" class="shrink-0">
+        <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
+      </a>
+      <ul class="hidden md:flex items-center gap-[23px]">
+        <li><a href="/#clients" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Clients</a></li>
+        <li><a href="/#process" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Process</a></li>
+        <li><a href="/#why-us" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Us</a></li>
+        <li><a href="/blog/" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Blog</a></li>
+        <li><a href="/#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
+        <li><a href="/#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Contact</a></li>
+      </ul>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Article container -->
+  <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
+
+    <!-- Breadcrumb -->
+    <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
+      <a href="/" class="hover:text-black">Home</a>
+      <span class="mx-[6px]">/</span>
+      <a href="/blog/" class="hover:text-black">Blog</a>
+      <span class="mx-[6px]">/</span>
+      <span>Build a Content Agent for Your B2B SaaS | StartupCookie</span>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="font-lustria text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.7px] md:tracking-[-1.1px] text-black mb-[24px]">Build a Content Agent for Your B2B SaaS | StartupCookie</h1>
+
+    <!-- Byline + last updated -->
+    <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
+      <span>By <a href="https://startupcookie.com" class="underline hover:text-black">Sam Claassen</a> at StartupCookie</span>
+      <span class="text-[rgba(0,0,0,0.2)]">|</span>
+      <span class="updated">Last updated: May 2026</span>
+    </div>
+
+    <!-- Hero image -->
+    <figure class="mb-[40px]">
+      <img src="hero.png" alt="StartupCookie editorial hero illustration" class="w-full h-auto rounded-[12px] border border-border-gray block">
+    </figure>
+
+    <!-- Article body. post_body_html includes H2s, prose, lists, tables, FAQ section, CTA block. -->
+    <div class="article-body">
+      <p class="updated">Last updated: May 2026</p>
+
+<p>StartupCookie builds custom content agents for B2B SaaS startups. A content agent is an AI workflow that ships AEO-built marketing content end to end (research, drafting, QA, schema, publishing) at marginal cost, with human approval gates at the editorial moments that actually matter. We built ours first and it now produces every article on this site; we build the same kind of system for clients who want production in-house rather than outsourced. Typical timeline: 4-6 weeks from kickoff to first article shipped through the agent. Fixed-scope pricing, no per-article fees afterward.</p>
+
+<aside class="cta-block">
+  <h2>Book a 20-minute scoping call</h2>
+  <p>We will walk through your stack, your publishing surface, your team's editorial bar, and whether a content agent is the right move for your stage. No pitch deck.</p>
+  <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call">Book a call</a>
+</aside>
+
+<h2>What we build</h2>
+<p>A four-agent system custom-fit to your stack and voice: a research agent that runs live AI-engine queries to find the citation gaps for your target prompts, a writer agent calibrated to your voice card (built from your existing best content), a deterministic linter that enforces AEO discipline as a hard gate, and a publish agent wired directly to your live site repo. Optional fifth role: an image agent that renders brand-locked HTML/CSS templates via Playwright, with gpt-image-1 fallback for editorial covers. The system is owned by you. The code lives in your repo. We hand it over and stay on retainer for editorial review if you want; otherwise you operate it.</p>
+
+<h2>Who this is for</h2>
+<ol>
+  <li><strong>Series A and later B2B SaaS</strong> with a technical founder and a senior content marketer who want to scale publishing without scaling headcount. The agent ships 4-8 high-quality articles per week, the strategist reviews.</li>
+  <li><strong>B2B SaaS already running an outsourced content program</strong> that wants to bring production in-house while keeping editorial outside. We build the agent for the in-house piece and keep doing strategy and editorial review on retainer.</li>
+  <li><strong>AI-native B2B SaaS</strong> that wants the hiring story and the technical credibility of operating an AI-native content stack. The agent IS the case study you tell prospects.</li>
+</ol>
+
+<h2>What we don't do</h2>
+<p>We do not build content agents for B2C, e-commerce, or consumer brands. The architecture works for those categories but the voice cards, the AEO playbooks, and the buyer-journey calibrations are calibrated for B2B SaaS specifically.</p>
+<p>We do not deliver "agents in a box" you can configure yourself. Every agent is built against a specific publishing surface, a specific voice, and a specific topic ladder. If you want a self-serve tool, this is not it.</p>
+<p>We do not operate the agent for you long-term unless you want us on retainer for editorial review. The handover is the point.</p>
+
+<h2>How it works, in 4 phases</h2>
+<table>
+  <thead>
+    <tr><th>Phase</th><th>What we ship</th><th>Timeline</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1. Scoping</td><td>Voice card, topic ladder, AEO target queries, publishing-surface audit</td><td>Week 1</td></tr>
+    <tr><td>2. Build</td><td>4-agent system, schema templates, AEO linter, image templates</td><td>Weeks 2-4</td></tr>
+    <tr><td>3. Smoke ship</td><td>First 2-3 articles shipped through the agent with you in the loop</td><td>Week 5</td></tr>
+    <tr><td>4. Handover</td><td>Documentation, training, optional retainer for editorial review</td><td>Week 6</td></tr>
+  </tbody>
+</table>
+
+<aside class="disclosure">
+  <strong>Disclosure:</strong> StartupCookie is our agency. The agent we operate to produce this site is one we built; that is the proof of capability we sell. We have included our own pricing here for transparency.
+</aside>
+
+<h2>Pricing</h2>
+<p>Fixed-scope pricing starting at $30,000 for the standard 4-agent build, $50,000+ for builds with multi-author voice, multi-site publishing, or custom integrations (HubSpot, Salesforce, internal data systems). Add-on managed-service retainer for ongoing editorial review: starting at $5,000/mo. Standalone content services (managed content programs, founder LinkedIn) start at $5,000/mo with no agent build. Every engagement is custom-scoped on the intro call.</p>
+
+<h2>Frequently asked questions</h2>
+
+<h3>Do I need a content agent if I already have a content team?</h3>
+<p>Not necessarily. Content agents amplify a senior content marketer; they do not replace one. If you have a 5+ person content team already shipping consistently, the agent's marginal value is lower. If you have one senior strategist trying to scale, the agent multiplies their output 4-8x.</p>
+
+<h3>What happens if the agent ships a bad article?</h3>
+<p>It does not, because the publish gate is human-approved. The agent stages a commit; a senior strategist on your team (or ours, on retainer) reviews before the push. The linter catches most issues before they reach the human gate; the human catches the rest.</p>
+
+<h3>Do you white-label the agent?</h3>
+<p>No. The agent we build is your code, in your repo, written for your team. There is nothing to white-label. We do not put the StartupCookie name in the agent's output.</p>
+
+<h3>Can I see the agent that runs this site?</h3>
+<p>Yes. Book a call and we will walk through the architecture, the orchestrator, the skill files, and the deployment pipeline that ships every article on this site. The system is the case study.</p>
+
+<h3>How long does the buildout take?</h3>
+<p>Standard 4-agent build: 4-6 weeks from kickoff to first article shipped through the agent. Builds with multi-author voice, multi-site publishing, or custom integrations take 6-10 weeks.</p>
+
+<h3>Who owns the agent code after the build?</h3>
+<p>You do. The agent lives in your repo. We deliver it, document it, train your team on it, and (optionally) stay on retainer for editorial review.</p>
+
+<aside class="cta-block">
+  <h2>Build your B2B SaaS content agent with StartupCookie</h2>
+  <p>Fixed-scope, 4-6 week buildout. We build the agent for your stack and your voice. You own the code. We can stay on retainer for editorial review or hand it over.</p>
+  <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call">Book a 20-minute scoping call</a>
+</aside>
+
+<footer class="footer">
+  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: May 2026.</p>
+</footer>
+
+    </div>
+
+  </article>
+
+  <!-- Footer (matches index.html) -->
+  <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
+      <div class="flex flex-col gap-[23px]">
+        <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <a href="/#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
+        <a href="/#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
+        <a href="/blog/" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
+        <a href="/#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+      </div>
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD schema blocks. Each block validated by publish_post.py. -->
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://startupcookie.com/services/content-agents/"
+  },
+  "headline": "Build a Content Agent for Your B2B SaaS Startup",
+  "description": "StartupCookie builds custom content agents for B2B SaaS startups. Fixed-scope 4-6 week buildout. The agent ships AEO-built content end to end; you own the code.",
+  "image": "https://startupcookie.com/services/content-agents/hero.png",
+  "author": {
+    "@type": "Person",
+    "name": "Sam Claassen",
+    "url": "https://startupcookie.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "StartupCookie",
+    "url": "https://startupcookie.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://startupcookie.com/assets/logo-nav.svg"
+    }
+  },
+  "datePublished": "2026-05-14T09:00:00-07:00",
+  "dateModified": "2026-05-14T09:00:00-07:00",
+  "articleSection": "Services",
+  "keywords": "content agent, build content agent, B2B SaaS, AI agent buildout, custom content agent, StartupCookie services"
+}
+  </script>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Custom Content Agent Buildout",
+  "description": "StartupCookie builds custom AI content agents for B2B SaaS startups. The agent ships AEO-built content end to end (research, drafting, QA, schema, publishing) at marginal cost.",
+  "provider": {
+    "@type": "Organization",
+    "name": "StartupCookie",
+    "url": "https://startupcookie.com"
+  },
+  "areaServed": "Worldwide",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "B2B SaaS Startups"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "30000",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": "30000",
+      "priceCurrency": "USD"
+    },
+    "url": "https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call"
+  }
+}
+  </script>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://startupcookie.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://startupcookie.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Content Agents",
+      "item": "https://startupcookie.com/services/content-agents/"
+    }
+  ]
+}
+  </script>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need a content agent if I already have a content team?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not necessarily. Content agents amplify a senior content marketer; they do not replace one. If you have a 5+ person content team already shipping consistently, the agent's marginal value is lower. If you have one senior strategist trying to scale, the agent multiplies their output 4-8x."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if the agent ships a bad article?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It does not, because the publish gate is human-approved. The agent stages a commit; a senior strategist on your team (or ours, on retainer) reviews before the push. The linter catches most issues before they reach the human gate; the human catches the rest."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you white-label the agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The agent we build is your code, in your repo, written for your team. There is nothing to white-label. We do not put the StartupCookie name in the agent's output."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I see the agent that runs this site?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Book a call and we will walk through the architecture, the orchestrator, the skill files, and the deployment pipeline that ships every article on this site. The system is the case study."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the buildout take?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Standard 4-agent build: 4-6 weeks from kickoff to first article shipped through the agent. Builds with multi-author voice, multi-site publishing, or custom integrations take 6-10 weeks."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who owns the agent code after the build?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You do. The agent lives in your repo. We deliver it, document it, train your team on it, and (optionally) stay on retainer for editorial review."
+      }
+    }
+  ]
+}
+  </script>
+  
+
+</body>
+</html>

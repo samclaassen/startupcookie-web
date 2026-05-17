@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Build a Content Agent for Your B2B SaaS Startup (2026) | StartupCookie</title>
+  <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
+  <meta name="description" content="A content agent ships marketing content end to end at marginal cost. The 4 roles every agent needs, the architecture, and a 2-4 week build plan for B2B SaaS.">
+  <link rel="canonical" href="https://startupcookie.com/guides/content-agents/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How to Build a Content Agent for Your B2B SaaS Startup (2026)">
+  <meta property="og:description" content="A content agent ships marketing content end to end at marginal cost. The 4 roles every agent needs, the architecture, and a 2-4 week build plan for B2B SaaS.">
+  <meta property="og:image" content="https://startupcookie.com/guides/content-agents/hero.png">
+  <meta property="og:image:width" content="1536">
+  <meta property="og:image:height" content="864">
+  <meta property="og:url" content="https://startupcookie.com/guides/content-agents/">
+  <meta property="og:site_name" content="StartupCookie">
+  <meta property="article:published_time" content="2026-05-14T09:00:00-07:00">
+  <meta property="article:modified_time" content="2026-05-14T09:00:00-07:00">
+  <meta property="article:author" content="Sam Claassen">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How to Build a Content Agent for Your B2B SaaS Startup (2026)">
+  <meta name="twitter:description" content="A content agent ships marketing content end to end at marginal cost. The 4 roles every agent needs, the architecture, and a 2-4 week build plan for B2B SaaS.">
+  <meta name="twitter:image" content="https://startupcookie.com/guides/content-agents/hero.png">
+
+  <!-- Fonts + Tailwind (matches index.html) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+            sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            'green-highlight': '#f9fff4',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    /* Article-specific styles. Keep small, defer to Tailwind. */
+    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 56px; margin-bottom: 20px; color: rgba(0,0,0,0.9); }
+    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 32px; margin-bottom: 12px; color: rgba(0,0,0,0.9); }
+    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin-bottom: 16px; }
+    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin: 16px 0 20px 24px; }
+    .article-body ul li { list-style: disc; margin-bottom: 6px; }
+    .article-body ol li { list-style: decimal; margin-bottom: 6px; }
+    .article-body a { color: #4F69EB; text-decoration: underline; }
+    .article-body a:hover { opacity: 0.8; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body th, .article-body td { border: 1px solid #DCDCDC; padding: 10px 14px; text-align: left; vertical-align: top; }
+    .article-body th { background: #F9FFF4; font-weight: 600; }
+    .article-body figure { margin: 32px 0; }
+    .article-body figure img { width: 100%; height: auto; border: 1px solid #DCDCDC; border-radius: 8px; display: block; }
+    .article-body figure figcaption { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 8px; text-align: center; }
+    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 20px 0; font-style: italic; color: rgba(0,0,0,0.7); }
+    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 24px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
+    .article-body aside.cta-block { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 32px; border-radius: 12px; margin: 48px 0 24px; }
+    .article-body aside.cta-block h2 { margin-top: 0; }
+    .article-body aside.cta-block a { display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-family: 'Lustria', serif; font-size: 16px; }
+    .article-body aside.cta-block a:hover { opacity: 0.85; }
+    .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
+    .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
+  </style>
+</head>
+<body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
+
+  <!-- Navigation (matches index.html) -->
+  <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
+    <div class="flex items-center justify-between">
+      <a href="/" class="shrink-0">
+        <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
+      </a>
+      <ul class="hidden md:flex items-center gap-[23px]">
+        <li><a href="/#clients" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Clients</a></li>
+        <li><a href="/#process" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Process</a></li>
+        <li><a href="/#why-us" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Us</a></li>
+        <li><a href="/blog/" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Blog</a></li>
+        <li><a href="/#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
+        <li><a href="/#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Contact</a></li>
+      </ul>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Article container -->
+  <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
+
+    <!-- Breadcrumb -->
+    <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
+      <a href="/" class="hover:text-black">Home</a>
+      <span class="mx-[6px]">/</span>
+      <a href="/blog/" class="hover:text-black">Blog</a>
+      <span class="mx-[6px]">/</span>
+      <span>How to Build a Content Agent for Your B2B SaaS Startup (2026)</span>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="font-lustria text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.7px] md:tracking-[-1.1px] text-black mb-[24px]">How to Build a Content Agent for Your B2B SaaS Startup (2026)</h1>
+
+    <!-- Byline + last updated -->
+    <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
+      <span>By <a href="https://startupcookie.com" class="underline hover:text-black">Sam Claassen</a> at StartupCookie</span>
+      <span class="text-[rgba(0,0,0,0.2)]">|</span>
+      <span class="updated">Last updated: May 2026</span>
+    </div>
+
+    <!-- Hero image -->
+    <figure class="mb-[40px]">
+      <img src="hero.png" alt="StartupCookie editorial hero illustration" class="w-full h-auto rounded-[12px] border border-border-gray block">
+    </figure>
+
+    <!-- Article body. post_body_html includes H2s, prose, lists, tables, FAQ section, CTA block. -->
+    <div class="article-body">
+      <p class="updated">Last updated: May 2026</p>
+
+<p>A content agent is an AI workflow that produces and ships marketing content for your B2B SaaS end to end (research, drafting, QA, schema, publishing) at marginal cost. The right architecture in 2026 is multi-agent: a research agent, a writer agent, a linter agent, an image agent, and a publish agent, orchestrated by a thin orchestrator that handles approval gates and state. Build it correctly and one founder + one senior strategist can ship 4-8 high-quality, AEO-built articles per week without burning out. Build it wrong and you ship generic AI slop that hurts your brand. This guide is the practitioner playbook: the architecture that actually works, the four roles every content agent needs, what to keep human in the loop, and a concrete build plan with weeks-to-shipping estimates. Everything in this guide is taken from <a href="https://startupcookie.com">StartupCookie</a>'s own content agent, which produces every article on this site.</p>
+
+<h2>What a content agent is, and what it is not</h2>
+<p>A content agent is a coordinated set of AI tools and scripts that performs the steps a human content team would perform, on a defined topic, end to end. Inputs: a topic and a brief. Outputs: a published, AEO-built article with images, schema, and the right URL on your live site. The orchestration handles the messy middle: research, drafting, QA loops, image generation, publishing, and (optionally) citation tracking.</p>
+<p>A content agent is <strong>not</strong> a single ChatGPT prompt that drafts a 1,500-word post. That is a thin wrapper, not an agent. Thin wrappers ship AI slop because they have no QA, no schema, no editorial gates, and no judgment about what makes content citable.</p>
+<p>A content agent is <strong>not</strong> a workflow tool like Zapier or Make. Those tools route data between APIs. An agent makes decisions: which sources to trust, when to cut a section, whether a stat needs verification, when to escalate to a human.</p>
+<p>A content agent is <strong>not</strong> a fully autonomous robot. The agent runs the workflow; a senior strategist still owns the editorial calls. The good agents make the human's judgment scalable, not unnecessary.</p>
+
+<h2>Why build a content agent in 2026</h2>
+<p>Two reasons. First, the cost has collapsed. According to industry tracking (cross-referenced in <a href="https://www.trysight.ai/blog/ai-agent-content-creation-system">TrySight's 2026 content-agent architecture guide</a>), the cost and complexity of building agentic workflows dropped by roughly an order of magnitude in 2025-2026. The OpenAI Agents SDK and the Claude Agent SDK both handle orchestration out of the box. A working content agent is now a 2-4 week build for a single technical founder, not a six-month engineering project.</p>
+<p>Second, the output reliability has crossed the human-acceptable threshold. With multi-agent architectures, the right model selection per task (cheap small models for drafting, more expensive models for QA), and a deterministic linter, the per-article quality variance is now lower than a typical content team's. The same agent ships the 50th article at the same quality as the 1st.</p>
+<p>Concretely, what that buys an early-stage B2B SaaS startup: 4-8 AEO-built articles per week, at marginal cost, with consistent voice, all schema-validated and ready to be cited by AI assistants.</p>
+
+<h2>The 4 roles every content agent needs</h2>
+<p>Every working content agent in 2026 has four functional roles. They can be one agent with multiple modes or four separate agents orchestrated by an orchestrator; the architectural pattern is the same.</p>
+<ol>
+  <li><strong>Researcher.</strong> Takes the topic, queries the live web (via API tools like OpenAI Responses with web_search, Anthropic web_search, or Perplexity Sonar), surfaces the top cited pages for the target query, and produces a brief: which claims to make, which stats to cite, what the AEO gap is, what the proprietary angle should be.</li>
+  <li><strong>Writer.</strong> Takes the brief and produces a draft in three passes: skeleton (H1, H2s, one-sentence answers under each), prose (each H2 expanded to 250-400 words), polish (opener, closer, transitions). Voice is enforced via a "voice card" that lists do/don't patterns and provides 5-7 exemplars. The writer never invents stats.</li>
+  <li><strong>Linter (QA).</strong> Deterministic script that enforces the AEO discipline. Hard fails: em-dashes, banned-word hits, missing schema, malformed schema, FAQ-schema mismatch, broken external links. Soft warns: word count off target, paragraph not in the 120-180 word extraction sweet spot. The linter is the difference between a content agent and a slop generator.</li>
+  <li><strong>Publisher.</strong> Renders the validated draft into HTML using a template, copies images, rebuilds the blog index and sitemap, and stages a git commit to the deployment branch. A human approves before the actual push goes live. This last gate is non-negotiable.</li>
+</ol>
+<p>Optional fifth role: <strong>image agent.</strong> Most B2B SaaS articles benefit from one hero image and 2-3 inline data visualizations. HTML/CSS templates rendered via Playwright are deterministic and brand-locked. gpt-image-1 or Midjourney are right for editorial illustration. The image agent picks per slot.</p>
+
+<h3>The architectural rule: thin orchestrator, fat skills</h3>
+<p>The single architectural decision that separates working content agents from broken ones: <strong>keep the orchestrator thin, keep the skill files fat</strong>. The orchestrator is the thin layer: it handles state, approval gates, and tool calls. The skills are markdown reference files that encode the editorial knowledge: voice card, AEO principles, FAQ patterns, schema templates, brand guidelines.</p>
+<p>The skills are re-read from disk at runtime. The orchestrator does not paraphrase them or summarize them. This means you can update voice, AEO rules, or brand language by editing a markdown file, without touching code. Your senior strategist can edit the rules without bothering an engineer.</p>
+<p>Deterministic scripts handle the parts that must be reproducible: HTML audit, schema validation, image compositing, file publishing, citation checks. These are Python scripts the agent calls as tools, not LLM-generated logic.</p>
+
+<h2>What stays human in the loop</h2>
+<p>Three decisions never get fully automated.</p>
+<p><strong>Topic selection.</strong> Knowing which topic to write next requires reading the market, the sales pipeline, and the competitive landscape. The agent can suggest topics from citation gaps; a human picks.</p>
+<p><strong>Voice and editorial judgment.</strong> A senior strategist reviews the draft before image generation. Drafts read fluent on the surface but flatten under pressure; the editorial pass catches the flatness.</p>
+<p><strong>The final publish.</strong> The agent stages a commit. A human runs the push. This is the gate that prevents shipping a draft that looks fine but contains a fabricated stat the human will recognize.</p>
+<p>Programs without these three human gates flatten into AI-generic content within 60 days. The agent's job is to make the human's judgment scalable, not to replace it.</p>
+
+<h2>How to build your own content agent in 2-4 weeks</h2>
+<p>A concrete buildout plan for a B2B SaaS startup with one technical founder.</p>
+<ol>
+  <li><strong>Week 1 (foundation).</strong> Pick an agent SDK (Claude Agent SDK, OpenAI Agents SDK). Define the four roles as skill markdown files. Write the voice card with 5-7 exemplars from your existing best content. Write the AEO principles file from this guide and the <a href="/guides/aeo-for-b2b-saas/">AEO playbook</a>. Stand up the publish script targeting your live site repo with a "no-push" default.</li>
+  <li><strong>Week 2 (linter and templates).</strong> Build the deterministic AEO linter (Python script, regex-based for portability). Build the HTML template for the rendered article. Build the JSON-LD schema templates. Smoke test end-to-end with one throwaway article.</li>
+  <li><strong>Week 3 (images and QA).</strong> Build the HTML/CSS image templates. Wire up Playwright for hero rendering. Add gpt-image-1 fallback for illustrative covers. Build the citation tracker (free Promptwatch tier first; DIY tracker later if needed).</li>
+  <li><strong>Week 4 (ship and iterate).</strong> Ship the first real article. Have a senior strategist review against the voice card. Fix what's flat. Ship the second. By week 6 the agent ships an article in 30-45 minutes including QA and images.</li>
+</ol>
+<p>Reasonable budget: $30-80/month in API fees once running, plus the strategist's time (~2 hours per article for review).</p>
+
+<h2>The 3 most common mistakes when building a content agent</h2>
+<p>From building several of these for B2B SaaS startups and from auditing competitors, three patterns kill the agent's output quality consistently.</p>
+<p>First, <strong>no QA gate</strong>. Teams ship the agent's draft straight to publish. The result is fluent slop with hallucinated stats. The linter must be a hard gate, not a suggestion.</p>
+<p>Second, <strong>one big prompt instead of multiple agents</strong>. Teams write a single 5,000-word prompt that tells one model to do everything. Multi-agent architectures (research, write, lint, publish) consistently outperform monolithic prompts on every quality measure.</p>
+<p>Third, <strong>no voice card</strong>. Teams rely on the model to "match our voice" by reading the brand guide. Voice cards with 5-7 exemplars (real passages from your real content) work; brand-guide adherence alone does not.</p>
+
+<h2>Frequently asked questions</h2>
+
+<h3>How much does it cost to build a content agent?</h3>
+<p>A first working version takes 2-4 weeks of one technical founder's time, plus roughly $30-80/month in API costs once running. Building one as a contractor or hiring an agency to build it for you runs $20,000-$60,000 for a custom buildout depending on complexity. StartupCookie builds content agents for clients on a fixed-scope basis; pricing depends on the publishing surface (one site vs. multiple) and the integrations needed.</p>
+
+<h3>What is the difference between a content agent and a tool like Jasper or Copy.ai?</h3>
+<p>Jasper, Copy.ai, and similar tools are AI writing assistants you operate. A content agent is an end-to-end workflow that operates itself, with human approval gates. The writing tools require a marketer to drive them; the agent ships the work and surfaces it for review. Different category, different buyer.</p>
+
+<h3>Should a B2B SaaS founder build a content agent, or outsource the content instead?</h3>
+<p>Both are valid. Building gives you a system that compounds and a hiring story (you are now an AI-native company). Outsourcing gives you faster time-to-content and someone else's editorial judgment. The hybrid: outsource the first 90 days to a full-stack agency, then build the agent and bring production in-house while keeping the strategist on retainer.</p>
+
+<h3>Which agent framework should I use?</h3>
+<p>Three solid choices in 2026. The Claude Agent SDK is the cleanest for content workflows because it has strong file-system tooling and bash integration, which content publishing needs. The OpenAI Agents SDK is the most mature and has the best Responses API for web search. LangChain or CrewAI work but tend to over-abstract the simple cases. Pick based on which model you trust most for editorial judgment.</p>
+
+<h3>Can a content agent handle voice for multiple authors?</h3>
+<p>Yes. The pattern is one voice card per author, loaded by the writer agent at the start of each run. The agent reads the named author's voice card and uses the exemplars as few-shot examples. We use this pattern at StartupCookie for clients with multiple founder voices on the same blog.</p>
+
+<h3>How do I know if my content agent's output is good enough to ship?</h3>
+<p>Three tests: (1) read three random paragraphs and ask "would a senior content strategist have written this?" (2) run the AEO linter; any hard fail means do not ship. (3) check whether a real AI assistant cites the page within the expected time window (14-60 days depending on engine). If citations don't show, the architecture has a gap; usually the voice card or the schema validation.</p>
+
+<h3>Does Google penalize content produced by a content agent?</h3>
+<p>No, with a caveat. Google's official 2024 guidance is "we reward helpful content, regardless of how it is produced." AI-only generic content does not rank. AI content that is fact-checked, structured for extractability, and reviewed by a human ranks normally. The penalty is for slop, not for AI provenance.</p>
+
+<h3>Can I use a content agent for B2C content?</h3>
+<p>You can, but the calibrations are different. B2C content optimizes for shorter formats, different platforms (TikTok and YouTube AI features matter more for B2C), and different voice patterns. Content agents are most valuable in B2B SaaS where buying cycles are long and the AEO citation surface is the moat.</p>
+
+<aside class="disclosure">
+  <strong>Disclosure:</strong> StartupCookie is our agency. We build content agents for B2B SaaS startups as one of our services. The principles in this guide are brand-agnostic; the implementation example is one viable approach of many.
+</aside>
+
+<aside class="cta-block">
+  <h2>Want StartupCookie to build your content agent?</h2>
+  <p>We build custom content agents for B2B SaaS startups. The agent we use for our own site is one we built; we can build the same kind of system for yours. We can also run your content as a managed service (starting at $5,000/mo) while we build the agent in parallel, so production never stops.</p>
+  <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call">Book a 20-minute intro call</a>
+</aside>
+
+<footer class="footer">
+  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: May 2026.</p>
+</footer>
+
+    </div>
+
+  </article>
+
+  <!-- Footer (matches index.html) -->
+  <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
+      <div class="flex flex-col gap-[23px]">
+        <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <a href="/#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
+        <a href="/#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
+        <a href="/blog/" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
+        <a href="/#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+      </div>
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD schema blocks. Each block validated by publish_post.py. -->
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://startupcookie.com/guides/content-agents/"
+  },
+  "headline": "How to Build a Content Agent for Your B2B SaaS Startup (2026 Playbook)",
+  "description": "A content agent ships marketing content end to end at marginal cost. The 4 roles every agent needs, the thin-harness architecture, and a 2-4 week build plan for B2B SaaS startups.",
+  "image": "https://startupcookie.com/guides/content-agents/hero.png",
+  "author": {
+    "@type": "Person",
+    "name": "Sam Claassen",
+    "url": "https://startupcookie.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "StartupCookie",
+    "url": "https://startupcookie.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://startupcookie.com/assets/logo-nav.svg"
+    }
+  },
+  "datePublished": "2026-05-14T09:00:00-07:00",
+  "dateModified": "2026-05-14T09:00:00-07:00",
+  "articleSection": "Content Agents",
+  "keywords": "content agent, AI content agent, build content agent, B2B SaaS, multi-agent content, AI workflow, content automation, 2026"
+}
+  </script>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://startupcookie.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://startupcookie.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Build a Content Agent",
+      "item": "https://startupcookie.com/guides/content-agents/"
+    }
+  ]
+}
+  </script>
+  
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does it cost to build a content agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A first working version takes 2-4 weeks of one technical founder's time, plus roughly $30-80/month in API costs once running. Building one as a contractor or hiring an agency to build it for you runs $20,000-$60,000 for a custom buildout depending on complexity. StartupCookie builds content agents for clients on a fixed-scope basis; pricing depends on the publishing surface (one site vs. multiple) and the integrations needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between a content agent and a tool like Jasper or Copy.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Jasper, Copy.ai, and similar tools are AI writing assistants you operate. A content agent is an end-to-end workflow that operates itself, with human approval gates. The writing tools require a marketer to drive them; the agent ships the work and surfaces it for review. Different category, different buyer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should a B2B SaaS founder build a content agent, or outsource the content instead?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Both are valid. Building gives you a system that compounds and a hiring story (you are now an AI-native company). Outsourcing gives you faster time-to-content and someone else's editorial judgment. The hybrid: outsource the first 90 days to a full-stack agency, then build the agent and bring production in-house while keeping the strategist on retainer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which agent framework should I use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three solid choices in 2026. The Claude Agent SDK is the cleanest for content workflows because it has strong file-system tooling and bash integration, which content publishing needs. The OpenAI Agents SDK is the most mature and has the best Responses API for web search. LangChain or CrewAI work but tend to over-abstract the simple cases. Pick based on which model you trust most for editorial judgment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a content agent handle voice for multiple authors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The pattern is one voice card per author, loaded by the writer agent at the start of each run. The agent reads the named author's voice card and uses the exemplars as few-shot examples. We use this pattern at StartupCookie for clients with multiple founder voices on the same blog."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I know if my content agent's output is good enough to ship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Three tests: (1) read three random paragraphs and ask \"would a senior content strategist have written this?\" (2) run the AEO linter; any hard fail means do not ship. (3) check whether a real AI assistant cites the page within the expected time window (14-60 days depending on engine). If citations don't show, the architecture has a gap; usually the voice card or the schema validation."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Google penalize content produced by a content agent?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, with a caveat. Google's official 2024 guidance is \"we reward helpful content, regardless of how it is produced.\" AI-only generic content does not rank. AI content that is fact-checked, structured for extractability, and reviewed by a human ranks normally. The penalty is for slop, not for AI provenance."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use a content agent for B2C content?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can, but the calibrations are different. B2C content optimizes for shorter formats, different platforms (TikTok and YouTube AI features matter more for B2C), and different voice patterns. Content agents are most valuable in B2B SaaS where buying cycles are long and the AEO citation surface is the moat."
+      }
+    }
+  ]
+}
+  </script>
+  
+
+</body>
+</html>

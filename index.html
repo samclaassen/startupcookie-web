@@ -35,6 +35,37 @@
     }
   </script>
   <link rel="stylesheet" href="styles.css">
+
+  <!-- Organization schema (site-wide, see references/schema-examples.md) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-Native Thought Leadership Agency for B2B SaaS startups. Content and distribution that drives revenue.",
+  "founder": {
+    "@type": "Person",
+    "name": "Barbara Jovanovic"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/barbara-startup-cookie/"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
@@ -49,13 +80,16 @@
         <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
         <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
       </button>
-      <ul class="hidden md:flex items-center gap-[23px]">
-        <li><a href="#clients" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Clients</a></li>
-        <li><a href="#process" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Process</a></li>
-        <li><a href="#why-us" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Us</a></li>
-        <li><a href="#content" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Our Work</a></li>
-        <li><a href="#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Pricing</a></li>
-        <li><a href="#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] text-center hover:text-black transition-colors">Contact</a></li>
+      <ul class="hidden md:flex items-center gap-[20px]">
+        <li><a href="/services/" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Services</a></li>
+        <li><a href="/guides/" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Guides</a></li>
+        <li><a href="/blog/" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Blog</a></li>
+        <li><a href="#clients" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Clients</a></li>
+        <li><a href="#process" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Process</a></li>
+        <li><a href="#why-us" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Us</a></li>
+        <li><a href="#content" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Our Work</a></li>
+        <li><a href="#pricing" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Pricing</a></li>
+        <li><a href="#contact" class="text-[16px] text-[rgba(0,0,0,0.8)] tracking-[-0.32px] text-center hover:text-black transition-colors">Contact</a></li>
       </ul>
       <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
     </div>
@@ -63,14 +97,17 @@
 
   <!-- Mobile Nav Overlay -->
   <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
-    <ul class="flex flex-col items-center gap-[24px]">
-      <li><a href="#clients" class="text-[24px] text-[rgba(0,0,0,0.8)]">Clients</a></li>
-      <li><a href="#process" class="text-[24px] text-[rgba(0,0,0,0.8)]">Process</a></li>
-      <li><a href="#why-us" class="text-[24px] text-[rgba(0,0,0,0.8)]">Us</a></li>
-      <li><a href="#content" class="text-[24px] text-[rgba(0,0,0,0.8)]">Our Work</a></li>
-      <li><a href="#pricing" class="text-[24px] text-[rgba(0,0,0,0.8)]">Pricing</a></li>
-      <li><a href="#contact" class="text-[24px] text-[rgba(0,0,0,0.8)]">Contact</a></li>
-      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+    <ul class="flex flex-col items-center gap-[22px]">
+      <li><a href="/services/" class="text-[22px] text-[rgba(0,0,0,0.8)]">Services</a></li>
+      <li><a href="/guides/" class="text-[22px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
+      <li><a href="/blog/" class="text-[22px] text-[rgba(0,0,0,0.8)]">Blog</a></li>
+      <li><a href="#clients" class="text-[22px] text-[rgba(0,0,0,0.8)]">Clients</a></li>
+      <li><a href="#process" class="text-[22px] text-[rgba(0,0,0,0.8)]">Process</a></li>
+      <li><a href="#why-us" class="text-[22px] text-[rgba(0,0,0,0.8)]">Us</a></li>
+      <li><a href="#content" class="text-[22px] text-[rgba(0,0,0,0.8)]">Our Work</a></li>
+      <li><a href="#pricing" class="text-[22px] text-[rgba(0,0,0,0.8)]">Pricing</a></li>
+      <li><a href="#contact" class="text-[22px] text-[rgba(0,0,0,0.8)]">Contact</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[22px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
     </ul>
   </div>
 
@@ -465,28 +502,43 @@
     </div>
   </section>
 
-  <!-- Footer (Fix 10: white button with dark text, gap-[23px]) -->
+  <!-- Footer -->
   <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
-    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
-      <div class="flex flex-col gap-[23px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-5 gap-[40px]">
+      <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
         <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
         <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <a href="#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
-        <a href="#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
-        <a href="#content" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Content</a>
-        <a href="#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
-        <a href="#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Services</span>
+        <a href="/services/thought-leadership/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership</a>
+        <a href="/services/founder-linkedin/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder LinkedIn</a>
+        <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO Content</a>
+        <a href="/services/content-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Content Agents</a>
+        <a href="/services/webinar-repurposing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Webinar Repurposing</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
-        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
-        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Guides</span>
+        <a href="/guides/aeo-for-b2b-saas/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO for B2B SaaS</a>
+        <a href="/guides/content-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Content Agents</a>
+        <a href="/guides/founder-led-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder-Led Content</a>
+        <a href="/guides/thought-leadership-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership</a>
+        <a href="/guides/webinar-repurposing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Webinar Repurposing</a>
       </div>
-      <div class="flex flex-col gap-[10px]">
-        <span class="text-[24px] md:text-[32px]">🌁</span>
-        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Resources</span>
+        <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Best Content Agencies</a>
+        <a href="#clients" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
+        <a href="#process" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
+        <a href="#pricing" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Contact</span>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Book a call</a>
       </div>
     </div>
   </footer>
