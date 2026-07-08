@@ -111,7 +111,7 @@
       <a href="/" class="shrink-0">
         <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
       </a>
-      <ul class="hidden md:flex items-center gap-[24px]">
+      <ul class="hidden md:flex items-center gap-[16px] lg:gap-[24px]">
         <li><a href="/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Home</a></li>
         <li class="relative group">
           <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
@@ -191,10 +191,15 @@
 
     <!-- Header -->
     <header class="max-w-[900px] mb-[48px] md:mb-[80px]">
-      <span class="block text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px] uppercase mb-[16px]">Press</span>
-      <h1 class="text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.8px] md:tracking-[-1.28px] text-black mb-[24px]">Press and appearances</h1>
-      <p class="font-sans text-[17px] md:text-[19px] leading-[1.55] text-[rgba(0,0,0,0.7)] max-w-[720px]">Podcasts, workshops, and interviews featuring StartupCookie co-founders Barbara Jovanovic and Sam Claassen. Newest first. More about the team on our <a href="/about/" class="text-blue-link underline hover:opacity-80 transition-opacity">About page</a>.</p>
-      <p class="text-[14px] text-[rgba(0,0,0,0.5)] mt-[16px]">Last updated: July 2026</p>
+      <div class="flex flex-col lg:flex-row lg:items-center gap-[30px] lg:gap-[60px]">
+        <div class="lg:flex-1">
+          <span class="block text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px] uppercase mb-[16px]">Press</span>
+          <h1 class="text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.8px] md:tracking-[-1.28px] text-black mb-[24px]">Press and appearances</h1>
+          <p class="font-sans text-[17px] md:text-[19px] leading-[1.55] text-[rgba(0,0,0,0.7)] max-w-[720px]">Podcasts, workshops, and interviews featuring StartupCookie co-founders Barbara Jovanovic and Sam Claassen. Newest first. More about the team on our <a href="/about/" class="text-blue-link underline hover:opacity-80 transition-opacity">About page</a>.</p>
+          <p class="text-[14px] text-[rgba(0,0,0,0.5)] mt-[16px]">Last updated: July 2026</p>
+        </div>
+        <img src="/assets/illustrations/press-megaphone.svg" alt="Pixel illustration of a megaphone" class="w-[140px] md:w-[180px] lg:w-[220px] shrink-0 self-center">
+      </div>
     </header>
 
     <!-- Press list (reverse-chronological: newest entry at the top) -->
@@ -222,16 +227,21 @@
       ========================================================== -->
 
       <article class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[40px]">
-        <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[6px] mb-[14px]">
-          <span class="text-[13px] md:text-[14px] uppercase tracking-[0.08em] text-[rgba(0,0,0,0.5)]">Two girls, one Claude (live series)</span>
-          <span class="text-[rgba(0,0,0,0.2)]">|</span>
-          <time datetime="2026-03-17" class="text-[13px] md:text-[14px] text-[rgba(0,0,0,0.5)]">Weekly, since March 2026</time>
-        </div>
-        <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">Two girls, one Claude: live build sessions</h2>
-        <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)] mb-[18px]">Barbara co-hosts a weekly live show with Bojana Vojnovic of HeyReach. Two marketers build real content workflows, tools, and websites with Claude and Claude Code, then publish honest recaps. Nine episodes and counting.</p>
-        <div class="flex flex-wrap gap-x-[20px] gap-y-[8px]">
-          <a href="https://www.linkedin.com/company/two-girls-one-claude" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">Follow on LinkedIn →</a>
-          <a href="https://twogirlsoneclaude.substack.com/" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">Read the recaps →</a>
+        <div class="flex items-start gap-[20px] md:gap-[28px]">
+          <img src="/assets/illustrations/two-girls-one-claude.svg" alt="" class="w-[72px] md:w-[96px] shrink-0">
+          <div class="min-w-0">
+            <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[6px] mb-[14px]">
+              <span class="text-[13px] md:text-[14px] uppercase tracking-[0.08em] text-[rgba(0,0,0,0.5)]">Two girls, one Claude (live series)</span>
+              <span class="text-[rgba(0,0,0,0.2)]">|</span>
+              <time datetime="2026-03-17" class="text-[13px] md:text-[14px] text-[rgba(0,0,0,0.5)]">Weekly, since March 2026</time>
+            </div>
+            <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">Two girls, one Claude: live build sessions</h2>
+            <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)] mb-[18px]">Barbara co-hosts a weekly live show with Bojana Vojnovic of HeyReach. Two marketers build real content workflows, tools, and websites with Claude and Claude Code, then publish honest recaps. Nine episodes and counting.</p>
+            <div class="flex flex-wrap gap-x-[20px] gap-y-[8px]">
+              <a href="https://www.linkedin.com/company/two-girls-one-claude" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">Follow on LinkedIn →</a>
+              <a href="https://twogirlsoneclaude.substack.com/" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">Read the recaps →</a>
+            </div>
+          </div>
         </div>
       </article>
 
@@ -305,6 +315,7 @@
         <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
         <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Agency Lists &amp; Comparisons</a>
         <a href="/press/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Press</a>
+        <a href="https://twogirlsoneclaude.com/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Two girls, one Claude</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
         <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
