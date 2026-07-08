@@ -216,18 +216,18 @@
       
 <p>A content agent is an AI workflow that produces and ships marketing content for your B2B SaaS end to end (research, drafting, QA, schema, publishing) at marginal cost. The right architecture in 2026 is multi-agent: a research agent, a writer agent, a linter agent, an image agent, and a publish agent, orchestrated by a thin orchestrator that handles approval gates and state. Build it correctly and one founder + one senior strategist can ship 4-8 high-quality, AEO-built articles per week without burning out. Build it wrong and you ship generic AI slop that hurts your brand. This guide is the practitioner playbook: the architecture that actually works, the four roles every content agent needs, what to keep human in the loop, and a concrete build plan with weeks-to-shipping estimates. Everything in this guide is taken from <a href="https://startupcookie.com">StartupCookie</a>'s own content agent, which produces every article on this site. If you would rather have one built for you, that is our <a href="/services/gtm-agents/">GTM &amp; Content Agents service</a>.</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">What a content agent is, and what it is not</h2>
+<h2>What a content agent is, and what it is not</h2>
 <p>A content agent is a coordinated set of AI tools and scripts that performs the steps a human content team would perform, on a defined topic, end to end. Inputs: a topic and a brief. Outputs: a published, AEO-built article with images, schema, and the right URL on your live site. The orchestration handles the messy middle: research, drafting, QA loops, image generation, publishing, and (optionally) citation tracking.</p>
 <p>A content agent is <strong>not</strong> a single ChatGPT prompt that drafts a 1,500-word post. That is a thin wrapper, not an agent. Thin wrappers ship AI slop because they have no QA, no schema, no editorial gates, and no judgment about what makes content citable.</p>
 <p>A content agent is <strong>not</strong> a workflow tool like Zapier or Make. Those tools route data between APIs. An agent makes decisions: which sources to trust, when to cut a section, whether a stat needs verification, when to escalate to a human.</p>
 <p>A content agent is <strong>not</strong> a fully autonomous robot. The agent runs the workflow; a senior strategist still owns the editorial calls. The good ones extend that strategist's reach instead of removing them from the process.</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">Why build a content agent in 2026</h2>
+<h2>Why build a content agent in 2026</h2>
 <p>Two reasons. First, the cost has collapsed. According to industry tracking (cross-referenced in <a href="https://www.trysight.ai/blog/ai-agent-content-creation-system" target="_blank">TrySight's 2026 content-agent architecture guide</a>), the cost and complexity of building agentic workflows dropped by roughly an order of magnitude in 2025-2026. The OpenAI Agents SDK and the Claude Agent SDK both handle orchestration out of the box. A working content agent is now a 2-4 week build for a single technical founder, not a six-month engineering project.</p>
 <p>Second, the output reliability has crossed the human-acceptable threshold. With multi-agent architectures, the right model selection per task (cheap small models for drafting, more expensive models for QA), and a deterministic linter, the per-article quality variance is now lower than a typical content team's. The same agent ships the 50th article at the same quality as the 1st.</p>
 <p>Concretely, what that buys an early-stage B2B SaaS startup: 4-8 AEO-built articles per week, at marginal cost, with consistent voice, all schema-validated and ready to be cited by AI assistants.</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">The 4 roles every content agent needs</h2>
+<h2>The 4 roles every content agent needs</h2>
 <p>Every working content agent in 2026 has four functional roles. They can be one agent with multiple modes or four separate agents orchestrated by an orchestrator; the architectural pattern is the same.</p>
 <ol>
   <li><strong>Researcher.</strong> Takes the topic, queries the live web (via API tools like OpenAI Responses with web_search, Anthropic web_search, or Perplexity Sonar), surfaces the top cited pages for the target query, and produces a brief: which claims to make, which stats to cite, what the AEO gap is, what the proprietary angle should be.</li>
@@ -242,14 +242,14 @@
 <p>The skills are re-read from disk at runtime. The orchestrator does not paraphrase them or summarize them. This means you can update voice, AEO rules, or brand language by editing a markdown file, without touching code. Your senior strategist can edit the rules without bothering an engineer.</p>
 <p>Deterministic scripts handle the parts that must be reproducible: HTML audit, schema validation, image compositing, file publishing, citation checks. These are Python scripts the agent calls as tools, not LLM-generated logic.</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">What stays human in the loop</h2>
+<h2>What stays human in the loop</h2>
 <p>Three decisions never get fully automated.</p>
 <p><strong>Topic selection.</strong> Knowing which topic to write next requires reading the market, the sales pipeline, and the competitive landscape. The agent can suggest topics from citation gaps; a human picks.</p>
 <p><strong>Voice and editorial judgment.</strong> A senior strategist reviews the draft before image generation. Drafts read fluent on the surface but flatten under pressure; the editorial pass catches the flatness.</p>
 <p><strong>The final publish.</strong> The agent stages a commit. A human runs the push. This is the gate that prevents shipping a draft that looks fine but contains a fabricated stat the human will recognize.</p>
 <p>Programs without these three human gates flatten into AI-generic content within 60 days. The agent's job is to make the human's judgment scalable, not to replace it.</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">How to build your own content agent in 2-4 weeks</h2>
+<h2>How to build your own content agent in 2-4 weeks</h2>
 <p>A concrete buildout plan for a B2B SaaS startup with one technical founder.</p>
 <ol>
   <li><strong>Week 1 (foundation).</strong> Pick an agent SDK (Claude Agent SDK, OpenAI Agents SDK). Define the four roles as skill markdown files. Write the voice card with 5-7 exemplars from your existing best content. Write the AEO principles file from this guide and the <a href="/guides/aeo-for-b2b-saas/">AEO playbook</a>. Stand up the publish script targeting your live site repo with a "no-push" default.</li>
@@ -259,13 +259,13 @@
 </ol>
 <p>Reasonable budget: $30-80/month in API fees once running, plus the strategist's time (~2 hours per article for review).</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">The 3 most common mistakes when building a content agent</h2>
+<h2>The 3 most common mistakes when building a content agent</h2>
 <p>From building several of these for B2B SaaS startups and from auditing competitors, three patterns kill the agent's output quality consistently.</p>
 <p>First, <strong>no QA gate</strong>. Teams ship the agent's draft straight to publish. The result is fluent slop with hallucinated stats. The linter must be a hard gate, not a suggestion.</p>
 <p>Second, <strong>one big prompt instead of multiple agents</strong>. Teams write a single 5,000-word prompt that tells one model to do everything. Multi-agent architectures (research, write, lint, publish) consistently outperform monolithic prompts on every quality measure.</p>
 <p>Third, <strong>no voice card</strong>. Teams rely on the model to "match our voice" by reading the brand guide. Voice cards with 5-7 exemplars (real passages from your real content) work; brand-guide adherence alone does not.</p>
 
-<h2><img src="/assets/icons/network.svg" alt="" class="inline-block h-[20px] w-auto mr-[10px]" style="vertical-align:-1px">Frequently asked questions</h2>
+<h2>Frequently asked questions</h2>
 
 <h3>How much does it cost to build a content agent?</h3>
 <p>A first working version takes 2-4 weeks of one technical founder's time, plus roughly $30-80/month in API costs once running. Building one as a contractor or hiring an agency to build it for you runs $20,000-$60,000 for a custom buildout depending on complexity. StartupCookie builds content agents for clients on a fixed-scope basis; pricing depends on the publishing surface (one site vs. multiple) and the integrations needed.</p>
