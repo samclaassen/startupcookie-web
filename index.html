@@ -96,6 +96,7 @@
         <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
       </a>
       <ul class="hidden md:flex items-center gap-[24px]">
+        <li><a href="/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Home</a></li>
         <li class="relative group">
           <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Services
@@ -151,6 +152,7 @@
   <!-- Mobile Nav Overlay (shared) -->
   <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
     <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Home</a></li>
       <li><a href="/services/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Services</a></li>
       <li><a href="/case-studies/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Case Studies</a></li>
       <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
@@ -221,7 +223,7 @@
     <div class="logo-marquee-wrapper">
       <div class="logo-marquee">
         <div class="logo-marquee-track">
-          <img src="/assets/favi-logo.svg" alt="Favi logo" style="height:40px;width:auto;">
+          <img src="/assets/favi-logo.svg" alt="Juno logo" style="height:40px;width:auto;">
           <img src="/assets/venn-logo-1.svg" alt="Venn logo" style="height:40px;width:auto;">
           <img src="/assets/venn-logo-2.svg" alt="" style="height:40px;width:auto;">
           <img src="/assets/puzzle-logo.png" alt="Puzzle logo" style="height:40px;width:auto;">
@@ -469,6 +471,23 @@
           </div>
         </div>
 
+        <!-- Two girls, one Claude -->
+        <div class="flex flex-col gap-[30px]">
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Barbara's live build series</h3>
+            <div class="w-full h-px bg-border-gray"></div>
+          </div>
+          <div class="bg-green-highlight border border-border-gray rounded-[12px] p-[24px] md:p-[32px] flex flex-col gap-[12px]">
+            <h3 class="text-[22px] md:text-[32px] font-normal text-black tracking-[-0.44px] md:tracking-[-0.64px] leading-[1.2]">Two girls, one Claude</h3>
+            <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.34px] leading-[1.5]">Every week, Barbara and Bojana Vojnovic of HeyReach build real content workflows, tools, and websites live with Claude and Claude Code, then publish honest recaps of what worked. Nine episodes and counting since March 2026.</p>
+            <div class="flex flex-wrap items-center gap-x-[20px] gap-y-[8px] mt-[6px]">
+              <a href="https://www.linkedin.com/company/two-girls-one-claude" target="_blank" class="text-[16px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.32px] hover:text-black transition-colors">Follow on LinkedIn</a>
+              <a href="https://twogirlsoneclaude.substack.com/" target="_blank" class="text-[16px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.32px] hover:text-black transition-colors">Read the recaps</a>
+              <a href="https://twogirlsoneclaude.com/" target="_blank" class="text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px] hover:text-black transition-colors">twogirlsoneclaude.com →</a>
+            </div>
+          </div>
+        </div>
+
         <!-- Long-form -->
         <div class="flex flex-col gap-[30px]">
           <div class="flex flex-col gap-[10px]">
@@ -513,24 +532,27 @@
             <div class="w-full h-px bg-border-gray"></div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
-            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+            <a href="/case-studies/venn/" class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px] hover:border-[rgba(0,0,0,0.4)] transition-colors">
               <div class="flex flex-col gap-[30px]">
                 <img src="/assets/venn-logo-color.png" alt="Venn logo" class="h-[30px] md:h-[40px] w-auto object-contain self-start">
                 <h3 class="text-[22px] md:text-[32px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.44px] md:tracking-[-0.64px] leading-[1.18]">How Stan simplified global payments for its creator platform with Venn</h3>
               </div>
-            </div>
-            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+              <span class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</span>
+            </a>
+            <a href="/case-studies/juno/" class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px] hover:border-[rgba(0,0,0,0.4)] transition-colors">
               <div class="flex flex-col gap-[30px]">
-                <img src="/assets/favi-case-study.svg" alt="Favi logo" class="h-[30px] md:h-[40px] w-auto object-contain self-start">
+                <img src="/assets/favi-case-study.svg" alt="Juno logo" class="h-[30px] md:h-[40px] w-auto object-contain self-start">
                 <h3 class="text-[22px] md:text-[32px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.44px] md:tracking-[-0.64px] leading-[1.18]">Accelerating digital adoption</h3>
               </div>
-            </div>
-            <div class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px]">
+              <span class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</span>
+            </a>
+            <a href="/case-studies/puzzle/" class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px] hover:border-[rgba(0,0,0,0.4)] transition-colors">
               <div class="flex flex-col gap-[30px]">
                 <img src="/assets/puzzle-logo.png" alt="Puzzle logo" class="h-[30px] md:h-[40px] w-auto object-contain self-start mix-blend-multiply">
                 <h3 class="text-[22px] md:text-[32px] font-normal text-[rgba(0,0,0,0.8)] tracking-[-0.44px] md:tracking-[-0.64px] leading-[1.18]">How Paradigm (YC W24) Simplified Financial Management with Puzzle</h3>
               </div>
-            </div>
+              <span class="text-[18px] text-[rgba(0,0,0,0.8)] underline tracking-[-0.36px] self-end">View Case Study</span>
+            </a>
             <a href="/case-studies/tofu/" class="bg-white border border-border-gray p-[20px] flex flex-col justify-between gap-[40px] min-h-[280px] md:min-h-[349px] hover:border-[rgba(0,0,0,0.4)] transition-colors">
               <div class="flex flex-col gap-[30px]">
                 <div class="flex items-center justify-between gap-[12px] w-full"><img src="/assets/tofu-logo.svg" alt="Tofu logo" class="h-[30px] md:h-[40px] w-auto object-contain"><span class="inline-block bg-green-highlight border border-border-gray rounded-full px-[12px] py-[4px] text-[12px] uppercase tracking-[0.05em] text-[rgba(0,0,0,0.6)]">Our results</span></div>
