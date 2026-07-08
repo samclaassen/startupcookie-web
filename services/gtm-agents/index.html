@@ -51,22 +51,22 @@
 
   <style>
     /* Article-specific styles. Keep small, defer to Tailwind. */
-    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 56px; margin-bottom: 20px; color: rgba(0,0,0,0.9); }
-    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 32px; margin-bottom: 12px; color: rgba(0,0,0,0.9); }
-    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin-bottom: 16px; }
-    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin: 16px 0 20px 24px; }
-    .article-body ul li { list-style: disc; margin-bottom: 6px; }
-    .article-body ol li { list-style: decimal; margin-bottom: 6px; }
+    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 72px; margin-bottom: 24px; color: rgba(0,0,0,0.9); }
+    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 44px; margin-bottom: 14px; color: rgba(0,0,0,0.9); }
+    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.7; color: rgba(0,0,0,0.8); margin-bottom: 22px; }
+    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.7; color: rgba(0,0,0,0.8); margin: 20px 0 28px 24px; }
+    .article-body ul li { list-style: disc; margin-bottom: 10px; }
+    .article-body ol li { list-style: decimal; margin-bottom: 10px; }
     .article-body a { color: #4F69EB; text-decoration: underline; }
     .article-body a:hover { opacity: 0.8; }
-    .article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 32px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
     .article-body th, .article-body td { border: 1px solid #DCDCDC; padding: 10px 14px; text-align: left; vertical-align: top; }
     .article-body th { background: #F9FFF4; font-weight: 600; }
     .article-body figure { margin: 32px 0; }
     .article-body figure img { width: 100%; height: auto; border: 1px solid #DCDCDC; border-radius: 8px; display: block; }
     .article-body figure figcaption { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 8px; text-align: center; }
-    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 20px 0; font-style: italic; color: rgba(0,0,0,0.7); }
-    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 24px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
+    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 28px 0; font-style: italic; color: rgba(0,0,0,0.7); }
+    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 32px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
     .article-body aside.cta-block { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 32px; border-radius: 12px; margin: 48px 0 24px; }
     .article-body aside.cta-block h2 { margin-top: 0; }
     .article-body aside.cta-block a { display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-family: 'Lustria', serif; font-size: 16px; }
@@ -129,7 +129,6 @@
               <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO / AI Search</a>
               <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Product Marketing</a>
               <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Video Content</a>
-              <a href="/services/webinar-repurposing/" class="block pl-[30px] pr-[14px] py-[8px] text-[14px] text-[rgba(0,0,0,0.6)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
               <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
@@ -213,7 +212,15 @@
     <!-- Article body -->
     <div class="article-body">
       
-<p>StartupCookie builds custom GTM (go-to-market) and content agents for B2B SaaS startups. An agent is an AI workflow that runs one job end to end, with human approval gates at the moments that actually matter. We build four families: content production agents, signal-based outbound agents, AEO citation monitoring agents (AEO is answer engine optimization, i.e. getting cited by AI search tools), and distribution automation agents. Every agent is built on your stack (HubSpot, Clay, Apify, LinkedIn) and owned by you: the code lives in your repo. We built our own content agent first, and it now produces every article on this site. One-time fixed-scope builds from $30,000, with no per-article fees afterward and an optional managed-service retainer from $5,000/mo. If you want the how-to before the pitch, start with our <a href="/guides/content-agents/">content agent guide</a>.</p>
+<p>StartupCookie builds custom GTM (go-to-market) and content agents for B2B SaaS startups. An agent is an AI workflow that runs one job end to end, with human approval gates where they matter. We build four families:</p>
+<ul>
+  <li>Content production agents</li>
+  <li>Signal-based outbound agents</li>
+  <li>AEO citation monitoring agents (AEO is answer engine optimization: getting cited by AI search tools)</li>
+  <li>Distribution automation agents</li>
+</ul>
+<p><strong>Built on your stack, owned by you.</strong> Every agent runs on your tools (HubSpot, Clay, Apify, LinkedIn); the code lives in your repo. We built our own content agent first; it now produces every article on this site.</p>
+<p>One-time fixed-scope builds from $30,000, no per-article fees afterward. Optional managed-service retainer from $5,000/mo. If you want the how-to before the pitch, start with our <a href="/guides/content-agents/">content agent guide</a>.</p>
 
 <aside class="cta-block">
   <h2>Book a 20-minute scoping call</h2>
@@ -222,36 +229,44 @@
 </aside>
 
 <h2>What we build</h2>
-<p>Four agent families, each custom-fit to your stack, your voice, and your pipeline. Build one, or combine them.</p>
+<p>Four agent families, each custom-fit to your stack, voice, and pipeline. Build one, or combine them.</p>
 
 <h3>Content production agents</h3>
-<p>A four-agent system that ships AEO-built marketing content end to end (research, drafting, QA, schema, publishing) at marginal cost: a research agent that runs live AI-engine queries to find the citation gaps for your target prompts, a writer agent calibrated to your voice card (built from your existing best content), a deterministic linter that enforces AEO discipline as a hard gate, and a publish agent wired directly to your live site repo. Optional fifth role: an image agent that renders brand-locked HTML/CSS templates via Playwright, with gpt-image-1 fallback for editorial covers. This is the standard 4-agent build, and it is the same system that produces every article on this site.</p>
+<p><strong>The standard 4-agent build.</strong> Four agents ship AEO-built marketing content end to end (research, drafting, QA, schema, publishing) at marginal cost:</p>
+<ul>
+  <li>A research agent that runs live AI-engine queries to find citation gaps for your target prompts</li>
+  <li>A writer agent calibrated to your voice card, built from your existing best content</li>
+  <li>A deterministic linter that enforces AEO discipline as a hard gate</li>
+  <li>A publish agent wired directly to your live site repo</li>
+</ul>
+<p>Optional fifth role: an image agent that renders brand-locked HTML/CSS templates via Playwright, with gpt-image-1 fallback for editorial covers.</p>
 
 <h3>Signal-based outbound agents</h3>
-<p>Agents that watch for buying signals at your target accounts (a funding round, a hiring spree, a leadership change) through tools like Clay and Apify, match them against your ideal customer profile, and draft personalized outreach for a human to review. Your team keeps the send button.</p>
+<p>Agents that watch for buying signals at your target accounts (funding rounds, hiring sprees, leadership changes) through tools like Clay and Apify, match them against your ideal customer profile, and draft personalized outreach for a human to review. Your team keeps the send button.</p>
 
 <h3>AEO and citation monitoring agents</h3>
-<p>Agents that track how often AI assistants (ChatGPT, Perplexity, Claude, Google AI Overviews) cite your domain for the prompts your buyers ask, and flag when a competitor takes your spot. Citation tracking is how we measured the results in our <a href="/case-studies/tofu/">Tofu case study</a>: 2.36x AI search visibility in 90 days. These agents put the same tracking in your stack. Pair them with our <a href="/services/aeo-content/">AEO content program</a> if you also want the pages built for you.</p>
+<p>Agents that track how often AI assistants (ChatGPT, Perplexity, Claude, Google AI Overviews) cite your domain for the prompts your buyers ask, and flag when a competitor takes your spot.</p>
+<p>Citation tracking is how we measured results in our <a href="/case-studies/tofu/">Tofu case study</a>: 2.36x AI search visibility in 90 days. These agents put the same tracking in your stack. Pair them with our <a href="/services/aeo-content/">AEO content program</a> if you also want the pages built for you.</p>
 
 <h3>Distribution automation agents</h3>
-<p>Agents that turn each published asset into channel-ready variants (LinkedIn posts, newsletter sections, clip scripts) and stage them for review in your scheduling tool. You publish once; the agent handles the repurposing pass.</p>
+<p>Agents that turn each published asset into channel-ready variants (LinkedIn posts, newsletter sections, clip scripts) and stage them for review in your scheduling tool. You publish once; the agent handles repurposing.</p>
 
-<p>Handover is part of every build. We document the system, train your team to run it, and then step back. If you want ongoing editorial review, an optional retainer covers that; otherwise you operate it on your own.</p>
+<p>Handover is part of every build. We document the system, train your team to run it, then step back.</p>
 
 <h2>Who this is for</h2>
 <ol>
-  <li><strong>Series A and later B2B SaaS</strong> with a technical founder and a senior content marketer who want to scale publishing without scaling headcount. The agent ships 4-8 high-quality articles per week, the strategist reviews.</li>
-  <li><strong>B2B SaaS already running an outsourced content program</strong> that wants to bring production in-house while keeping editorial outside. We build the agent for the in-house piece and keep doing strategy and editorial review on retainer.</li>
-  <li><strong>AI-native B2B SaaS</strong> that wants the hiring story and the technical credibility of operating an AI-native content stack. The agent IS the case study you tell prospects.</li>
+  <li><strong>Series A and later B2B SaaS</strong> with a technical founder and a senior content marketer who want to scale publishing without scaling headcount. The agent ships 4-8 high-quality articles per week; the strategist reviews.</li>
+  <li><strong>B2B SaaS already running an outsourced content program</strong> that wants to bring production in-house while keeping editorial outside. We build the in-house piece and keep strategy and editorial review on retainer.</li>
+  <li><strong>AI-native B2B SaaS</strong> that wants the hiring story and technical credibility of operating an AI-native content stack. The agent IS the case study you tell prospects.</li>
 </ol>
 
 <h2>What we don't do</h2>
-<p>We do not build agents for B2C, e-commerce, or consumer brands. The architecture works for those categories but the voice cards, the AEO playbooks, and the buyer-journey calibrations are built for B2B SaaS specifically.</p>
-<p>We do not deliver "agents in a box" you can configure yourself. Every agent is built against a specific publishing surface, a specific voice, and a specific topic ladder. If you want a self-serve tool, this is not it.</p>
-<p>We do not operate the agent for you long-term unless you want us on retainer for editorial review. The handover is the point.</p>
+<p>We do not build agents for B2C, e-commerce, or consumer brands. The architecture would carry over, but our voice cards, AEO playbooks, and buyer-journey calibrations are built for B2B SaaS specifically.</p>
+<p>We do not deliver "agents in a box" you can configure yourself. Every agent is built against a specific publishing surface, voice, and topic ladder. If you want a self-serve tool, this is not it.</p>
+<p>We do not operate the agent long-term unless you want us on retainer for editorial review. The handover is the point.</p>
 
 <h2>How it works, in 4 phases</h2>
-<p>The table shows the standard 4-agent content production build. Other agent families are scoped the same way on the intro call.</p>
+<p>The table shows the standard 4-agent content production build. Other families are scoped the same way on the intro call.</p>
 <table>
   <thead>
     <tr><th>Phase</th><th>What we ship</th><th>Timeline</th></tr>
@@ -269,10 +284,16 @@
 </aside>
 
 <h2>Proof</h2>
-<p>The clearest proof is the one you are reading: this site's content pipeline runs on an agent we built and operate ourselves. For client results, see how our AEO program grew <a href="/case-studies/tofu/">Tofu's AI search visibility 2.36x in 90 days</a>, the same citation-tracking discipline our monitoring agents automate. More studies are in production in our <a href="/case-studies/">case studies hub</a>.</p>
+<p><strong>The clearest proof is the one you are reading:</strong> this site's content pipeline runs on an agent we built and operate ourselves. For client results, see how our AEO program grew <a href="/case-studies/tofu/">Tofu's AI search visibility 2.36x in 90 days</a>. More studies are in production in our <a href="/case-studies/">case studies hub</a>.</p>
 
 <h2>Pricing</h2>
-<p>Agent builds are one-time projects, priced by scope: from $30,000 for the standard 4-agent build, and $50,000+ for builds with multi-author voice, multi-site publishing, or custom integrations (HubSpot, Salesforce, internal data systems). The build fee is paid once; there are no per-article fees afterward. Ongoing review is separate: an optional managed-service retainer from $5,000/mo, month-to-month. Standalone content services (managed content programs, founder LinkedIn) are monthly engagements from $5,000/mo with no agent build required. Every engagement is custom-scoped on the intro call.</p>
+<p><strong>Pay once for the build.</strong> Agent builds are one-time projects, priced by scope, with no per-article fees afterward:</p>
+<ul>
+  <li>From $30,000: the standard 4-agent build</li>
+  <li>$50,000+: builds with multi-author voice, multi-site publishing, or custom integrations (HubSpot, Salesforce, internal data systems)</li>
+  <li>From $5,000/mo: optional managed-service retainer for ongoing review, month-to-month</li>
+</ul>
+<p>Standalone content services (managed content programs, founder LinkedIn) are monthly engagements from $5,000/mo, no agent build required. Every engagement is custom-scoped on the intro call.</p>
 
 <h2>Frequently asked questions</h2>
 
@@ -324,7 +345,7 @@
         <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
         <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
         <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
-        <a href="/services/webinar-repurposing/" class="text-[13px] md:text-[15px] text-[rgba(255,255,255,0.7)] tracking-[-0.36px] hover:opacity-70 transition-opacity pl-[14px]">Webinar Repurposing</a>
+        <a href="/services/webinar-repurposing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Webinar Repurposing</a>
         <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">

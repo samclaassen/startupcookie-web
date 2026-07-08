@@ -48,22 +48,22 @@
 
   <style>
     /* Article-specific styles. Keep small, defer to Tailwind. */
-    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 56px; margin-bottom: 20px; color: rgba(0,0,0,0.9); }
-    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 32px; margin-bottom: 12px; color: rgba(0,0,0,0.9); }
-    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin-bottom: 16px; }
-    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin: 16px 0 20px 24px; }
-    .article-body ul li { list-style: disc; margin-bottom: 6px; }
-    .article-body ol li { list-style: decimal; margin-bottom: 6px; }
+    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 72px; margin-bottom: 24px; color: rgba(0,0,0,0.9); }
+    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 44px; margin-bottom: 14px; color: rgba(0,0,0,0.9); }
+    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.7; color: rgba(0,0,0,0.8); margin-bottom: 22px; }
+    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.7; color: rgba(0,0,0,0.8); margin: 20px 0 28px 24px; }
+    .article-body ul li { list-style: disc; margin-bottom: 10px; }
+    .article-body ol li { list-style: decimal; margin-bottom: 10px; }
     .article-body a { color: #4F69EB; text-decoration: underline; }
     .article-body a:hover { opacity: 0.8; }
-    .article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 32px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
     .article-body th, .article-body td { border: 1px solid #DCDCDC; padding: 10px 14px; text-align: left; vertical-align: top; }
     .article-body th { background: #F9FFF4; font-weight: 600; }
     .article-body figure { margin: 32px 0; }
     .article-body figure img { width: 100%; height: auto; border: 1px solid #DCDCDC; border-radius: 8px; display: block; }
     .article-body figure figcaption { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 8px; text-align: center; }
-    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 20px 0; font-style: italic; color: rgba(0,0,0,0.7); }
-    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 24px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
+    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 28px 0; font-style: italic; color: rgba(0,0,0,0.7); }
+    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 32px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
     .article-body aside.cta-block { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 32px; border-radius: 12px; margin: 48px 0 24px; }
     .article-body aside.cta-block h2 { margin-top: 0; }
     .article-body aside.cta-block a { display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-family: 'Lustria', serif; font-size: 16px; }
@@ -126,7 +126,6 @@
               <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO / AI Search</a>
               <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Product Marketing</a>
               <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Video Content</a>
-              <a href="/services/webinar-repurposing/" class="block pl-[30px] pr-[14px] py-[8px] text-[14px] text-[rgba(0,0,0,0.6)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
               <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
@@ -208,28 +207,69 @@
     <!-- Article body -->
     <div class="article-body">
       
-<p>StartupCookie runs end-to-end content and GTM programs for B2B SaaS startups: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM &amp; content agent buildouts. Every service pairs AI-native production with senior content strategists; you get the output of a full content team at a fraction of the hiring cost. Managed services start at $5,000/mo on month-to-month terms with no long contracts. Agent buildouts are one-time, fixed-scope projects from $30,000. Every service includes a weekly performance review, and we ask for 90 days so the work has time to compound.</p>
+<p>StartupCookie runs end-to-end content and GTM programs for B2B SaaS startups: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM &amp; content agent buildouts. Every service pairs AI-native production with senior content strategists. You get the output of a full content team at a fraction of the hiring cost.</p>
+
+<p>Managed services start at $5,000/mo, month-to-month. Agent buildouts are one-time, fixed-scope projects from $30,000.</p>
 
 <h2>1. Thought Leadership Programs</h2>
-<p>Full-stack thought leadership programs for B2B SaaS startups. Founder-led LinkedIn (3-5 posts/week), long-form articles (1-2/week), monthly webinar with repurposing, quarterly case studies. We handle production and distribution; the founder provides 1-2 hours per week of input. From $5,000/mo. <a href="/services/thought-leadership/">See the thought leadership service</a>.</p>
+<p><strong>Full-stack thought leadership</strong> for B2B SaaS startups. We handle production and distribution; the founder provides 1-2 hours of input per week.</p>
+<ul>
+  <li>Founder-led LinkedIn, 3-5 posts per week</li>
+  <li>Long-form articles, 1-2 per week</li>
+  <li>Monthly webinar with repurposing</li>
+  <li>Quarterly case studies</li>
+</ul>
+<p>From $5,000/mo. <a href="/services/thought-leadership/">See the thought leadership service</a>.</p>
 
 <h2>2. Founder LinkedIn Ghostwriting</h2>
-<p>Done-for-you founder-led LinkedIn for B2B SaaS founders. Voice card built from your existing best posts, weekly 30-45 minute audio input, 3-5 posts per week drafted in your voice, automated posting. Net founder time: ~1 hour per week. From $5,000/mo, or included in our thought leadership program. <a href="/services/founder-linkedin/">See the founder LinkedIn service</a>.</p>
+<p><strong>Done-for-you founder-led LinkedIn</strong> for B2B SaaS founders. Net founder time: ~1 hour per week.</p>
+<ul>
+  <li>Voice card built from your existing best posts</li>
+  <li>Weekly 30-45 minute audio input</li>
+  <li>3-5 posts per week, drafted in your voice</li>
+  <li>Automated posting</li>
+</ul>
+<p>From $5,000/mo, or included in our thought leadership program. <a href="/services/founder-linkedin/">See the founder LinkedIn service</a>.</p>
 
 <h2>3. AEO Content Programs</h2>
-<p>Answer Engine Optimization content programs for B2B SaaS. 4-8 AEO-built pages per month (guides, comparisons, listicles, definitional pages), full schema markup, weekly citation tracking across ChatGPT, Perplexity, Claude, and Google AI Overviews. From $5,000/mo. See how this worked for <a href="/case-studies/tofu/">Tofu: 2.36x AI search visibility in 90 days</a>. <a href="/services/aeo-content/">See the AEO content service</a>.</p>
+<p><strong>Answer Engine Optimization content programs</strong> for B2B SaaS.</p>
+<ul>
+  <li>4-8 AEO-built pages per month: guides, comparisons, listicles, definitional pages</li>
+  <li>Full schema markup</li>
+  <li>Weekly citation tracking across ChatGPT, Perplexity, Claude, and Google AI Overviews</li>
+</ul>
+<p>From $5,000/mo. Case study: <a href="/case-studies/tofu/">Tofu: 2.36x AI search visibility in 90 days</a>. <a href="/services/aeo-content/">See the AEO content service</a>.</p>
 
 <h2>4. Product Marketing</h2>
-<p>Product marketing for seed to Series B B2B SaaS: positioning, messaging, launch strategy, and sales enablement. We turn what your product does into language your buyers and your sales team can actually use, then feed it into every content program above. Engagements from $5,000/mo. <a href="/services/product-marketing/">See the product marketing service</a>.</p>
+<p><strong>Product marketing</strong> for seed to Series B B2B SaaS. We turn what your product does into language your buyers and sales team can use, then feed it into every content program above.</p>
+<ul>
+  <li>Positioning and messaging</li>
+  <li>Launch strategy</li>
+  <li>Sales enablement</li>
+</ul>
+<p>Engagements from $5,000/mo. <a href="/services/product-marketing/">See the product marketing service</a>.</p>
 
 <h2>5. Video Content</h2>
-<p>Video editing and repurposing for B2B SaaS. We take one recording (a webinar, a podcast episode, a founder talk) and turn it into a month of distribution-ready video content. Webinar repurposing sits under this service. Engagements from $5,000/mo. <a href="/services/video-content/">See the video content service</a>.</p>
+<p><strong>Video editing and repurposing</strong> for B2B SaaS. One recording (a webinar, a podcast episode, a founder talk) becomes a month of distribution-ready video content. Webinar repurposing sits under this service.</p>
+<p>Engagements from $5,000/mo. <a href="/services/video-content/">See the video content service</a>.</p>
 
 <h2>6. GTM &amp; Content Agent Buildouts</h2>
-<p>We build custom GTM and content agents for B2B SaaS startups. The agent ships AEO-built content end to end (research, drafting, QA, schema, publishing) at marginal cost, with human approval gates. Fixed-scope, one-time build pricing from $30,000 for the standard 4-agent build. You own the code; we deliver and (optionally) stay on retainer for editorial review. <a href="/services/gtm-agents/">See the GTM &amp; content agent service</a>.</p>
+<p><strong>Custom GTM and content agents</strong> for B2B SaaS startups. The agent ships AEO-built content end to end at marginal cost, with human approval gates.</p>
+<ul>
+  <li>Covers research, drafting, QA, schema, and publishing</li>
+  <li>You own the code</li>
+  <li>Optional retainer for editorial review after delivery</li>
+</ul>
+<p>Fixed-scope, one-time pricing from $30,000 for the standard 4-agent build. <a href="/services/gtm-agents/">See the GTM &amp; content agent service</a>.</p>
 
 <h2>7. Webinar Repurposing</h2>
-<p>Done-for-you webinar repurposing for B2B SaaS, delivered as part of our video content service. Each webinar becomes 17-25 ready-to-ship assets across LinkedIn, blog, email, podcast, and short-form video, within 7 days of the live event. Included in engagements from $5,000/mo, or bundled with the thought leadership program. <a href="/services/webinar-repurposing/">See the webinar repurposing service</a>, or read our <a href="/guides/webinar-repurposing/">webinar repurposing guide</a>.</p>
+<p><strong>Done-for-you webinar repurposing</strong> for B2B SaaS, delivered as part of our video content service.</p>
+<ul>
+  <li>17-25 ready-to-ship assets per webinar</li>
+  <li>Covers LinkedIn, blog, email, podcast, and short-form video</li>
+  <li>Delivered within 7 days of the live event</li>
+</ul>
+<p>Included in engagements from $5,000/mo, or bundled with the thought leadership program. <a href="/services/webinar-repurposing/">See the webinar repurposing service</a>, or read our <a href="/guides/webinar-repurposing/">webinar repurposing guide</a>.</p>
 
 <h2>Which service is right for your stage?</h2>
 <ol>
@@ -237,15 +277,15 @@
   <li><strong>Series A, no content team:</strong> the full thought leadership program. Founder LinkedIn + 2 articles per week + monthly webinar. Compounds in 90-120 days.</li>
   <li><strong>Series A or B with existing content but no AEO:</strong> the AEO content program. Layer it on top of what you already have.</li>
   <li><strong>Seed to Series B with a launch coming or messaging that is not landing:</strong> the product marketing engagement. Positioning and sales enablement first, then content.</li>
-  <li><strong>Any stage already recording webinars, podcasts, or talks:</strong> the video content service. One recording becomes a month of distribution.</li>
+  <li><strong>Any stage already recording webinars, podcasts, or talks:</strong> the video content service.</li>
   <li><strong>Series A or B with technical talent and a long content roadmap:</strong> the GTM &amp; content agent buildout. Ship it once, run forever at marginal cost.</li>
-  <li><strong>Any stage with a webinar program:</strong> webinar repurposing, under the video content service, as a standalone or layered into the thought leadership program.</li>
+  <li><strong>Any stage with a webinar program:</strong> webinar repurposing, standalone or layered into the thought leadership program.</li>
 </ol>
 
 <h2>What every service includes</h2>
 <ul>
-  <li>A senior content strategist as your primary contact (not an account manager).</li>
-  <li>Voice card calibration to your founder, your category, and your stage.</li>
+  <li>A senior content strategist as your primary contact.</li>
+  <li>Voice card calibration to your founder, category, and stage.</li>
   <li>AEO-built production discipline on every long-form asset.</li>
   <li>Distribution layer (LinkedIn, email, optional paid amplification).</li>
   <li>Weekly performance review with pipeline attribution.</li>
@@ -255,9 +295,9 @@
 
 <h2>What we do not do</h2>
 <ul>
-  <li>B2C, e-commerce, or consumer brands. We are calibrated for B2B SaaS specifically.</li>
+  <li>B2C, e-commerce, or consumer brands.</li>
   <li>Companies past Series C with established content teams. We are the bridge, not the replacement.</li>
-  <li>Engagements where the founder will not commit any input time. Programs without founder input flatten into AI-generic content.</li>
+  <li>Engagements with no founder input time. Programs without it flatten into AI-generic content.</li>
 </ul>
 
 <aside class="disclosure">
@@ -270,19 +310,19 @@
 <p>Yes. Most clients run thought leadership plus AEO together. The bundled price is typically lower than the sum of standalone services; we will quote during the scoping call.</p>
 
 <h3>What is the minimum commitment?</h3>
-<p>Managed services run month-to-month. We recommend committing to at least 90 days because content programs compound in the second and third month, not the first. If you cancel at month 1 you will not see the value. Agent buildouts are one-time, fixed-scope projects, so there is no ongoing commitment unless you add an editorial retainer.</p>
+<p>Managed services run month-to-month. We recommend at least 90 days because content programs compound in the second and third month, not the first. Agent buildouts are one-time, fixed-scope projects, so there is no ongoing commitment unless you add an editorial retainer.</p>
 
 <h3>How does onboarding work?</h3>
 <p>2 weeks. Week 1: voice card kickoff, topic ladder, AEO target query selection, distribution setup. Week 2: first batch of content drafted and reviewed. Week 3 onwards: cadence. We do not require a 6-week setup phase.</p>
 
 <h3>Who is the team that will work on my account?</h3>
-<p>A senior content strategist owns each engagement, supported by AI-native production tooling and (when relevant) a junior editorial associate. You will have one named human as your primary contact. No account managers, no junior writers running the program.</p>
+<p>A senior content strategist owns each engagement, supported by AI-native production tooling and (when relevant) a junior editorial associate. One named human is your primary contact. No account managers, no junior writers running the program.</p>
 
 <h3>What does the GTM &amp; content agent service have to do with the managed services?</h3>
-<p>The GTM &amp; content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over the agent and we stay on retainer for editorial review.</p>
+<p>The GTM &amp; content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over and we stay on retainer for editorial review.</p>
 
 <h3>Do you work with B2C, e-commerce, or consumer brands?</h3>
-<p>No. Every service in our catalog is calibrated for B2B SaaS. The voice cards, the AEO playbooks, the distribution channels, and the buyer-journey assumptions are all built around B2B buying cycles. We refer B2C teams to category-appropriate specialists.</p>
+<p>No. Every service is calibrated for B2B SaaS. The voice cards, AEO playbooks, distribution channels, and buyer-journey assumptions are all built around B2B buying cycles. We refer B2C teams to category-appropriate specialists.</p>
 
 <aside class="cta-block">
   <h2>Talk to StartupCookie</h2>
@@ -314,7 +354,7 @@
         <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
         <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
         <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
-        <a href="/services/webinar-repurposing/" class="text-[13px] md:text-[15px] text-[rgba(255,255,255,0.7)] tracking-[-0.36px] hover:opacity-70 transition-opacity pl-[14px]">Webinar Repurposing</a>
+        <a href="/services/webinar-repurposing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Webinar Repurposing</a>
         <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
@@ -459,7 +499,7 @@
       "name": "What is the minimum commitment?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Managed services run month-to-month. We recommend committing to at least 90 days because content programs compound in the second and third month, not the first. If you cancel at month 1 you will not see the value. Agent buildouts are one-time, fixed-scope projects, so there is no ongoing commitment unless you add an editorial retainer."
+        "text": "Managed services run month-to-month. We recommend at least 90 days because content programs compound in the second and third month, not the first. Agent buildouts are one-time, fixed-scope projects, so there is no ongoing commitment unless you add an editorial retainer."
       }
     },
     {
@@ -475,7 +515,7 @@
       "name": "Who is the team that will work on my account?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A senior content strategist owns each engagement, supported by AI-native production tooling and (when relevant) a junior editorial associate. You will have one named human as your primary contact. No account managers, no junior writers running the program."
+        "text": "A senior content strategist owns each engagement, supported by AI-native production tooling and (when relevant) a junior editorial associate. One named human is your primary contact. No account managers, no junior writers running the program."
       }
     },
     {
@@ -483,7 +523,7 @@
       "name": "What does the GTM & content agent service have to do with the managed services?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The GTM & content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over the agent and we stay on retainer for editorial review."
+        "text": "The GTM & content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over and we stay on retainer for editorial review."
       }
     },
     {
@@ -491,7 +531,7 @@
       "name": "Do you work with B2C, e-commerce, or consumer brands?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No. Every service in our catalog is calibrated for B2B SaaS. The voice cards, the AEO playbooks, the distribution channels, and the buyer-journey assumptions are all built around B2B buying cycles. We refer B2C teams to category-appropriate specialists."
+        "text": "No. Every service is calibrated for B2B SaaS. The voice cards, AEO playbooks, distribution channels, and buyer-journey assumptions are all built around B2B buying cycles. We refer B2C teams to category-appropriate specialists."
       }
     }
   ]
