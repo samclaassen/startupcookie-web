@@ -45,4 +45,12 @@ if (navbar) {
       el.textContent = 'Join the waitlist';
     });
   }
+  if (typeof cfg.NEXT_OPENING === 'string' && cfg.NEXT_OPENING) {
+    document.querySelectorAll('.js-next-opening-date').forEach(el => {
+      el.textContent = cfg.NEXT_OPENING;
+    });
+    document.querySelectorAll('.js-next-opening').forEach(el => {
+      el.classList.remove('hidden');
+    });
+  }
 })();

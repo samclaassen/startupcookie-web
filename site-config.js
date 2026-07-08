@@ -6,5 +6,8 @@ window.SC_CONFIG = {
   // If CLIENT_COUNT >= MAX_CLIENTS, booking CTAs marked with the
   // js-capacity-cta class switch their label to "Join the waitlist".
   CLIENT_COUNT: null,
+  // Next date a client slot opens up. Shown in the homepage hero and
+  // pricing card. Set to null to hide the line entirely.
+  NEXT_OPENING: 'July 17th',
   MAX_CLIENTS: 6
 };
