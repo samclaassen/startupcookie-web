@@ -81,11 +81,6 @@
       <a href="/" class="shrink-0">
         <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
       </a>
-      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
-        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
-        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
-        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
-      </button>
       <ul class="hidden md:flex items-center gap-[24px]">
         <li class="relative group">
           <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
@@ -127,8 +122,16 @@
         </li>
         <li><a href="/about/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">About</a></li>
         <li><a href="/press/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Press</a></li>
+        <li><a href="/#pricing" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
       </ul>
-      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:inline-block bg-black text-white rounded-[10px] px-[20px] py-[10px] text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors shrink-0">Book a Call</a>
+      <div class="flex items-center gap-[14px] shrink-0">
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="inline-block bg-black text-white rounded-[10px] px-[14px] py-[8px] text-[14px] md:px-[20px] md:py-[10px] md:text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors js-capacity-cta">Book a Call</a>
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      </div>
     </div>
   </nav>
 
@@ -140,7 +143,8 @@
       <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
       <li><a href="/about/" class="text-[24px] text-[rgba(0,0,0,0.8)]">About</a></li>
       <li><a href="/press/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Press</a></li>
-      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+      <li><a href="/#pricing" class="text-[24px] text-[rgba(0,0,0,0.8)]">Pricing</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline js-capacity-cta">Book a Call</a></li>
     </ul>
   </div>
 
@@ -290,13 +294,13 @@
 <h2>Frequently asked questions</h2>
 
 <h3>What does a product marketing agency do?</h3>
-<p>A product marketing agency defines how your product is framed and sold. Typical deliverables are positioning (the market frame you compete in), messaging (the exact language for your site and sales team), launch plans for new products and features, and sales enablement materials like decks and battlecards. It is a different job from demand generation, which buys attention, and from content production, which executes against a story someone already defined.</p>
+<p>A product marketing agency settles the questions a startup has to answer before growth spend works: who the product is for, which category it belongs in, and what your site and sellers should say about it. The work usually arrives as a positioning strategy, message frameworks, launch plans, and sales tools such as decks and battlecards. Firms that buy ads or produce articles do a related but separate job; a product marketing agency supplies the story those channels run on.</p>
 
 <h3>How much does a product marketing agency cost for a startup?</h3>
 <p>Most product marketing agencies do not publish pricing. Among the firms on this list, two publish numbers: Fletch PMM charges a fixed fee of $10,000 to $30,000 for its two-week positioning sprint depending on company stage, and StartupCookie's retainers start at $5,000 per month. Olivine, Punchy, Aventi Group, Kalungi, and April Dunford all scope pricing per engagement, so expect a sales conversation before you see a number.</p>
 
 <h3>When should a startup invest in positioning work?</h3>
-<p>Before scaling spend on traffic or sales hires, and as soon as the symptoms show: visitors do not understand your homepage, sales calls need ten minutes of explanation before the demo, or every landing page describes the product differently. Positioning work done early makes every later marketing dollar work harder. Done late, it means rewriting everything you already shipped.</p>
+<p>Invest before you scale paid traffic or grow the sales team. The warning sign is confusion: prospects cannot repeat back what you do, demos need a long setup speech, or different pages on your site tell conflicting versions of the product story. Positioning fixed early makes every later marketing dollar work harder. Fixed late, it means rewriting everything you already shipped.</p>
 
 <h3>Should a startup hire an in-house product marketer or an agency?</h3>
 <p>In-house wins on daily context and cross-team influence, but a senior product marketer is a slow and expensive hire to make before the need is proven. Agencies and consultants are the faster, lower-commitment way to get the positioning foundation in place. A common path is to buy the foundation from a specialist first, then hire in-house once the company is big enough to keep a full-time product marketer busy.</p>
@@ -324,7 +328,7 @@
       <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
         <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
         <p class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.7)] tracking-[-0.32px] leading-[1.4]">AI-native content &amp; GTM agency for B2B SaaS.</p>
-        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors js-capacity-cta">Book a call</a>
         <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
@@ -348,9 +352,10 @@
         <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
         <a href="/about/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">About</a>
         <a href="/case-studies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Case Studies</a>
+        <a href="/#pricing" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
         <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
         <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
-        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Book a call</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity js-capacity-cta">Book a call</a>
       </div>
     </div>
   </footer>
@@ -510,7 +515,7 @@
       "name": "What does a product marketing agency do?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "A product marketing agency defines how your product is framed and sold. Typical deliverables are positioning (the market frame you compete in), messaging (the exact language for your site and sales team), launch plans for new products and features, and sales enablement materials like decks and battlecards. It is a different job from demand generation, which buys attention, and from content production, which executes against a story someone already defined."
+        "text": "A product marketing agency settles the questions a startup has to answer before growth spend works: who the product is for, which category it belongs in, and what your site and sellers should say about it. The work usually arrives as a positioning strategy, message frameworks, launch plans, and sales tools such as decks and battlecards. Firms that buy ads or produce articles do a related but separate job; a product marketing agency supplies the story those channels run on."
       }
     },
     {
@@ -526,7 +531,7 @@
       "name": "When should a startup invest in positioning work?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Before scaling spend on traffic or sales hires, and as soon as the symptoms show: visitors do not understand your homepage, sales calls need ten minutes of explanation before the demo, or every landing page describes the product differently. Positioning work done early makes every later marketing dollar work harder. Done late, it means rewriting everything you already shipped."
+        "text": "Invest before you scale paid traffic or grow the sales team. The warning sign is confusion: prospects cannot repeat back what you do, demos need a long setup speech, or different pages on your site tell conflicting versions of the product story. Positioning fixed early makes every later marketing dollar work harder. Fixed late, it means rewriting everything you already shipped."
       }
     },
     {
@@ -549,6 +554,7 @@
 }
   </script>
 
+  <script src="/site-config.js"></script>
   <script src="/script.js" defer></script>
 </body>
 </html>
