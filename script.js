@@ -52,5 +52,12 @@ if (navbar) {
     document.querySelectorAll('.js-next-opening').forEach(el => {
       el.classList.remove('hidden');
     });
+    // If the top announcement banner is present, drop the floating nav below it.
+    const announce = document.getElementById('announce');
+    if (announce && navbar) {
+      const setNavOffset = () => { navbar.style.top = (announce.offsetHeight + 8) + 'px'; };
+      setNavOffset();
+      window.addEventListener('resize', setNavOffset);
+    }
   }
 })();

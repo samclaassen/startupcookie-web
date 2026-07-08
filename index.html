@@ -89,6 +89,16 @@
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
+  <!-- Announcement banner (homepage; date from site-config.js) -->
+  <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" id="announce" class="js-next-opening hidden fixed top-0 inset-x-0 z-[90] bg-black text-white hover:bg-[#222] transition-colors">
+    <div class="max-w-[1608px] mx-auto px-[20px] py-[9px] flex items-center justify-center gap-[10px] text-[13px] md:text-[14px] tracking-[-0.28px]">
+      <span class="w-[7px] h-[7px] rounded-full bg-blue-link shrink-0"></span>
+      <span>Next new client opening: <span class="js-next-opening-date font-semibold"></span></span>
+      <span class="hidden sm:inline text-[rgba(255,255,255,0.5)]">&middot;</span>
+      <span class="hidden sm:inline underline">Book a call &rarr;</span>
+    </div>
+  </a>
+
   <!-- Navigation (shared — identical on every page; root-absolute paths) -->
   <nav id="navbar" class="fixed top-[10px] md:top-[24px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
     <div class="flex items-center justify-between">
@@ -168,12 +178,12 @@
     <div class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] flex flex-col items-center gap-[60px] md:gap-[80px]">
       <img src="/assets/cookie-hero.svg" alt="StartupCookie" class="w-[90px] h-[90px] md:w-[150px] md:h-[150px]">
       <div class="flex flex-col items-center gap-[20px] md:gap-[30px] text-center">
-        <span class="inline-block border border-[rgba(0,0,0,0.2)] rounded-full px-[16px] py-[6px] text-[13px] md:text-[15px] text-[rgba(0,0,0,0.6)] tracking-[-0.3px] uppercase">✨ AI-Native Agency</span>
-        <h1 class="text-[30px] md:text-[70px] font-normal text-black tracking-[-0.6px] md:tracking-[-1.4px] leading-[1.18]">Content & distribution<br>that drives revenue.</h1>
-        <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] max-w-[720px]">StartupCookie is an AI-native content &amp; GTM agency for B2B SaaS: thought leadership, product marketing, video, and GTM agents. A team of two that outships agencies five times its size.</p>
+        <span class="inline-block border border-[rgba(0,0,0,0.2)] rounded-full px-[16px] py-[6px] text-[13px] md:text-[15px] text-[rgba(0,0,0,0.6)] tracking-[-0.3px] uppercase">✨ AI-Native Marketing</span>
+        <h1 class="text-[30px] md:text-[70px] font-normal text-black tracking-[-0.6px] md:tracking-[-1.4px] leading-[1.18]">Content that drives revenue.</h1>
+        <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] max-w-[720px]">StartupCookie is a one-person, AI-native agency for B2B SaaS: thought leadership, product marketing, video, and GTM agents. I outship teams five times my size.</p>
       </div>
       <div class="flex flex-wrap items-center justify-center gap-[10px]">
-        <span class="inline-flex items-center gap-[8px] border border-border-gray rounded-full px-[14px] py-[6px] text-[13px] md:text-[14px] text-[rgba(0,0,0,0.7)] tracking-[-0.28px]"><img src="/assets/icons/cookie-mini.svg" alt="" class="h-[14px] w-auto">Maximum six clients</span>
+        <span class="inline-flex items-center gap-[8px] border border-border-gray rounded-full px-[14px] py-[6px] text-[13px] md:text-[14px] text-[rgba(0,0,0,0.7)] tracking-[-0.28px]"><img src="/assets/icons/cookie-mini.svg" alt="" class="h-[14px] w-auto">6 clients max</span>
         <span class="inline-flex items-center gap-[8px] border border-border-gray rounded-full px-[14px] py-[6px] text-[13px] md:text-[14px] text-[rgba(0,0,0,0.7)] tracking-[-0.28px]"><img src="/assets/icons/calendar.svg" alt="" class="h-[14px] w-auto">Month-to-month</span>
         <span class="inline-flex items-center gap-[8px] border border-border-gray rounded-full px-[14px] py-[6px] text-[13px] md:text-[14px] text-[rgba(0,0,0,0.7)] tracking-[-0.28px]"><img src="/assets/icons/network.svg" alt="" class="h-[14px] w-auto">Agents do the production</span>
       </div>
@@ -181,7 +191,6 @@
         <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="inline-block bg-black text-white rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-center tracking-[-0.36px] hover:bg-[#222] transition-colors js-capacity-cta">Book a Call</a>
         <a href="/case-studies/" class="inline-block border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-[rgba(0,0,0,0.05)] transition-colors">See Case Studies</a>
       </div>
-      <span class="js-next-opening hidden inline-flex items-center gap-[10px] bg-green-highlight border border-border-gray rounded-full px-[18px] py-[9px] text-[14px] md:text-[15px] text-[rgba(0,0,0,0.8)] tracking-[-0.3px]"><span class="w-[8px] h-[8px] rounded-full bg-blue-link"></span>Next new client opening: <span class="js-next-opening-date font-semibold"></span></span>
     </div>
   </section>
 
@@ -189,10 +198,9 @@
   <section id="proof" class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[80px] md:pb-[130px]">
     <div class="flex flex-col md:flex-row gap-[40px] md:gap-0">
       <div class="flex flex-col gap-[10px] md:w-[372px] md:shrink-0">
-        <span class="text-[13px] md:text-[15px] text-[rgba(0,0,0,0.5)] tracking-[0.08em] uppercase">As seen on Marketing Against the Grain</span>
         <div class="flex flex-col gap-[20px]">
-          <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">The most-watched episode in the show's history</h2>
-          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Barbara broke HubSpot's Marketing Against the Grain viewing records, 151k+ views and counting, explaining how a two-person, AI-native agency outproduces much larger teams.</p>
+          <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Watch me on HubSpot's Marketing Against the Grain.</h2>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">I broke HubSpot's podcast viewership record, 151k+ views and counting.</p>
           <div class="flex flex-col gap-[8px] mt-[10px]">
             <span class="text-[13px] text-[rgba(0,0,0,0.5)] tracking-[0.08em] uppercase">Also featured</span>
             <div class="flex flex-wrap items-center gap-x-[16px] gap-y-[8px]">
@@ -277,7 +285,7 @@
   <section id="services" class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[80px] md:pb-[130px] flex flex-col gap-[40px] md:gap-[60px]">
     <div class="flex flex-col gap-[10px] md:w-[647px]">
       <span class="inline-flex items-center gap-[8px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]"><img src="/assets/icons/stack.svg" alt="" class="h-[16px] w-auto">Services</span>
-      <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">What we do</h2>
+      <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">What I do</h2>
     </div>
     <div class="grid grid-cols-1 md:grid-cols-3 gap-[20px] md:gap-[30px]">
       <a href="/services/thought-leadership/" class="bg-white border border-border-gray rounded-[12px] p-[25px] md:p-[30px] flex flex-col justify-between gap-[30px] min-h-[200px] hover:border-[rgba(0,0,0,0.4)] transition-colors">
@@ -338,7 +346,7 @@
         <span class="inline-flex items-center gap-[8px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]"><img src="/assets/icons/network.svg" alt="" class="h-[16px] w-auto">How It Works</span>
         <div class="flex flex-col gap-[20px]">
           <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">An end-to-end process:</h2>
-          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">The only thing we need from you is your industry expertise.</p>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">The only thing I need from you is your industry expertise.</p>
         </div>
       </div>
       <div class="flex flex-col md:flex-row gap-[40px] md:gap-0 lg:ml-[calc(33.33%-338px)] md:flex-1 relative">
@@ -346,7 +354,7 @@
           <img src="/assets/icon-extract.svg" alt="Extract Insights icon" class="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
           <div class="flex flex-col gap-[15px]">
             <h3 class="text-[18px] md:text-[25px] font-normal text-black tracking-[-0.36px] md:tracking-[-0.5px]">1. Extract Insights</h3>
-            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">We conduct insight calls and webinars with the founders and leaders on your team.</p>
+            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">I run insight calls and webinars with the founders and leaders on your team.</p>
           </div>
         </div>
         <div class="w-full md:w-1/3 md:px-[20px] flex flex-col gap-[30px] md:mt-[109px]">
@@ -360,7 +368,7 @@
           <img src="/assets/icon-distribute.svg" alt="Distribute Outputs icon" class="w-[60px] h-[60px] md:w-[80px] md:h-[80px]">
           <div class="flex flex-col gap-[15px]">
             <h3 class="text-[18px] md:text-[25px] font-normal text-black tracking-[-0.36px] md:tracking-[-0.5px]">3. Distribute Outputs</h3>
-            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Once we publish your content, we'll get it in front of your ICP with LinkedIn automation campaigns.</p>
+            <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Once I publish your content, I get it in front of your ICP with LinkedIn automation campaigns.</p>
           </div>
         </div>
       </div>
@@ -437,7 +445,7 @@
     <div class="flex flex-col md:flex-row gap-[40px] md:gap-0">
       <div class="flex flex-col gap-[10px] md:w-[372px] md:shrink-0">
         <span class="inline-flex items-center gap-[8px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]"><img src="/assets/icons/doc.svg" alt="" class="h-[16px] w-auto">Content</span>
-        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">What do we produce?</h2>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">What do I produce?</h2>
         <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px]">Everything from LinkedIn posts to webinars, newsletters and videos.</p>
       </div>
 
@@ -531,7 +539,7 @@
         <!-- Webinar -->
         <div class="flex flex-col gap-[30px]">
           <div class="flex flex-col gap-[10px]">
-            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Webinars we produce and host</h3>
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Webinars I produce and host</h3>
             <div class="w-full h-px bg-border-gray"></div>
           </div>
           <div class="w-full md:max-w-[1059px]">
@@ -542,7 +550,7 @@
         <!-- Case Studies -->
         <div class="flex flex-col gap-[30px]">
           <div class="flex flex-col gap-[10px]">
-            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Case studies we produce for clients</h3>
+            <h3 class="text-[14px] md:text-[18px] font-normal text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Case studies I produce for clients</h3>
             <div class="w-full h-px bg-border-gray"></div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
@@ -612,15 +620,15 @@
         <div class="flex flex-col gap-[10px]">
           <span class="inline-flex items-center gap-[8px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]"><img src="/assets/icons/check.svg" alt="" class="h-[16px] w-auto">Pricing</span>
           <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Programs start at $5,000 a month</h2>
-          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[10px]">That is the floor, not a teaser tier. It buys a complete monthly program: strategy, production, and distribution, planned and run for you by the two co-founders. We shape the exact scope around your goals on the intro call.</p>
-          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[10px]">We take a maximum of six clients at a time. <span id="capacity-roster" class="text-black font-semibold"></span></p>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[10px]">That is the floor, not a teaser tier. It buys a complete monthly program: strategy, production, and distribution, planned and run for you personally. I shape the exact scope around your goals on the intro call.</p>
+          <p class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[10px]">I take a maximum of six clients at a time. <span id="capacity-roster" class="text-black font-semibold"></span></p>
           <p class="js-next-opening hidden text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] mt-[4px]">Next new client opening: <span class="js-next-opening-date text-black font-semibold"></span></p>
           <div class="flex flex-col gap-[10px] mt-[20px]">
             <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Every program includes:</span>
             <ul class="flex flex-col gap-[6px]">
               <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] flex items-center gap-[10px]"><img src="/assets/icons/check.svg" alt="" class="h-[14px] w-auto">Strategy and production, done for you</li>
               <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] flex items-center gap-[10px]"><img src="/assets/icons/check.svg" alt="" class="h-[14px] w-auto">Distribution, not just publishing</li>
-              <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] flex items-center gap-[10px]"><img src="/assets/icons/check.svg" alt="" class="h-[14px] w-auto">Both co-founders on your account</li>
+              <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] flex items-center gap-[10px]"><img src="/assets/icons/check.svg" alt="" class="h-[14px] w-auto">You work directly with me, every time</li>
               <li class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] flex items-center gap-[10px]"><img src="/assets/icons/check.svg" alt="" class="h-[14px] w-auto">Month-to-month, cancel any month</li>
             </ul>
           </div>
