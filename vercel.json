@@ -1,0 +1,14 @@
+{
+  "redirects": [
+    {
+      "source": "/services/content-agents/",
+      "destination": "/services/gtm-agents/",
+      "statusCode": 301
+    },
+    {
+      "source": "/services/content-agents",
+      "destination": "/services/gtm-agents/",
+      "statusCode": 301
+    }
+  ]
+}

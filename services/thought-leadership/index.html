@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thought Leadership Programs for B2B SaaS | StartupCookie | StartupCookie</title>
+  <title>Thought Leadership Programs for B2B SaaS | StartupCookie</title>
   <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
   <meta name="description" content="StartupCookie runs full-stack thought leadership programs for B2B SaaS startups.">
   <link rel="canonical" href="https://startupcookie.com/services/thought-leadership/">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Thought Leadership Programs for B2B SaaS | StartupCookie">
   <meta property="og:description" content="StartupCookie runs full-stack thought leadership programs for B2B SaaS startups.">
   <meta property="og:image" content="https://startupcookie.com/services/thought-leadership/hero.png">
@@ -18,7 +18,7 @@
   <meta property="og:url" content="https://startupcookie.com/services/thought-leadership/">
   <meta property="og:site_name" content="StartupCookie">
   <meta property="article:published_time" content="2026-05-14T09:00:00-07:00">
-  <meta property="article:modified_time" content="2026-05-14T09:00:00-07:00">
+  <meta property="article:modified_time" content="2026-07-07T09:00:00-07:00">
   <meta property="article:author" content="Sam Claassen">
 
   <!-- Twitter -->
@@ -74,35 +74,76 @@
     .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
     .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
   </style>
+
+  <!-- Site-wide Organization schema (identical on every page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
+  "founder": [
+    { "@type": "Person", "name": "Barbara Jovanovic" },
+    { "@type": "Person", "name": "Sam Claassen" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/startup-cookie",
+    "https://www.linkedin.com/in/barbara-startup-cookie/",
+    "https://www.youtube.com/@startupcookie"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
-  <!-- Navigation (matches index.html) -->
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
   <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
     <div class="flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
       </a>
-      <ul class="hidden md:flex items-center gap-[28px]">
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      <ul class="hidden md:flex items-center gap-[24px]">
         <li class="relative group">
-          <a href="/services/" class="inline-flex items-center gap-[5px] text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+          <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Services
             <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
           <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
-            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[280px]">
-              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership</a>
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Content</a>
               <a href="/services/founder-linkedin/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder LinkedIn</a>
-              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO Content</a>
-              <a href="/services/content-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Content Agents</a>
-              <a href="/services/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO / AI Search</a>
+              <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Product Marketing</a>
+              <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Video Content</a>
+              <a href="/services/webinar-repurposing/" class="block pl-[30px] pr-[14px] py-[8px] text-[14px] text-[rgba(0,0,0,0.6)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
             </div>
           </div>
         </li>
+        <li><a href="/case-studies/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Case Studies</a></li>
         <li class="relative group">
-          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Guides
             <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
@@ -113,18 +154,30 @@
               <a href="/guides/founder-led-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder-Led Content</a>
               <a href="/guides/thought-leadership-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Marketing</a>
               <a href="/guides/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
-              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Best AI Content Agencies (2026)</a>
+              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Agency Lists &amp; Comparisons</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/guides/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All guides →</a>
             </div>
           </div>
         </li>
-        <li><a href="/#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
-        <li><a href="/#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Contact</a></li>
+        <li><a href="/about/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">About</a></li>
+        <li><a href="/press/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Press</a></li>
       </ul>
-      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:inline-block bg-black text-white rounded-[10px] px-[20px] py-[10px] text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors shrink-0">Book a Call</a>
     </div>
   </nav>
+
+  <!-- Mobile Nav Overlay (shared) -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
+    <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="/services/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Services</a></li>
+      <li><a href="/case-studies/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Case Studies</a></li>
+      <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
+      <li><a href="/about/" class="text-[24px] text-[rgba(0,0,0,0.8)]">About</a></li>
+      <li><a href="/press/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Press</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+    </ul>
+  </div>
 
   <!-- Article container -->
   <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
@@ -133,31 +186,31 @@
     <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
       <a href="/" class="hover:text-black">Home</a>
       <span class="mx-[6px]">/</span>
-      <a href="/blog/" class="hover:text-black">Blog</a>
+      <a href="/services/" class="hover:text-black">Services</a>
       <span class="mx-[6px]">/</span>
-      <span>Thought Leadership Programs for B2B SaaS | StartupCookie</span>
+      <span>Thought Leadership</span>
     </nav>
 
     <!-- Title -->
-    <h1 class="font-lustria text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.7px] md:tracking-[-1.1px] text-black mb-[24px]">Thought Leadership Programs for B2B SaaS | StartupCookie</h1>
+    <h1 class="font-lustria text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.7px] md:tracking-[-1.1px] text-black mb-[24px]">Thought Leadership Programs for B2B SaaS</h1>
 
     <!-- Byline + last updated -->
     <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
       <span>By <a href="https://startupcookie.com" class="underline hover:text-black">Sam Claassen</a> at StartupCookie</span>
       <span class="text-[rgba(0,0,0,0.2)]">|</span>
-      <span class="updated">Last updated: May 2026</span>
+      <span class="updated">Last updated: July 2026</span>
     </div>
 
     <!-- Hero image -->
     <figure class="mb-[40px]">
-      <img src="hero.png" alt="StartupCookie editorial hero illustration" class="w-full h-auto rounded-[12px] border border-border-gray block">
+      <img src="hero.png" alt="Illustration of StartupCookie's thought leadership program for B2B SaaS: founder-led LinkedIn posts, long-form articles, and webinar repurposing" class="w-full h-auto rounded-[12px] border border-border-gray block">
     </figure>
 
     <!-- Article body. post_body_html includes H2s, prose, lists, tables, FAQ section, CTA block. -->
     <div class="article-body">
-      <p class="updated">Last updated: May 2026</p>
+      <p class="updated">Last updated: July 2026</p>
 
-<p>StartupCookie runs full-stack thought leadership programs for B2B SaaS startups. We pair AI-native production with senior content strategists to ship founder-led LinkedIn, long-form articles, case studies, and webinar repurposing end to end. Typical engagement: $5,000-$15,000/mo, month-to-month, no long contracts. The output of a full content team at the price of a junior hire. The principles are the same as the playbook in our <a href="/guides/thought-leadership-marketing/">thought leadership marketing guide</a>; the implementation is what we run for clients.</p>
+<p>StartupCookie runs full-stack thought leadership programs for B2B SaaS startups. We pair AI-native production with senior content strategists to ship founder-led LinkedIn, long-form articles, case studies, and webinar repurposing end to end. Engagements from $5,000/mo, month-to-month, no long contracts. The output of a full content team at the price of a junior hire. The principles are the same as the playbook in our <a href="/guides/thought-leadership-marketing/">thought leadership marketing guide</a>; the implementation is what we run for clients.</p>
 
 <aside class="cta-block">
   <h2>Book a 20-minute scoping call</h2>
@@ -172,7 +225,7 @@
 <ol>
   <li><strong>Seed to Series B B2B SaaS</strong> founders who know their content is not working and do not have time to fix it themselves.</li>
   <li><strong>Growth-stage marketing leaders</strong> without an in-house content team yet who need the program to compound while they build the rest of the marketing function.</li>
-  <li><strong>Series A and B founders</strong> who want to bring production in-house eventually and need a partner to run the program while we build them a custom <a href="/services/content-agents/">content agent</a>.</li>
+  <li><strong>Series A and B founders</strong> who want to bring production in-house eventually and need a partner to run the program while we build them a custom <a href="/services/gtm-agents/">content agent</a>.</li>
 </ol>
 
 <h2>Who this is not for</h2>
@@ -200,7 +253,8 @@
 </aside>
 
 <h2>Pricing</h2>
-<p>Starting at $5,000/mo for founder-led LinkedIn + 4 articles/month. $10,000-$15,000/mo for a full-stack program including webinars, case studies, and distribution. Custom pricing for multi-author programs or programs with custom integrations. Every engagement is month-to-month with no long contracts; we recommend committing to at least 90 days because thought leadership compounds in the second and third month, not the first.</p>
+<p>Engagements from $5,000/mo for founder-led LinkedIn + 4 articles/month. $10,000-$15,000/mo for a full-stack program including webinars, case studies, and distribution. Custom pricing for multi-author programs or programs with custom integrations. Every engagement is month-to-month with no long contracts; we recommend committing to at least 90 days because thought leadership compounds in the second and third month, not the first.</p>
+<p>For proof of how our content performs in AI search, see the <a href="/case-studies/tofu/">Tofu case study</a>: 2.36x AI search visibility in 90 days, from 7.00% to 16.51%.</p>
 
 <h2>Frequently asked questions</h2>
 
@@ -217,43 +271,55 @@
 <p>Yes. We slot in alongside an existing freelance writer or in-house marketer. We typically take strategy, AEO/SEO optimization, and distribution; your existing writer can continue handling drafting if that works for the team.</p>
 
 <h3>What is the difference between this and your content agent service?</h3>
-<p>The thought leadership program is a managed service; we run the content. The <a href="/services/content-agents/">content agent service</a> is a custom buildout; we build the agent and your team operates it. Many clients run both: we run the program while we build the agent, then the team takes over once the agent is shipped.</p>
+<p>The thought leadership program is a managed service; we run the content. The <a href="/services/gtm-agents/">content agent service</a> is a custom buildout; we build the agent and your team operates it. Many clients run both: we run the program while we build the agent, then the team takes over once the agent is shipped.</p>
 
 <aside class="cta-block">
   <h2>Run thought leadership with StartupCookie</h2>
-  <p>Full-stack thought leadership programs for B2B SaaS startups. Starting at $5,000/mo, month-to-month, no long contracts.</p>
+  <p>Full-stack thought leadership programs for B2B SaaS startups. Engagements from $5,000/mo, month-to-month, no long contracts.</p>
   <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call">Book a 20-minute intro call</a>
 </aside>
 
 <footer class="footer">
-  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: May 2026.</p>
+  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: July 2026.</p>
 </footer>
 
     </div>
 
   </article>
 
-  <!-- Footer (matches index.html) -->
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
   <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
-    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
-      <div class="flex flex-col gap-[23px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
+      <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
         <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <p class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.7)] tracking-[-0.32px] leading-[1.4]">AI-native content &amp; GTM agency for B2B SaaS.</p>
         <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <a href="/#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
-        <a href="/#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
-        <a href="/blog/" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
-        <a href="/#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
-        <a href="/#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Services</span>
+        <a href="/services/thought-leadership/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership Content</a>
+        <a href="/services/founder-linkedin/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder LinkedIn</a>
+        <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
+        <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
+        <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
+        <a href="/services/webinar-repurposing/" class="text-[13px] md:text-[15px] text-[rgba(255,255,255,0.7)] tracking-[-0.36px] hover:opacity-70 transition-opacity pl-[14px]">Webinar Repurposing</a>
+        <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
-        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
-        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Resources</span>
+        <a href="/guides/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Guides</a>
+        <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Agency Lists &amp; Comparisons</a>
+        <a href="/press/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Press</a>
       </div>
-      <div class="flex flex-col gap-[10px]">
-        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
+        <a href="/about/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">About</a>
+        <a href="/case-studies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Case Studies</a>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Book a call</a>
       </div>
     </div>
   </footer>
@@ -269,7 +335,7 @@
     "@id": "https://startupcookie.com/services/thought-leadership/"
   },
   "headline": "Thought Leadership Programs for B2B SaaS | StartupCookie",
-  "description": "StartupCookie runs full-stack thought leadership programs for B2B SaaS startups. Founder-led LinkedIn, long-form articles, case studies, webinar repurposing. Starting at $5,000/mo.",
+  "description": "StartupCookie runs full-stack thought leadership programs for B2B SaaS startups. Founder-led LinkedIn, long-form articles, case studies, webinar repurposing. Engagements from $5,000/mo.",
   "image": "https://startupcookie.com/services/thought-leadership/hero.png",
   "author": {
     "@type": "Person",
@@ -286,7 +352,7 @@
     }
   },
   "datePublished": "2026-05-14T09:00:00-07:00",
-  "dateModified": "2026-05-14T09:00:00-07:00",
+  "dateModified": "2026-07-07T09:00:00-07:00",
   "articleSection": "Services"
 }
   </script>
@@ -396,7 +462,7 @@
   ]
 }
   </script>
-  
 
+  <script src="/script.js" defer></script>
 </body>
 </html>

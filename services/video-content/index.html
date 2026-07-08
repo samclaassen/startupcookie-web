@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video Content &amp; Editing for B2B SaaS — StartupCookie</title>
+  <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
+  <meta name="description" content="Video editing, repurposing, and short-form clips for B2B SaaS. Turn webinars, podcasts, and founder recordings into a month of distribution.">
+  <link rel="canonical" href="https://startupcookie.com/services/video-content/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Video Content &amp; Editing for B2B SaaS — StartupCookie">
+  <meta property="og:description" content="Video editing, repurposing, and short-form clips for B2B SaaS. Turn webinars, podcasts, and founder recordings into a month of distribution.">
+  <meta property="og:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+  <meta property="og:url" content="https://startupcookie.com/services/video-content/">
+  <meta property="og:site_name" content="StartupCookie">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Video Content &amp; Editing for B2B SaaS — StartupCookie">
+  <meta name="twitter:description" content="Video editing, repurposing, and short-form clips for B2B SaaS. Turn webinars, podcasts, and founder recordings into a month of distribution.">
+  <meta name="twitter:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+
+  <!-- Fonts + Tailwind (matches index.html) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+            sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            'green-highlight': '#f9fff4',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
+
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
+  <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
+    <div class="flex items-center justify-between">
+      <a href="/" class="shrink-0">
+        <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
+      </a>
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      <ul class="hidden md:flex items-center gap-[24px]">
+        <li class="relative group">
+          <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+            Services
+            <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Content</a>
+              <a href="/services/founder-linkedin/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder LinkedIn</a>
+              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO / AI Search</a>
+              <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Product Marketing</a>
+              <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Video Content</a>
+              <a href="/services/webinar-repurposing/" class="block pl-[30px] pr-[14px] py-[8px] text-[14px] text-[rgba(0,0,0,0.6)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
+              <div class="border-t border-border-gray my-[6px]"></div>
+              <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="/case-studies/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Case Studies</a></li>
+        <li class="relative group">
+          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+            Guides
+            <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/guides/aeo-for-b2b-saas/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO for B2B SaaS</a>
+              <a href="/guides/content-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Build a Content Agent</a>
+              <a href="/guides/founder-led-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder-Led Content</a>
+              <a href="/guides/thought-leadership-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Marketing</a>
+              <a href="/guides/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Agency Lists &amp; Comparisons</a>
+              <div class="border-t border-border-gray my-[6px]"></div>
+              <a href="/guides/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All guides →</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="/about/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">About</a></li>
+        <li><a href="/press/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Press</a></li>
+      </ul>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:inline-block bg-black text-white rounded-[10px] px-[20px] py-[10px] text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors shrink-0">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay (shared) -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
+    <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="/services/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Services</a></li>
+      <li><a href="/case-studies/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Case Studies</a></li>
+      <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
+      <li><a href="/about/" class="text-[24px] text-[rgba(0,0,0,0.8)]">About</a></li>
+      <li><a href="/press/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Press</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pt-[140px] md:pt-[220px] pb-[60px] md:pb-[100px]">
+    <div class="max-w-[900px] flex flex-col gap-[20px]">
+      <nav class="text-[14px] text-[rgba(0,0,0,0.5)]">
+        <a href="/" class="hover:text-black">Home</a>
+        <span class="mx-[6px]">/</span>
+        <a href="/services/" class="hover:text-black">Services</a>
+        <span class="mx-[6px]">/</span>
+        <span>Video Content</span>
+      </nav>
+      <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Video Content</span>
+      <h1 class="text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.8px] md:tracking-[-1.28px] text-black">One recording. A month of content.</h1>
+      <p class="text-[16px] md:text-[20px] text-[rgba(0,0,0,0.7)] leading-[1.4] tracking-[-0.4px] max-w-[720px]">You already record more than you publish. We take the webinars, podcasts, demos, and founder talks sitting in your drive and turn them into short-form clips, LinkedIn-native video, and YouTube-ready episodes. Editing, captions, branding, and packaging included.</p>
+      <div class="flex flex-wrap items-center gap-[20px] mt-[10px]">
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="inline-block bg-black text-white rounded-[10px] px-[25px] py-[12px] text-[16px] md:text-[18px] tracking-[-0.36px] hover:bg-[#222] transition-colors">Book an intro call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px]">Engagements from $5,000/mo. Month-to-month, no long contracts.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Who this is for -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col gap-[30px]">
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Who this is for</span>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Teams sitting on good footage</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">You run webinars or a podcast</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Each episode gets announced once, then sits in a folder. The recording holds weeks of material nobody has cut yet.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Your founder records easily</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Conference talks, product demos, podcast guest spots. The footage exists. Nobody has time to cut, caption, and package it.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">You need video without a hire</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">You want a steady stream of video for LinkedIn and YouTube without hiring a full-time editor or learning an editing suite.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What you get -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col gap-[30px]">
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">What you get</span>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Deliverables</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Short-form clips</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Vertical and square clips cut from your strongest moments, sized for LinkedIn and YouTube Shorts.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Podcast and webinar editing</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Full-episode edits. We cut the filler, tighten the pacing, and clean up the audio so the long version is worth publishing.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">LinkedIn-native video</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Video built for the LinkedIn feed: a hook in the first seconds, captions always on, and a format that works on mute.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">YouTube packaging</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Titles, descriptions, thumbnails, and chapters, so full episodes go up ready to be found, not just ready to watch.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Captioning and branding</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Burned-in captions, your fonts, your colors, and consistent templates. Every clip looks like it came from you, because it did.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sub-offer: Webinar Repurposing -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="bg-green-highlight border border-border-gray rounded-[12px] p-[30px] md:p-[48px] flex flex-col gap-[16px]">
+      <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Sub-offer</span>
+      <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Run webinars? Start with Webinar Repurposing.</h2>
+      <p class="text-[16px] md:text-[18px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.36px] max-w-[840px]">Webinar Repurposing is the deepest version of this service. Each webinar becomes a full batch of ready-to-ship assets: LinkedIn posts, short-form clips, a blog post, an email, and a podcast cut, delivered within 7 days of the live event.</p>
+      <div class="flex flex-wrap items-center gap-[20px] mt-[10px]">
+        <a href="/services/webinar-repurposing/" class="inline-block bg-black text-white rounded-[10px] px-[25px] py-[12px] text-[16px] md:text-[18px] tracking-[-0.36px] hover:bg-[#222] transition-colors">Explore Webinar Repurposing</a>
+        <a href="/guides/webinar-repurposing/" class="text-[15px] md:text-[17px] text-blue-link underline tracking-[-0.34px] hover:opacity-80 transition-opacity">Or read the webinar repurposing guide</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col gap-[30px]">
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">How it works</span>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Three steps, no new meetings</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-[30px]">
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <span class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px]">Step 1</span>
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Send the recording</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">A webinar, a podcast episode, a product demo, or a founder video. Raw exports are fine.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <span class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px]">Step 2</span>
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">We mine and cut</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">We pull the strongest moments, edit the full piece, and cut clips for each platform.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[12px]">
+          <span class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px]">Step 3</span>
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">You publish for a month</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Everything arrives captioned, branded, and formatted per platform, ready to schedule.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col gap-[30px]">
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">Proof</span>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Client video work</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-[30px]">
+        <div class="flex flex-col gap-[12px]">
+          <a href="https://www.linkedin.com/posts/vennca_still-waiting-half-the-week-for-your-bank-activity-7404188666878840832-qnUb" target="_blank" class="rounded-[24px] aspect-[516.5/290] flex items-center justify-center cursor-pointer relative overflow-hidden group bg-cover bg-center" style="background-image: url('/assets/venn-video-thumbnail.jpg')">
+            <div class="absolute inset-0 bg-[rgba(0,0,0,0.25)] group-hover:bg-[rgba(0,0,0,0.35)] transition-colors"></div>
+            <div class="flex flex-col items-center gap-[8px] relative z-10">
+              <img src="/assets/play-button-2.svg" alt="Play" class="w-[50px] h-[58px]">
+              <span class="text-white text-[14px] md:text-[16px] opacity-90 group-hover:opacity-100 transition-opacity">Watch on LinkedIn</span>
+            </div>
+          </a>
+          <span class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px]">Venn, LinkedIn video</span>
+        </div>
+        <div class="flex flex-col gap-[12px]">
+          <a href="https://www.linkedin.com/posts/propane_healthtech-healthcaredesign-patientjourney-activity-7415099510584139776-a7E6" target="_blank" class="rounded-[24px] aspect-[516.5/290] flex items-center justify-center cursor-pointer relative overflow-hidden group bg-cover bg-center" style="background-image: url('/assets/propane-video-thumbnail.jpg')">
+            <div class="absolute inset-0 bg-[rgba(0,0,0,0.25)] group-hover:bg-[rgba(0,0,0,0.35)] transition-colors"></div>
+            <div class="flex flex-col items-center gap-[8px] relative z-10">
+              <img src="/assets/play-button-2.svg" alt="Play" class="w-[50px] h-[58px]">
+              <span class="text-white text-[14px] md:text-[16px] opacity-90 group-hover:opacity-100 transition-opacity">Watch on LinkedIn</span>
+            </div>
+          </a>
+          <span class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.5)] tracking-[-0.32px]">Propane, LinkedIn video</span>
+        </div>
+      </div>
+      <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] tracking-[-0.34px]">Want the numbers behind the work? <a href="/case-studies/" class="text-blue-link underline hover:opacity-80 transition-opacity">Browse our case studies</a>, starting with <a href="/case-studies/tofu/" class="text-blue-link underline hover:opacity-80 transition-opacity">Tofu's 2.36x AI search visibility in 90 days</a>.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="flex flex-col gap-[30px]">
+      <div class="flex flex-col gap-[10px]">
+        <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">FAQ</span>
+        <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">Frequently asked questions</h2>
+      </div>
+      <div class="flex flex-col gap-[20px] max-w-[900px]">
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[10px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">What footage do you need from us?</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Whatever you already have. Webinar and podcast recordings, Zoom exports, conference talks, product demos, and phone-recorded founder videos all work. Cleaner source footage gives us more to work with, but you do not need a studio.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[10px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">What is the turnaround time?</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">For webinar repurposing, assets are ready to ship within 7 days of the live event. For other video work, turnaround depends on the length of the footage and the number of deliverables. We set the schedule together at kickoff.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[10px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Do you handle publishing and distribution?</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">We deliver publish-ready files, captioned and formatted for each platform. On webinar repurposing engagements, distribution is built into the program. If you want us to handle publishing beyond that, we scope it on the intro call.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[10px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">How does pricing work?</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">Engagements from $5,000/mo, scoped to your goals. Month-to-month, no long contracts.</p>
+        </div>
+        <div class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[30px] flex flex-col gap-[10px]">
+          <h3 class="text-[20px] md:text-[24px] text-black tracking-[-0.48px] leading-[1.18]">Who does the work?</h3>
+          <p class="text-[15px] md:text-[17px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.3px]">StartupCookie is two people: co-founders Sam Claassen and Barbara Jovanovic. Senior-only, no account managers. The people you meet on the intro call are the people who edit your video.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing CTA -->
+  <section class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pb-[60px] md:pb-[100px]">
+    <div class="bg-green-highlight border border-border-gray rounded-[12px] p-[30px] md:p-[48px] flex flex-col gap-[16px]">
+      <h2 class="text-[24px] md:text-[40px] font-normal text-black tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">One recording in. A month of content out.</h2>
+      <p class="text-[16px] md:text-[18px] text-[rgba(0,0,0,0.7)] leading-[1.5] tracking-[-0.36px] max-w-[840px]">StartupCookie is an AI-native content &amp; GTM agency for B2B SaaS. Book a call, bring a recording you like, and we will walk through what we would make from it. Engagements from $5,000/mo.</p>
+      <div class="mt-[10px]">
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="inline-block bg-black text-white rounded-[10px] px-[25px] py-[12px] text-[16px] md:text-[18px] tracking-[-0.36px] hover:bg-[#222] transition-colors">Book an intro call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
+  <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
+      <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
+        <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <p class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.7)] tracking-[-0.32px] leading-[1.4]">AI-native content &amp; GTM agency for B2B SaaS.</p>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Services</span>
+        <a href="/services/thought-leadership/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership Content</a>
+        <a href="/services/founder-linkedin/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder LinkedIn</a>
+        <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
+        <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
+        <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
+        <a href="/services/webinar-repurposing/" class="text-[13px] md:text-[15px] text-[rgba(255,255,255,0.7)] tracking-[-0.36px] hover:opacity-70 transition-opacity pl-[14px]">Webinar Repurposing</a>
+        <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Resources</span>
+        <a href="/guides/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Guides</a>
+        <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Agency Lists &amp; Comparisons</a>
+        <a href="/press/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Press</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
+        <a href="/about/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">About</a>
+        <a href="/case-studies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Case Studies</a>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Book a call</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Site-wide Organization schema (identical on every page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
+  "founder": [
+    { "@type": "Person", "name": "Barbara Jovanovic" },
+    { "@type": "Person", "name": "Sam Claassen" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/startup-cookie",
+    "https://www.linkedin.com/in/barbara-startup-cookie/",
+    "https://www.youtube.com/@startupcookie"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Video Content & Editing",
+  "description": "Video editing and repurposing for B2B SaaS: short-form clips, podcast and webinar editing, LinkedIn-native video, YouTube packaging, and captioning. Turns one recording into a month of distribution-ready content.",
+  "url": "https://startupcookie.com/services/video-content/",
+  "provider": {
+    "@type": "Organization",
+    "name": "StartupCookie",
+    "url": "https://startupcookie.com"
+  },
+  "areaServed": "Worldwide",
+  "audience": {
+    "@type": "Audience",
+    "audienceType": "B2B SaaS Startups"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "5000",
+    "priceSpecification": {
+      "@type": "PriceSpecification",
+      "minPrice": "5000",
+      "priceCurrency": "USD"
+    },
+    "url": "https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call"
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://startupcookie.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Services",
+      "item": "https://startupcookie.com/services/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Video Content",
+      "item": "https://startupcookie.com/services/video-content/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What footage do you need from us?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Whatever you already have. Webinar and podcast recordings, Zoom exports, conference talks, product demos, and phone-recorded founder videos all work. Cleaner source footage gives us more to work with, but you do not need a studio."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the turnaround time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For webinar repurposing, assets are ready to ship within 7 days of the live event. For other video work, turnaround depends on the length of the footage and the number of deliverables. We set the schedule together at kickoff."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you handle publishing and distribution?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We deliver publish-ready files, captioned and formatted for each platform. On webinar repurposing engagements, distribution is built into the program. If you want us to handle publishing beyond that, we scope it on the intro call."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does pricing work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Engagements from $5,000/mo, scoped to your goals. Month-to-month, no long contracts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who does the work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "StartupCookie is two people: co-founders Sam Claassen and Barbara Jovanovic. Senior-only, no account managers. The people you meet on the intro call are the people who edit your video."
+      }
+    }
+  ]
+}
+  </script>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>

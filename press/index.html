@@ -3,30 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | StartupCookie</title>
+  <title>Press &amp; Appearances — StartupCookie</title>
   <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
-  <meta name="description" content="The StartupCookie blog: tactics and field notes on AI-native content, product marketing, video, and GTM agents for B2B SaaS startups.">
-  <link rel="canonical" href="https://startupcookie.com/blog/">
+  <meta name="description" content="Press and appearances from StartupCookie: Barbara Jovanovic's record-setting Marketing Against the Grain episode, the Ben's Bites workshop, and Sam Claassen's Authority Magazine interview.">
+  <link rel="canonical" href="https://startupcookie.com/press/">
 
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Blog | StartupCookie">
-  <meta property="og:description" content="Tactics and field notes on AI-native content, product marketing, video, and GTM agents for B2B SaaS startups.">
-  <meta property="og:url" content="https://startupcookie.com/blog/">
-  <meta property="og:site_name" content="StartupCookie">
+  <meta property="og:title" content="Press &amp; Appearances — StartupCookie">
+  <meta property="og:description" content="Press and appearances from StartupCookie: Barbara Jovanovic's record-setting Marketing Against the Grain episode, the Ben's Bites workshop, and Sam Claassen's Authority Magazine interview.">
   <meta property="og:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+  <meta property="og:url" content="https://startupcookie.com/press/">
+  <meta property="og:site_name" content="StartupCookie">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog | StartupCookie">
-  <meta name="twitter:description" content="Tactics and field notes on AI-native content, product marketing, video, and GTM agents for B2B SaaS startups.">
+  <meta name="twitter:title" content="Press &amp; Appearances — StartupCookie">
+  <meta name="twitter:description" content="Press and appearances from StartupCookie: Barbara Jovanovic's record-setting Marketing Against the Grain episode, the Ben's Bites workshop, and Sam Claassen's Authority Magazine interview.">
   <meta name="twitter:image" content="https://startupcookie.com/assets/social-sharing-image.png">
 
+  <!-- Fonts + Tailwind (matches index.html) -->
   <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { lustria: ['Lustria', 'serif'] },
-          colors: { 'green-highlight': '#f9fff4', 'blue-link': '#4f69eb', 'border-gray': '#dcdcdc' },
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+            sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            'green-highlight': '#f9fff4',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
         }
       }
     }
@@ -65,10 +76,36 @@
   }
 }
   </script>
+
+  <!-- BreadcrumbList schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://startupcookie.com/" },
+    { "@type": "ListItem", "position": 2, "name": "Press", "item": "https://startupcookie.com/press/" }
+  ]
+}
+  </script>
+
+  <!-- VideoObject schema for the Marketing Against the Grain episode -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "How I Run A 0-Employee Marketing Agency With AI Tools",
+  "description": "Barbara Jovanovic, co-founder of StartupCookie, joins HubSpot's Marketing Against the Grain podcast to show how she runs a marketing agency with AI tools. It is the show's most-watched episode, with 151k+ views.",
+  "uploadDate": "2025-03-06",
+  "thumbnailUrl": "https://i.ytimg.com/vi/9QbFg4kiNpY/maxresdefault.jpg",
+  "embedUrl": "https://www.youtube.com/embed/9QbFg4kiNpY",
+  "url": "https://www.youtube.com/watch?v=9QbFg4kiNpY"
+}
+  </script>
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
-<!-- Navigation (shared — identical on every page; root-absolute paths) -->
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
   <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
     <div class="flex items-center justify-between">
       <a href="/" class="shrink-0">
@@ -137,27 +174,94 @@
     </ul>
   </div>
 
-  <!-- Page hero -->
-  <section class="pt-[140px] md:pt-[200px] pb-[40px]">
-    <div class="max-w-[1200px] mx-auto px-[20px] md:px-[40px] flex flex-col gap-[20px]">
-      <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">The blog</span>
-      <h1 class="text-[36px] md:text-[56px] font-normal text-black tracking-[-0.7px] md:tracking-[-1.1px] leading-[1.05]">Tactics, playbooks, and field notes on AI-native content, product marketing, video, and GTM agents.</h1>
-      <p class="text-[16px] md:text-[18px] text-[rgba(0,0,0,0.8)] max-w-[820px]">What we ship for clients and what we learn doing it.</p>
-    </div>
-  </section>
+  <!-- Page content -->
+  <main class="max-w-[1608px] mx-auto px-[20px] md:px-[60px] pt-[140px] md:pt-[220px] pb-[80px] md:pb-[140px]">
 
-  <!-- Posts grid -->
-  <section class="pb-[80px] md:pb-[120px]">
-    <div class="max-w-[1200px] mx-auto px-[20px] md:px-[40px]">
-      
-      <div class="border border-border-gray rounded-[12px] p-[40px] text-center bg-green-highlight">
-        <p class="text-[18px] text-[rgba(0,0,0,0.7)]">The first articles are landing soon.</p>
+    <!-- Breadcrumb -->
+    <nav aria-label="Breadcrumb" class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px] md:mb-[48px]">
+      <a href="/" class="hover:text-black transition-colors">Home</a>
+      <span class="mx-[6px]">/</span>
+      <span>Press</span>
+    </nav>
+
+    <!-- Header -->
+    <header class="max-w-[900px] mb-[48px] md:mb-[80px]">
+      <span class="block text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px] uppercase mb-[16px]">Press</span>
+      <h1 class="text-[40px] md:text-[64px] leading-[1.05] tracking-[-0.8px] md:tracking-[-1.28px] text-black mb-[24px]">Press and appearances</h1>
+      <p class="font-sans text-[17px] md:text-[19px] leading-[1.55] text-[rgba(0,0,0,0.7)] max-w-[720px]">Podcasts, workshops, and interviews featuring StartupCookie co-founders Barbara Jovanovic and Sam Claassen. Newest first. More about the team on our <a href="/about/" class="text-blue-link underline hover:opacity-80 transition-opacity">About page</a>.</p>
+      <p class="text-[14px] text-[rgba(0,0,0,0.5)] mt-[16px]">Last updated: July 2026</p>
+    </header>
+
+    <!-- Press list (reverse-chronological: newest entry at the top) -->
+    <section class="max-w-[900px] flex flex-col gap-[20px] md:gap-[24px]">
+
+      <!-- ==========================================================
+           HOW TO ADD A PRESS ENTRY
+           1. Copy the blank <article> template below.
+           2. Paste it at the TOP of this list (the list is newest first).
+           3. Fill in every ALL-CAPS placeholder. Keep external links
+              target="_blank" rel="noopener".
+           4. If the entry is a video, also add a VideoObject JSON-LD
+              block in <head> (copy the Marketing Against the Grain one).
+
+      <article class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[40px]">
+        <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[6px] mb-[14px]">
+          <span class="text-[13px] md:text-[14px] uppercase tracking-[0.08em] text-[rgba(0,0,0,0.5)]">OUTLET NAME</span>
+          <span class="text-[rgba(0,0,0,0.2)]">|</span>
+          <time datetime="YYYY-MM-DD" class="text-[13px] md:text-[14px] text-[rgba(0,0,0,0.5)]">MONTH D, YYYY</time>
+        </div>
+        <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">TITLE OF EPISODE, TALK, OR ARTICLE</h2>
+        <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)] mb-[18px]">ONE-LINE SUMMARY.</p>
+        <a href="EXTERNAL-URL" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">LINK LABEL →</a>
+      </article>
+      ========================================================== -->
+
+      <article class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[40px]">
+        <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[6px] mb-[14px]">
+          <span class="text-[13px] md:text-[14px] uppercase tracking-[0.08em] text-[rgba(0,0,0,0.5)]">Ben's Bites (workshop)</span>
+          <span class="text-[rgba(0,0,0,0.2)]">|</span>
+          <time datetime="2025-08-07" class="text-[13px] md:text-[14px] text-[rgba(0,0,0,0.5)]">August 7, 2025</time>
+        </div>
+        <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">Cascading content: How to repurpose your content using AI</h2>
+        <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)] mb-[18px]">Barbara led this Ben's Bites workshop on repurposing content with AI.</p>
+        <a href="https://catalog.bensbites.com/event/cascading-content-how-to-repurpose-your-content-using-ai" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">View the event page →</a>
+      </article>
+
+      <article class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[40px]">
+        <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[6px] mb-[14px]">
+          <span class="text-[13px] md:text-[14px] uppercase tracking-[0.08em] text-[rgba(0,0,0,0.5)]">Marketing Against the Grain (HubSpot podcast)</span>
+          <span class="text-[rgba(0,0,0,0.2)]">|</span>
+          <time datetime="2025-03-06" class="text-[13px] md:text-[14px] text-[rgba(0,0,0,0.5)]">March 6, 2025</time>
+        </div>
+        <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">How I Run A 0-Employee Marketing Agency With AI Tools</h2>
+        <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)] mb-[18px]">Barbara's episode is the most-watched in the show's history, with 151k+ views.</p>
+        <a href="https://www.youtube.com/watch?v=9QbFg4kiNpY" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">Watch on YouTube →</a>
+      </article>
+
+      <article class="bg-white border border-border-gray rounded-[12px] p-[24px] md:p-[40px]">
+        <div class="flex flex-wrap items-center gap-x-[12px] gap-y-[6px] mb-[14px]">
+          <span class="text-[13px] md:text-[14px] uppercase tracking-[0.08em] text-[rgba(0,0,0,0.5)]">Authority Magazine</span>
+          <span class="text-[rgba(0,0,0,0.2)]">|</span>
+          <time datetime="2023-10-18" class="text-[13px] md:text-[14px] text-[rgba(0,0,0,0.5)]">October 18, 2023</time>
+        </div>
+        <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">5 Tips for Your B2B Marketing Strategy</h2>
+        <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)] mb-[18px]">An interview with co-founder Sam Claassen on B2B marketing strategy.</p>
+        <a href="https://medium.com/authority-magazine/samuel-claassen-of-startup-cookie-5-tips-for-your-b2b-marketing-strategy-86b853cdeafc" target="_blank" rel="noopener" class="text-blue-link text-[16px] md:text-[17px] underline hover:opacity-80 transition-opacity">Read the interview →</a>
+      </article>
+
+    </section>
+
+    <!-- Media inquiries -->
+    <section class="max-w-[900px] mt-[48px] md:mt-[80px]">
+      <div class="bg-green-highlight border border-border-gray rounded-[12px] p-[24px] md:p-[40px]">
+        <h2 class="text-[22px] md:text-[28px] leading-[1.2] tracking-[-0.5px] text-black mb-[12px]">Media and speaking inquiries</h2>
+        <p class="font-sans text-[16px] md:text-[17px] leading-[1.55] text-[rgba(0,0,0,0.7)]">Want Barbara or Sam on your podcast, stage, or workshop? Email <a href="mailto:barbara@startupcookie.com" class="text-blue-link underline hover:opacity-80 transition-opacity">barbara@startupcookie.com</a>.</p>
       </div>
-      
-    </div>
-  </section>
+    </section>
 
-<!-- Footer (shared — identical on every page; root-absolute paths) -->
+  </main>
+
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
   <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
     <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
       <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">

@@ -18,7 +18,7 @@
   <meta property="og:url" content="https://startupcookie.com/agencies/">
   <meta property="og:site_name" content="StartupCookie">
   <meta property="article:published_time" content="2026-05-14T09:00:00-07:00">
-  <meta property="article:modified_time" content="2026-05-14T09:00:00-07:00">
+  <meta property="article:modified_time" content="2026-07-07T09:00:00-07:00">
   <meta property="article:author" content="Sam Claassen">
 
   <!-- Twitter -->
@@ -73,36 +73,79 @@
     .article-body aside.cta-block a:hover { opacity: 0.85; }
     .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
     .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
+    .article-body .hub-links a { text-decoration: none; color: rgba(0,0,0,0.8); font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body .hub-links a:hover { opacity: 1; background: #F9FFF4; }
   </style>
+
+  <!-- Site-wide Organization schema (identical on every page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
+  "founder": [
+    { "@type": "Person", "name": "Barbara Jovanovic" },
+    { "@type": "Person", "name": "Sam Claassen" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/startup-cookie",
+    "https://www.linkedin.com/in/barbara-startup-cookie/",
+    "https://www.youtube.com/@startupcookie"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
-  <!-- Navigation (matches index.html) -->
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
   <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
     <div class="flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
       </a>
-      <ul class="hidden md:flex items-center gap-[28px]">
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      <ul class="hidden md:flex items-center gap-[24px]">
         <li class="relative group">
-          <a href="/services/" class="inline-flex items-center gap-[5px] text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+          <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Services
             <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
           <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
-            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[280px]">
-              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership</a>
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Content</a>
               <a href="/services/founder-linkedin/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder LinkedIn</a>
-              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO Content</a>
-              <a href="/services/content-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Content Agents</a>
-              <a href="/services/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO / AI Search</a>
+              <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Product Marketing</a>
+              <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Video Content</a>
+              <a href="/services/webinar-repurposing/" class="block pl-[30px] pr-[14px] py-[8px] text-[14px] text-[rgba(0,0,0,0.6)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
             </div>
           </div>
         </li>
+        <li><a href="/case-studies/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Case Studies</a></li>
         <li class="relative group">
-          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Guides
             <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
@@ -113,18 +156,30 @@
               <a href="/guides/founder-led-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder-Led Content</a>
               <a href="/guides/thought-leadership-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Marketing</a>
               <a href="/guides/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
-              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Best AI Content Agencies (2026)</a>
+              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Agency Lists &amp; Comparisons</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/guides/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All guides →</a>
             </div>
           </div>
         </li>
-        <li><a href="/#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
-        <li><a href="/#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Contact</a></li>
+        <li><a href="/about/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">About</a></li>
+        <li><a href="/press/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Press</a></li>
       </ul>
-      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:inline-block bg-black text-white rounded-[10px] px-[20px] py-[10px] text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors shrink-0">Book a Call</a>
     </div>
   </nav>
+
+  <!-- Mobile Nav Overlay (shared) -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
+    <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="/services/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Services</a></li>
+      <li><a href="/case-studies/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Case Studies</a></li>
+      <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
+      <li><a href="/about/" class="text-[24px] text-[rgba(0,0,0,0.8)]">About</a></li>
+      <li><a href="/press/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Press</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+    </ul>
+  </div>
 
   <!-- Article container -->
   <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
@@ -133,9 +188,7 @@
     <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
       <a href="/" class="hover:text-black">Home</a>
       <span class="mx-[6px]">/</span>
-      <a href="/blog/" class="hover:text-black">Blog</a>
-      <span class="mx-[6px]">/</span>
-      <span>Best AI Content Agencies for B2B SaaS Startups in 2026</span>
+      <span>Agencies</span>
     </nav>
 
     <!-- Title -->
@@ -145,23 +198,35 @@
     <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
       <span>By <a href="https://startupcookie.com" class="underline hover:text-black">Sam Claassen</a> at StartupCookie</span>
       <span class="text-[rgba(0,0,0,0.2)]">|</span>
-      <span class="updated">Last updated: May 2026</span>
+      <span class="updated">Last updated: July 2026</span>
     </div>
 
     <!-- Hero image -->
     <figure class="mb-[40px]">
-      <img src="hero.png" alt="StartupCookie editorial hero illustration" class="w-full h-auto rounded-[12px] border border-border-gray block">
+      <img src="hero.png" alt="Illustration for a ranked comparison of the best AI content agencies for B2B SaaS startups in 2026" class="w-full h-auto rounded-[12px] border border-border-gray block">
     </figure>
 
     <!-- Article body. post_body_html includes H2s, prose, lists, tables, FAQ section, CTA block. -->
     <div class="article-body">
-      <p class="updated">Last updated: May 2026</p>
+      <p class="updated">Last updated: July 2026</p>
 
-<p>The short version: <strong>StartupCookie, Animalz, Foundation Inc., Optimist, Lureon.ai, and Quoleady</strong> each serve B2B SaaS founders looking for done-for-you content, but they serve different stages and different content philosophies. StartupCookie is built for early-stage B2B SaaS (seed to Series B), pairs AI-native production with senior strategy, and starts at $5,000/mo with no long contracts. Animalz and Foundation are mid-to-late stage premium editorial. Optimist is SEO-led for mature programs. Lureon.ai and Quoleady are AEO/GEO specialists for teams who want AI-search citation share specifically. The right pick depends on your stage, your existing content team, and how much editorial input the founder can give. This ranking explains who each agency is built for, the trade-offs, and the honest limitations of every option, including StartupCookie's.</p>
+<p>The short version: <strong>StartupCookie, Animalz, Foundation Inc., Optimist, Lureon.ai, and Quoleady</strong> each serve B2B SaaS founders looking for done-for-you content, but they serve different stages and different content philosophies. StartupCookie is built for early-stage B2B SaaS (seed to Series B), pairs AI-native production with senior strategy, and offers engagements from $5,000/mo with no long contracts. Animalz and Foundation are mid-to-late stage premium editorial. Optimist is SEO-led for mature programs. Lureon.ai and Quoleady are AEO/GEO specialists for teams who want AI-search citation share specifically. The right pick depends on your stage, your existing content team, and how much editorial input the founder can give. This ranking explains who each agency is built for, the trade-offs, and the honest limitations of every option, including StartupCookie's.</p>
 
 <aside class="disclosure">
   <strong>Disclosure:</strong> StartupCookie is our agency. We have included ourselves in this ranking alongside alternatives for transparency. Every option was evaluated using the same criteria, including SC's real limitations.
 </aside>
+
+<div class="hub-links bg-green-highlight border border-border-gray rounded-[12px] p-[24px] my-[32px]">
+  <span class="block text-[14px] text-[rgba(0,0,0,0.5)] tracking-[0.08em] uppercase mb-[14px]" style="font-family: ui-sans-serif, system-ui, sans-serif;">More lists and comparisons</span>
+  <div class="grid sm:grid-cols-2 gap-[10px]">
+    <a href="/agencies/best-aeo-agencies/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Best AEO Agencies</a>
+    <a href="/agencies/best-founder-linkedin-ghostwriting/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Best Founder LinkedIn Ghostwriting Agencies</a>
+    <a href="/agencies/best-product-marketing-agencies-startups/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Best Product Marketing Agencies for Startups</a>
+    <a href="/compare/startupcookie-vs-animalz/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">StartupCookie vs Animalz</a>
+    <a href="/compare/startupcookie-vs-omniscient-digital/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">StartupCookie vs Omniscient Digital</a>
+    <a href="/compare/agency-vs-in-house-content-marketer/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Agency vs In-House Content Marketer</a>
+  </div>
+</div>
 
 <h2>How we evaluated these AI content agencies</h2>
 <p>Every agency in this list was scored on five criteria: stage fit (does the agency serve early-stage B2B SaaS or only later-stage), production speed (how quickly a typical engagement ships its first batch of content), distribution depth (does the agency stop at production or run distribution too), pricing transparency (is the pricing on the site or behind a sales call), and editorial quality (is the work readable and citable, or generic).</p>
@@ -170,11 +235,11 @@
 
 <p>Six agencies made the final cut. Each entry below lists the agency's category, who they are built for, pricing, strengths, honest limitations, and a verdict.</p>
 
-<h2>1. StartupCookie: AI-native thought leadership for early-stage B2B SaaS</h2>
-<p>StartupCookie is an AI-native thought leadership agency that runs end-to-end content programs (strategy, production, and distribution) for B2B SaaS startups. The model pairs AI-augmented production speed with senior content strategists, so a $5,000-and-up monthly engagement delivers the output of a full content team. Typical deliverables: founder-led LinkedIn, long-form articles, case studies, webinar repurposing, and SEO/AEO-built blog programs. StartupCookie also builds and implements custom content agents for in-house content teams who want to operate the same way StartupCookie does.</p>
+<h2>1. StartupCookie: AI-native content &amp; GTM agency for early-stage B2B SaaS</h2>
+<p>StartupCookie is an AI-native content &amp; GTM agency that runs end-to-end <a href="/services/thought-leadership/">thought leadership</a> and content programs (strategy, production, and distribution) for B2B SaaS startups. The model pairs AI-augmented production speed with senior content strategists, so an engagement from $5,000/mo delivers the output of a full content team. Typical deliverables: founder-led LinkedIn, long-form articles, case studies, webinar repurposing, and SEO/AEO-built blog programs. StartupCookie also <a href="/services/gtm-agents/">builds and implements custom GTM and content agents</a> for in-house content teams who want to operate the same way StartupCookie does.</p>
 <ul>
   <li><strong>Best for:</strong> seed to Series B B2B SaaS, $0-$30M ARR, no in-house content team yet.</li>
-  <li><strong>Pricing:</strong> Starting at $5,000/mo, custom-scoped. Month-to-month, no long contracts.</li>
+  <li><strong>Pricing:</strong> Engagements from $5,000/mo, custom-scoped. Month-to-month, no long contracts.</li>
   <li><strong>Strengths:</strong> AI-native production, senior editorial in the loop, distribution included, transparent pricing, content-agent buildout option.</li>
   <li><strong>Limitations:</strong> Not a self-serve tool. Minimum 3-month commitment recommended (distribution programs need 90 days to compound, even though the contract is month-to-month). B2B-only, not optimized for B2C or e-commerce. Requires roughly 2 hours/month of senior input from a founder or domain expert (programs without expert input flatten into AI-generic content).</li>
   <li><strong>Verdict:</strong> The best fit for early-stage B2B SaaS founders who want the full content team without hiring one, and the only option in this list that will also build a content agent for the team's in-house use.</li>
@@ -251,7 +316,7 @@
 
 <h2>Recommended picks by stage and use case</h2>
 <ol>
-  <li><strong>Seed to Series B B2B SaaS with no content team:</strong> Pick StartupCookie. The starting-at-$5,000/mo entry point, full-stack delivery, and AI-native production speed fit the stage. The content-agent buildout option lets the team go from outsourced to in-house without rebuilding the playbook.</li>
+  <li><strong>Seed to Series B B2B SaaS with no content team:</strong> Pick StartupCookie. Engagements from $5,000/mo, full-stack delivery, and AI-native production speed fit the stage. The content-agent buildout option lets the team go from outsourced to in-house without rebuilding the playbook.</li>
   <li><strong>Series B+ with an editorial team and budget:</strong> Pick Animalz or Foundation Inc. Use the in-house team for velocity and the agency for editorial standards.</li>
   <li><strong>Pure organic-search compounding play:</strong> Pick Optimist. Best when the buyer journey still starts in Google.</li>
   <li><strong>The only metric you care about is AI citation share:</strong> Pick Lureon.ai. Specialists usually beat generalists on a single metric.</li>
@@ -270,7 +335,7 @@
 <p>The output is similar (blog posts, LinkedIn content, case studies, webinars) but the production speed and price point are different. AI-native agencies typically ship faster and cost less than traditional editorial agencies at the same quality bar. The trade-off is that AI-native agencies require slightly more founder input upfront to calibrate voice and tone.</p>
 
 <h3>How much should a B2B SaaS startup spend on content in 2026?</h3>
-<p>Seed-stage SaaS companies typically allocate $3,000-$10,000 per month to content and distribution. Series A companies often run $7,000-$20,000/mo. Series B and later commonly run $20,000-$50,000/mo when content is a primary acquisition channel. The cheaper end of the agency market starts at $5,000/mo (StartupCookie), the premium end starts at $10,000/mo.</p>
+<p>Seed-stage SaaS companies typically allocate up to $10,000 per month to content and distribution, with $5,000/mo a common entry point. Series A companies often run $7,000-$20,000/mo. Series B and later commonly run $20,000-$50,000/mo when content is a primary acquisition channel. The cheaper end of the agency market runs from $5,000/mo (StartupCookie), the premium end starts at $10,000/mo.</p>
 
 <h3>Should we hire an in-house content marketer or work with an agency?</h3>
 <p>In-house makes sense once content drives more than 10% of pipeline and you cross $5M ARR. Before that, hiring a senior in-house content marketer ($120,000+ all-in) against an unproven channel is hard to justify. Agencies are the bridge until content is proven. Several of the agencies in this list (StartupCookie included) explicitly position themselves as the bridge.</p>
@@ -287,41 +352,65 @@
 <h3>Why is StartupCookie in this ranking when you wrote the ranking?</h3>
 <p>Two reasons. First, transparency: a comparison page that excludes the publisher is less honest than one that includes the publisher with a disclosure. Second, every option in the list was evaluated with the same criteria, including StartupCookie's real limitations. Cross-check StartupCookie's claims against the alternatives above and decide based on your stage, your budget, and how much input the founder can give.</p>
 
+<div class="hub-links bg-green-highlight border border-border-gray rounded-[12px] p-[24px] my-[32px]">
+  <span class="block text-[14px] text-[rgba(0,0,0,0.5)] tracking-[0.08em] uppercase mb-[14px]" style="font-family: ui-sans-serif, system-ui, sans-serif;">Keep comparing: more lists and head-to-heads</span>
+  <div class="grid sm:grid-cols-2 gap-[10px]">
+    <a href="/agencies/best-aeo-agencies/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Best AEO Agencies</a>
+    <a href="/agencies/best-founder-linkedin-ghostwriting/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Best Founder LinkedIn Ghostwriting Agencies</a>
+    <a href="/agencies/best-product-marketing-agencies-startups/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Best Product Marketing Agencies for Startups</a>
+    <a href="/compare/startupcookie-vs-animalz/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">StartupCookie vs Animalz</a>
+    <a href="/compare/startupcookie-vs-omniscient-digital/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">StartupCookie vs Omniscient Digital</a>
+    <a href="/compare/agency-vs-in-house-content-marketer/" class="block bg-white border border-border-gray rounded-[8px] px-[16px] py-[12px]">Agency vs In-House Content Marketer</a>
+  </div>
+</div>
+
 <aside class="cta-block">
   <h2>Want to talk to StartupCookie about your content program?</h2>
-  <p>We are an AI-native thought leadership agency. We run founder-led content programs end to end (strategy, writing, distribution) for B2B SaaS startups, starting at $5,000/mo. Month-to-month, no long contracts. We also build content agents for teams who want the system in-house.</p>
+  <p>We are an AI-native content &amp; GTM agency for B2B SaaS. We run founder-led content and thought leadership programs end to end (strategy, writing, distribution). Engagements from $5,000/mo. Month-to-month, no long contracts. We also build GTM and content agents for teams who want the system in-house.</p>
   <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call">Book a 20-minute intro call</a>
 </aside>
 
 <footer class="footer">
-  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: May 2026.</p>
+  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: July 2026.</p>
 </footer>
 
     </div>
 
   </article>
 
-  <!-- Footer (matches index.html) -->
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
   <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
-    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
-      <div class="flex flex-col gap-[23px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
+      <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
         <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <p class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.7)] tracking-[-0.32px] leading-[1.4]">AI-native content &amp; GTM agency for B2B SaaS.</p>
         <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <a href="/#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
-        <a href="/#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
-        <a href="/blog/" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
-        <a href="/#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
-        <a href="/#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Services</span>
+        <a href="/services/thought-leadership/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership Content</a>
+        <a href="/services/founder-linkedin/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder LinkedIn</a>
+        <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
+        <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
+        <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
+        <a href="/services/webinar-repurposing/" class="text-[13px] md:text-[15px] text-[rgba(255,255,255,0.7)] tracking-[-0.36px] hover:opacity-70 transition-opacity pl-[14px]">Webinar Repurposing</a>
+        <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
-        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
-        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Resources</span>
+        <a href="/guides/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Guides</a>
+        <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Agency Lists &amp; Comparisons</a>
+        <a href="/press/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Press</a>
       </div>
-      <div class="flex flex-col gap-[10px]">
-        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
+        <a href="/about/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">About</a>
+        <a href="/case-studies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Case Studies</a>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Book a call</a>
       </div>
     </div>
   </footer>
@@ -354,9 +443,9 @@
     }
   },
   "datePublished": "2026-05-14T09:00:00-07:00",
-  "dateModified": "2026-05-14T09:00:00-07:00",
+  "dateModified": "2026-07-07T09:00:00-07:00",
   "articleSection": "Content Agencies",
-  "keywords": "best AI content agency, B2B SaaS, content agency, AEO agency, thought leadership agency, startup content agency, 2026"
+  "keywords": "best AI content agency, B2B SaaS, content agency, AEO agency, AI-native content & GTM agency, startup content agency, 2026"
 }
   </script>
   
@@ -454,7 +543,7 @@
       "name": "How much should a B2B SaaS startup spend on content in 2026?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Seed-stage SaaS companies typically allocate $3,000-$10,000 per month to content and distribution. Series A companies often run $7,000-$20,000/mo. Series B and later commonly run $20,000-$50,000/mo when content is a primary acquisition channel. The cheaper end of the agency market starts at $5,000/mo (StartupCookie), the premium end starts at $10,000/mo."
+        "text": "Seed-stage SaaS companies typically allocate up to $10,000 per month to content and distribution, with $5,000/mo a common entry point. Series A companies often run $7,000-$20,000/mo. Series B and later commonly run $20,000-$50,000/mo when content is a primary acquisition channel. The cheaper end of the agency market runs from $5,000/mo (StartupCookie), the premium end starts at $10,000/mo."
       }
     },
     {
@@ -500,7 +589,7 @@
   ]
 }
   </script>
-  
 
+  <script src="/script.js" defer></script>
 </body>
 </html>

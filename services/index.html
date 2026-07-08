@@ -3,28 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>StartupCookie Services for B2B SaaS | StartupCookie</title>
+  <title>Services for B2B SaaS: Content, Product Marketing, Video &amp; GTM Agents | StartupCookie</title>
   <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
-  <meta name="description" content="StartupCookie services: thought leadership programs, founder LinkedIn, AEO content, content agent buildouts, webinar repurposing.">
+  <meta name="description" content="StartupCookie services for B2B SaaS: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM &amp; content agent buildouts. Engagements from $5,000/mo.">
   <link rel="canonical" href="https://startupcookie.com/services/">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="StartupCookie Services for B2B SaaS">
-  <meta property="og:description" content="StartupCookie services: thought leadership programs, founder LinkedIn, AEO content, content agent buildouts, webinar repurposing.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Services for B2B SaaS: Content, Product Marketing, Video &amp; GTM Agents">
+  <meta property="og:description" content="StartupCookie services for B2B SaaS: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM &amp; content agent buildouts. Engagements from $5,000/mo.">
   <meta property="og:image" content="https://startupcookie.com/services/hero.png">
   <meta property="og:image:width" content="1536">
   <meta property="og:image:height" content="864">
   <meta property="og:url" content="https://startupcookie.com/services/">
   <meta property="og:site_name" content="StartupCookie">
-  <meta property="article:published_time" content="2026-05-14T09:00:00-07:00">
-  <meta property="article:modified_time" content="2026-05-14T09:00:00-07:00">
-  <meta property="article:author" content="Sam Claassen">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="StartupCookie Services for B2B SaaS">
-  <meta name="twitter:description" content="StartupCookie services: thought leadership programs, founder LinkedIn, AEO content, content agent buildouts, webinar repurposing.">
+  <meta name="twitter:title" content="Services for B2B SaaS: Content, Product Marketing, Video &amp; GTM Agents">
+  <meta name="twitter:description" content="StartupCookie services for B2B SaaS: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM &amp; content agent buildouts. Engagements from $5,000/mo.">
   <meta name="twitter:image" content="https://startupcookie.com/services/hero.png">
 
   <!-- Fonts + Tailwind (matches index.html) -->
@@ -74,35 +71,76 @@
     .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
     .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
   </style>
+
+  <!-- Site-wide Organization schema (identical on every page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
+  "founder": [
+    { "@type": "Person", "name": "Barbara Jovanovic" },
+    { "@type": "Person", "name": "Sam Claassen" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/startup-cookie",
+    "https://www.linkedin.com/in/barbara-startup-cookie/",
+    "https://www.youtube.com/@startupcookie"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
-  <!-- Navigation (matches index.html) -->
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
   <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
     <div class="flex items-center justify-between">
       <a href="/" class="shrink-0">
         <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
       </a>
-      <ul class="hidden md:flex items-center gap-[28px]">
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      <ul class="hidden md:flex items-center gap-[24px]">
         <li class="relative group">
-          <a href="/services/" class="inline-flex items-center gap-[5px] text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+          <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Services
             <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
           <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
-            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[280px]">
-              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership</a>
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Content</a>
               <a href="/services/founder-linkedin/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder LinkedIn</a>
-              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO Content</a>
-              <a href="/services/content-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Content Agents</a>
-              <a href="/services/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">AEO / AI Search</a>
+              <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Product Marketing</a>
+              <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Video Content</a>
+              <a href="/services/webinar-repurposing/" class="block pl-[30px] pr-[14px] py-[8px] text-[14px] text-[rgba(0,0,0,0.6)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
             </div>
           </div>
         </li>
+        <li><a href="/case-studies/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Case Studies</a></li>
         <li class="relative group">
-          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
             Guides
             <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
           </a>
@@ -113,18 +151,30 @@
               <a href="/guides/founder-led-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Founder-Led Content</a>
               <a href="/guides/thought-leadership-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Thought Leadership Marketing</a>
               <a href="/guides/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Webinar Repurposing</a>
-              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Best AI Content Agencies (2026)</a>
+              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-green-highlight rounded-[8px] transition-colors">Agency Lists &amp; Comparisons</a>
               <div class="border-t border-border-gray my-[6px]"></div>
               <a href="/guides/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All guides →</a>
             </div>
           </div>
         </li>
-        <li><a href="/#pricing" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
-        <li><a href="/#contact" class="text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Contact</a></li>
+        <li><a href="/about/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">About</a></li>
+        <li><a href="/press/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Press</a></li>
       </ul>
-      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:block text-[18px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] underline decoration-solid shrink-0">Book a Call</a>
+      <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="hidden md:inline-block bg-black text-white rounded-[10px] px-[20px] py-[10px] text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors shrink-0">Book a Call</a>
     </div>
   </nav>
+
+  <!-- Mobile Nav Overlay (shared) -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
+    <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="/services/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Services</a></li>
+      <li><a href="/case-studies/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Case Studies</a></li>
+      <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
+      <li><a href="/about/" class="text-[24px] text-[rgba(0,0,0,0.8)]">About</a></li>
+      <li><a href="/press/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Press</a></li>
+      <li><a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline">Book a Call</a></li>
+    </ul>
+  </div>
 
   <!-- Article container -->
   <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
@@ -133,9 +183,7 @@
     <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
       <a href="/" class="hover:text-black">Home</a>
       <span class="mx-[6px]">/</span>
-      <a href="/blog/" class="hover:text-black">Blog</a>
-      <span class="mx-[6px]">/</span>
-      <span>StartupCookie Services for B2B SaaS</span>
+      <span>Services</span>
     </nav>
 
     <!-- Title -->
@@ -145,42 +193,50 @@
     <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
       <span>By <a href="https://startupcookie.com" class="underline hover:text-black">Sam Claassen</a> at StartupCookie</span>
       <span class="text-[rgba(0,0,0,0.2)]">|</span>
-      <span class="updated">Last updated: May 2026</span>
+      <span class="updated">Last updated: July 2026</span>
     </div>
 
     <!-- Hero image -->
     <figure class="mb-[40px]">
-      <img src="hero.png" alt="StartupCookie editorial hero illustration" class="w-full h-auto rounded-[12px] border border-border-gray block">
+      <img src="hero.png" alt="Overview illustration of StartupCookie services for B2B SaaS: content, product marketing, video, and GTM agents" class="w-full h-auto rounded-[12px] border border-border-gray block">
     </figure>
 
     <!-- Article body. post_body_html includes H2s, prose, lists, tables, FAQ section, CTA block. -->
     <div class="article-body">
-      <p class="updated">Last updated: May 2026</p>
+      <p class="updated">Last updated: July 2026</p>
 
-<p>StartupCookie services. We run end-to-end content programs for B2B SaaS startups: thought leadership, founder LinkedIn, AEO content, content agent buildouts, and webinar repurposing. Every service pairs AI-native production with senior content strategists; you get the output of a full content team at a fraction of the hiring cost. Pricing starts at $3,000/mo for narrow scope, $5,000/mo for full-stack programs. Month-to-month, no long contracts. Every service includes weekly performance review and 90-day commitment-to-compound expectation.</p>
+<p>StartupCookie services. We run end-to-end content and GTM programs for B2B SaaS startups: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM &amp; content agent buildouts. Every service pairs AI-native production with senior content strategists; you get the output of a full content team at a fraction of the hiring cost. Engagements from $5,000/mo. Month-to-month, no long contracts. Every service includes weekly performance review and 90-day commitment-to-compound expectation.</p>
 
 <h2>1. Thought Leadership Programs</h2>
-<p>Full-stack thought leadership programs for B2B SaaS startups. Founder-led LinkedIn (3-5 posts/week), long-form articles (1-2/week), monthly webinar with repurposing, quarterly case studies. We handle production and distribution; the founder provides 1-2 hours per week of input. Starting at $5,000/mo. <a href="/services/thought-leadership/">See the thought leadership service</a>.</p>
+<p>Full-stack thought leadership programs for B2B SaaS startups. Founder-led LinkedIn (3-5 posts/week), long-form articles (1-2/week), monthly webinar with repurposing, quarterly case studies. We handle production and distribution; the founder provides 1-2 hours per week of input. From $5,000/mo. <a href="/services/thought-leadership/">See the thought leadership service</a>.</p>
 
 <h2>2. Founder LinkedIn Ghostwriting</h2>
-<p>Done-for-you founder-led LinkedIn for B2B SaaS founders. Voice card built from your existing best posts, weekly 30-45 minute audio input, 3-5 posts per week drafted in your voice, automated posting. Net founder time: ~1 hour per week. Starting at $5,000/mo, or included in our thought leadership program. <a href="/services/founder-linkedin/">See the founder LinkedIn service</a>.</p>
+<p>Done-for-you founder-led LinkedIn for B2B SaaS founders. Voice card built from your existing best posts, weekly 30-45 minute audio input, 3-5 posts per week drafted in your voice, automated posting. Net founder time: ~1 hour per week. From $5,000/mo, or included in our thought leadership program. <a href="/services/founder-linkedin/">See the founder LinkedIn service</a>.</p>
 
 <h2>3. AEO Content Programs</h2>
-<p>Answer Engine Optimization content programs for B2B SaaS. 4-8 AEO-built pages per month (guides, comparisons, listicles, definitional pages), full schema markup, weekly citation tracking across ChatGPT, Perplexity, Claude, and Google AI Overviews. Starting at $5,000/mo. <a href="/services/aeo-content/">See the AEO content service</a>.</p>
+<p>Answer Engine Optimization content programs for B2B SaaS. 4-8 AEO-built pages per month (guides, comparisons, listicles, definitional pages), full schema markup, weekly citation tracking across ChatGPT, Perplexity, Claude, and Google AI Overviews. From $5,000/mo. See how this worked for <a href="/case-studies/tofu/">Tofu: 2.36x AI search visibility in 90 days</a>. <a href="/services/aeo-content/">See the AEO content service</a>.</p>
 
-<h2>4. Custom Content Agent Buildouts</h2>
-<p>We build custom AI content agents for B2B SaaS startups. The agent ships AEO-built content end to end (research, drafting, QA, schema, publishing) at marginal cost, with human approval gates. Fixed-scope pricing starting at $30,000 for the standard 4-agent build. You own the code; we deliver and (optionally) stay on retainer for editorial review. <a href="/services/content-agents/">See the content agent service</a>.</p>
+<h2>4. Product Marketing</h2>
+<p>Product marketing for seed to Series B B2B SaaS: positioning, messaging, launch strategy, and sales enablement. We turn what your product does into language your buyers and your sales team can actually use, then feed it into every content program above. Engagements from $5,000/mo. <a href="/services/product-marketing/">See the product marketing service</a>.</p>
 
-<h2>5. Webinar Repurposing</h2>
-<p>Done-for-you webinar repurposing for B2B SaaS. Each webinar becomes 17-25 ready-to-ship assets across LinkedIn, blog, email, podcast, and short-form video, within 7 days of the live event. Starting at $3,000/mo for 1 webinar per month, or included in our thought leadership program. <a href="/services/webinar-repurposing/">See the webinar repurposing service</a>.</p>
+<h2>5. Video Content</h2>
+<p>Video editing and repurposing for B2B SaaS. We take one recording (a webinar, a podcast episode, a founder talk) and turn it into a month of distribution-ready video content. Webinar repurposing sits under this service. Engagements from $5,000/mo. <a href="/services/video-content/">See the video content service</a>.</p>
+
+<h2>6. GTM &amp; Content Agent Buildouts</h2>
+<p>We build custom GTM and content agents for B2B SaaS startups. The agent ships AEO-built content end to end (research, drafting, QA, schema, publishing) at marginal cost, with human approval gates. Fixed-scope, one-time build pricing from $30,000 for the standard 4-agent build. You own the code; we deliver and (optionally) stay on retainer for editorial review. <a href="/services/gtm-agents/">See the GTM &amp; content agent service</a>.</p>
+
+<h2>7. Webinar Repurposing</h2>
+<p>Done-for-you webinar repurposing for B2B SaaS, delivered as part of our video content service. Each webinar becomes 17-25 ready-to-ship assets across LinkedIn, blog, email, podcast, and short-form video, within 7 days of the live event. Included in engagements from $5,000/mo, or bundled with the thought leadership program. <a href="/services/webinar-repurposing/">See the webinar repurposing service</a>, or read our <a href="/guides/webinar-repurposing/">webinar repurposing guide</a>.</p>
 
 <h2>Which service is right for your stage?</h2>
 <ol>
   <li><strong>Seed-stage, no content team:</strong> start with founder LinkedIn ghostwriting. Cheapest entry point, fastest signal.</li>
   <li><strong>Series A, no content team:</strong> the full thought leadership program. Founder LinkedIn + 2 articles per week + monthly webinar. Compounds in 90-120 days.</li>
   <li><strong>Series A or B with existing content but no AEO:</strong> the AEO content program. Layer it on top of what you already have.</li>
-  <li><strong>Series A or B with technical talent and a long content roadmap:</strong> the content agent buildout. Ship it once, run forever at marginal cost.</li>
-  <li><strong>Any stage with a webinar program:</strong> webinar repurposing as a standalone or layered into the thought leadership program.</li>
+  <li><strong>Seed to Series B with a launch coming or messaging that is not landing:</strong> the product marketing engagement. Positioning and sales enablement first, then content.</li>
+  <li><strong>Any stage already recording webinars, podcasts, or talks:</strong> the video content service. One recording becomes a month of distribution.</li>
+  <li><strong>Series A or B with technical talent and a long content roadmap:</strong> the GTM &amp; content agent buildout. Ship it once, run forever at marginal cost.</li>
+  <li><strong>Any stage with a webinar program:</strong> webinar repurposing, under the video content service, as a standalone or layered into the thought leadership program.</li>
 </ol>
 
 <h2>What every service includes</h2>
@@ -219,8 +275,8 @@
 <h3>Who is the team that will work on my account?</h3>
 <p>A senior content strategist owns each engagement, supported by AI-native production tooling and (when relevant) a junior editorial associate. You will have one named human as your primary contact. No account managers, no junior writers running the program.</p>
 
-<h3>What does the content agent service have to do with the managed services?</h3>
-<p>The content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over the agent and we stay on retainer for editorial review.</p>
+<h3>What does the GTM &amp; content agent service have to do with the managed services?</h3>
+<p>The GTM &amp; content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over the agent and we stay on retainer for editorial review.</p>
 
 <h3>Do you work with B2C, e-commerce, or consumer brands?</h3>
 <p>No. Every service in our catalog is calibrated for B2B SaaS. The voice cards, the AEO playbooks, the distribution channels, and the buyer-journey assumptions are all built around B2B buying cycles. We refer B2C teams to category-appropriate specialists.</p>
@@ -232,34 +288,46 @@
 </aside>
 
 <footer class="footer">
-  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: May 2026.</p>
+  <p>By <a href="https://startupcookie.com">Sam Claassen</a> at StartupCookie. Last updated: July 2026.</p>
 </footer>
 
     </div>
 
   </article>
 
-  <!-- Footer (matches index.html) -->
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
   <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
-    <div class="max-w-[1608px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-[40px]">
-      <div class="flex flex-col gap-[23px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
+      <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
         <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <p class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.7)] tracking-[-0.32px] leading-[1.4]">AI-native content &amp; GTM agency for B2B SaaS.</p>
         <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors">Book a call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <a href="/#process" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Process</a>
-        <a href="/#why-us" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Why Us</a>
-        <a href="/blog/" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
-        <a href="/#clients" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Clients</a>
-        <a href="/#pricing" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Services</span>
+        <a href="/services/thought-leadership/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership Content</a>
+        <a href="/services/founder-linkedin/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder LinkedIn</a>
+        <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
+        <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
+        <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
+        <a href="/services/webinar-repurposing/" class="text-[13px] md:text-[15px] text-[rgba(255,255,255,0.7)] tracking-[-0.36px] hover:opacity-70 transition-opacity pl-[14px]">Webinar Repurposing</a>
+        <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
       </div>
       <div class="flex flex-col gap-[12px] md:gap-[15px]">
-        <span class="text-[14px] md:text-[18px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px]">Contact</span>
-        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
-        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[18px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Resources</span>
+        <a href="/guides/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Guides</a>
+        <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Agency Lists &amp; Comparisons</a>
+        <a href="/press/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Press</a>
       </div>
-      <div class="flex flex-col gap-[10px]">
-        <span class="text-[14px] md:text-[18px] text-white tracking-[-0.36px]">San Francisco, CA</span>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
+        <a href="/about/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">About</a>
+        <a href="/case-studies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Case Studies</a>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Book a call</a>
       </div>
     </div>
   </footer>
@@ -275,7 +343,7 @@
     "@id": "https://startupcookie.com/services/"
   },
   "headline": "StartupCookie Services for B2B SaaS",
-  "description": "StartupCookie services: thought leadership programs, founder LinkedIn, AEO content, content agent buildouts, webinar repurposing. Starting at $3,000/mo.",
+  "description": "StartupCookie services for B2B SaaS: thought leadership, founder LinkedIn, AEO content, product marketing, video content, and GTM & content agent buildouts. Engagements from $5,000/mo.",
   "image": "https://startupcookie.com/services/hero.png",
   "author": {
     "@type": "Person",
@@ -292,7 +360,7 @@
     }
   },
   "datePublished": "2026-05-14T09:00:00-07:00",
-  "dateModified": "2026-05-14T09:00:00-07:00"
+  "dateModified": "2026-07-07T09:00:00-07:00"
 }
   </script>
   
@@ -300,7 +368,7 @@
 {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  "numberOfItems": 5,
+  "numberOfItems": 7,
   "itemListElement": [
     {
       "@type": "ListItem",
@@ -323,12 +391,24 @@
     {
       "@type": "ListItem",
       "position": 4,
-      "name": "Content Agent Buildouts",
-      "url": "https://startupcookie.com/services/content-agents/"
+      "name": "Product Marketing",
+      "url": "https://startupcookie.com/services/product-marketing/"
     },
     {
       "@type": "ListItem",
       "position": 5,
+      "name": "Video Content",
+      "url": "https://startupcookie.com/services/video-content/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "name": "GTM & Content Agent Buildouts",
+      "url": "https://startupcookie.com/services/gtm-agents/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
       "name": "Webinar Repurposing",
       "url": "https://startupcookie.com/services/webinar-repurposing/"
     }
@@ -396,10 +476,10 @@
     },
     {
       "@type": "Question",
-      "name": "What does the content agent service have to do with the managed services?",
+      "name": "What does the GTM & content agent service have to do with the managed services?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over the agent and we stay on retainer for editorial review."
+        "text": "The GTM & content agent service is a custom buildout; we deliver an agent that your team operates. The managed services are us running the content for you. Many clients run both: we run the managed service for 90-180 days while we build the agent, then your team takes over the agent and we stay on retainer for editorial review."
       }
     },
     {
@@ -413,7 +493,8 @@
   ]
 }
   </script>
-  
 
+
+  <script src="/script.js" defer></script>
 </body>
 </html>

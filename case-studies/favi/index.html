@@ -3,72 +3,78 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Blog | StartupCookie</title>
+  <title>Favi Case Study (Draft) — StartupCookie</title>
   <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
-  <meta name="description" content="The StartupCookie blog: tactics and field notes on AI-native content, product marketing, video, and GTM agents for B2B SaaS startups.">
-  <link rel="canonical" href="https://startupcookie.com/blog/">
+  <meta name="description" content="Draft case study scaffold for Favi. Challenge, work, results, and client approval are pending input. Not for publication yet.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://startupcookie.com/case-studies/favi/">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Blog | StartupCookie">
-  <meta property="og:description" content="Tactics and field notes on AI-native content, product marketing, video, and GTM agents for B2B SaaS startups.">
-  <meta property="og:url" content="https://startupcookie.com/blog/">
-  <meta property="og:site_name" content="StartupCookie">
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Favi Case Study (Draft) — StartupCookie">
+  <meta property="og:description" content="Draft case study scaffold for Favi. Challenge, work, results, and client approval are pending input. Not for publication yet.">
   <meta property="og:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+  <meta property="og:url" content="https://startupcookie.com/case-studies/favi/">
+  <meta property="og:site_name" content="StartupCookie">
+  <meta property="article:author" content="Sam Claassen">
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Blog | StartupCookie">
-  <meta name="twitter:description" content="Tactics and field notes on AI-native content, product marketing, video, and GTM agents for B2B SaaS startups.">
+  <meta name="twitter:title" content="Favi Case Study (Draft) — StartupCookie">
+  <meta name="twitter:description" content="Draft case study scaffold for Favi. Challenge, work, results, and client approval are pending input. Not for publication yet.">
   <meta name="twitter:image" content="https://startupcookie.com/assets/social-sharing-image.png">
 
+  <!-- Fonts + Tailwind (matches index.html) -->
   <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: { lustria: ['Lustria', 'serif'] },
-          colors: { 'green-highlight': '#f9fff4', 'blue-link': '#4f69eb', 'border-gray': '#dcdcdc' },
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+            sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            'green-highlight': '#f9fff4',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
         }
       }
     }
   </script>
   <link rel="stylesheet" href="/styles.css">
 
-  <!-- Site-wide Organization schema (identical on every page) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "StartupCookie",
-  "url": "https://startupcookie.com",
-  "logo": "https://startupcookie.com/assets/logo-nav.svg",
-  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
-  "founder": [
-    { "@type": "Person", "name": "Barbara Jovanovic" },
-    { "@type": "Person", "name": "Sam Claassen" }
-  ],
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "San Francisco",
-    "addressRegion": "CA",
-    "addressCountry": "US"
-  },
-  "sameAs": [
-    "https://www.linkedin.com/company/startup-cookie",
-    "https://www.linkedin.com/in/barbara-startup-cookie/",
-    "https://www.youtube.com/@startupcookie"
-  ],
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "email": "barbara@startupcookie.com",
-    "contactType": "Sales",
-    "availableLanguage": ["English"]
-  }
-}
-  </script>
+  <style>
+    /* Article-specific styles. Keep small, defer to Tailwind. */
+    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 56px; margin-bottom: 20px; color: rgba(0,0,0,0.9); }
+    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 32px; margin-bottom: 12px; color: rgba(0,0,0,0.9); }
+    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin-bottom: 16px; }
+    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.55; color: rgba(0,0,0,0.8); margin: 16px 0 20px 24px; }
+    .article-body ul li { list-style: disc; margin-bottom: 6px; }
+    .article-body ol li { list-style: decimal; margin-bottom: 6px; }
+    .article-body a { color: #4F69EB; text-decoration: underline; }
+    .article-body a:hover { opacity: 0.8; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 24px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body th, .article-body td { border: 1px solid #DCDCDC; padding: 10px 14px; text-align: left; vertical-align: top; }
+    .article-body th { background: #F9FFF4; font-weight: 600; }
+    .article-body figure { margin: 32px 0; }
+    .article-body figure img { width: 100%; height: auto; border: 1px solid #DCDCDC; border-radius: 8px; display: block; }
+    .article-body figure figcaption { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 8px; text-align: center; }
+    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 20px 0; font-style: italic; color: rgba(0,0,0,0.7); }
+    .article-body aside.disclosure { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 24px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
+    .article-body aside.cta-block { background: #F9FFF4; border: 1px solid #DCDCDC; padding: 32px; border-radius: 12px; margin: 48px 0 24px; }
+    .article-body aside.cta-block h2 { margin-top: 0; }
+    .article-body aside.cta-block a { display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-family: 'Lustria', serif; font-size: 16px; }
+    .article-body aside.cta-block a:hover { opacity: 0.85; }
+    .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
+    .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
+  </style>
 </head>
 <body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
 
-<!-- Navigation (shared — identical on every page; root-absolute paths) -->
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
   <nav id="navbar" class="fixed top-[20px] md:top-[60px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
     <div class="flex items-center justify-between">
       <a href="/" class="shrink-0">
@@ -137,27 +143,76 @@
     </ul>
   </div>
 
-  <!-- Page hero -->
-  <section class="pt-[140px] md:pt-[200px] pb-[40px]">
-    <div class="max-w-[1200px] mx-auto px-[20px] md:px-[40px] flex flex-col gap-[20px]">
-      <span class="text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px]">The blog</span>
-      <h1 class="text-[36px] md:text-[56px] font-normal text-black tracking-[-0.7px] md:tracking-[-1.1px] leading-[1.05]">Tactics, playbooks, and field notes on AI-native content, product marketing, video, and GTM agents.</h1>
-      <p class="text-[16px] md:text-[18px] text-[rgba(0,0,0,0.8)] max-w-[820px]">What we ship for clients and what we learn doing it.</p>
-    </div>
-  </section>
+  <!-- Article container -->
+  <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
 
-  <!-- Posts grid -->
-  <section class="pb-[80px] md:pb-[120px]">
-    <div class="max-w-[1200px] mx-auto px-[20px] md:px-[40px]">
-      
-      <div class="border border-border-gray rounded-[12px] p-[40px] text-center bg-green-highlight">
-        <p class="text-[18px] text-[rgba(0,0,0,0.7)]">The first articles are landing soon.</p>
-      </div>
-      
-    </div>
-  </section>
+    <!-- Breadcrumb -->
+    <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
+      <a href="/" class="hover:text-black">Home</a>
+      <span class="mx-[6px]">/</span>
+      <a href="/case-studies/" class="hover:text-black">Case Studies</a>
+      <span class="mx-[6px]">/</span>
+      <span>Favi</span>
+    </nav>
 
-<!-- Footer (shared — identical on every page; root-absolute paths) -->
+    <!-- Draft label + title -->
+    <span class="block text-[14px] md:text-[18px] text-[rgba(0,0,0,0.5)] tracking-[-0.36px] uppercase mb-[12px]">Case Study Draft</span>
+    <h1 class="font-lustria text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.7px] md:tracking-[-1.1px] text-black mb-[24px]">Favi Case Study (Draft)</h1>
+
+    <!-- Byline + last updated -->
+    <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
+      <span>By <a href="https://startupcookie.com" class="underline hover:text-black">Sam Claassen</a> at StartupCookie</span>
+      <span class="text-[rgba(0,0,0,0.2)]">|</span>
+      <span class="updated">Last updated: July 2026</span>
+    </div>
+
+    <!-- Client logo -->
+    <figure class="mb-[40px] bg-white border border-border-gray rounded-[12px] p-[32px] flex items-center justify-center">
+      <img src="/assets/favi-case-study.svg" alt="Favi logo" class="h-[40px] md:h-[56px] w-auto object-contain">
+    </figure>
+
+    <!-- Article body -->
+    <div class="article-body">
+      <p class="updated">Last updated: July 2026</p>
+
+<aside class="disclosure">
+  <strong>Draft status:</strong> This page is a scaffold. It carries a noindex tag and is not linked from other pages. It cannot publish until this is resolved: [INPUT: approval to name client publicly]
+</aside>
+
+<h2>The challenge</h2>
+<p>[INPUT: challenge]</p>
+
+<h2>What we did</h2>
+<p>[INPUT: what we did]</p>
+
+<h2>Results</h2>
+<div class="bg-green-highlight border border-border-gray rounded-[12px] p-[32px] my-[24px] text-center">
+  <div class="font-lustria text-[32px] md:text-[48px] text-black leading-[1.15] tracking-[-0.7px]">[INPUT: metrics/results]</div>
+  <div class="mt-[12px] font-sans text-[14px] text-[rgba(0,0,0,0.5)]">Headline numbers go here, biggest first. Every number needs a source we can show.</div>
+</div>
+
+<h2>In their words</h2>
+<blockquote>[INPUT: client quote + attribution]</blockquote>
+
+<h2>Services used</h2>
+<p>[INPUT: services used]</p>
+<p>Service page links go here once the list is confirmed. Until then, see the full <a href="/services/">services overview</a> or browse all <a href="/case-studies/">case studies</a>.</p>
+
+<aside class="cta-block">
+  <h2>Work with StartupCookie</h2>
+  <p>StartupCookie is an AI-native content &amp; GTM agency for B2B SaaS. Engagements from $5,000/mo, month-to-month.</p>
+  <a href="https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call" target="_blank">Book a 20-minute intro call</a>
+</aside>
+
+<footer class="footer">
+  <p><a href="/case-studies/">Back to all case studies</a>. Draft scaffold, July 2026. Not for publication until all inputs above are filled and approved.</p>
+</footer>
+
+    </div>
+
+  </article>
+
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
   <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
     <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
       <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
@@ -193,6 +248,66 @@
       </div>
     </div>
   </footer>
+
+  <!-- Site-wide Organization schema (identical on every page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
+  "founder": [
+    { "@type": "Person", "name": "Barbara Jovanovic" },
+    { "@type": "Person", "name": "Sam Claassen" }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/startup-cookie",
+    "https://www.linkedin.com/in/barbara-startup-cookie/",
+    "https://www.youtube.com/@startupcookie"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://startupcookie.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://startupcookie.com/case-studies/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Favi",
+      "item": "https://startupcookie.com/case-studies/favi/"
+    }
+  ]
+}
+  </script>
 
   <script src="/script.js" defer></script>
 </body>
