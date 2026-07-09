@@ -61,3 +61,19 @@ if (navbar) {
     }
   }
 })();
+
+// Google Analytics 4 (loads only when GA4_MEASUREMENT_ID is set in /site-config.js)
+(function () {
+  const cfg = window.SC_CONFIG;
+  const id = cfg && cfg.GA4_MEASUREMENT_ID;
+  if (!id || typeof id !== 'string' || !/^G-[A-Z0-9]+$/.test(id)) return;
+  const s = document.createElement('script');
+  s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + id;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  window.gtag = gtag;
+  gtag('js', new Date());
+  gtag('config', id);
+})();
