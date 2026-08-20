@@ -8,7 +8,7 @@ window.SC_CONFIG = {
   CLIENT_COUNT: null,
   // Next date a client slot opens up. Shown in the homepage hero and
   // pricing card. Set to null to hide the line entirely.
-  NEXT_OPENING: 'July 17th',
+  NEXT_OPENING: 'September 1st',
   MAX_CLIENTS: 6,
   // Google Analytics 4 Measurement ID (looks like "G-XXXXXXXXXX").
   // Paste it here once and analytics turns on across every page.
