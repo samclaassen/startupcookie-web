@@ -1,6 +1,6 @@
 # Editing startupcookie.com
 
-**Repo:** https://github.com/samclaassen/startupcookie-web (private)
+**Repo:** https://github.com/samclaassen/startupcookie-web (public)
 **Live:** https://startupcookie.com
 
 There is no staging site. Anything saved to `main` is live in about 30 seconds.
@@ -50,7 +50,8 @@ Change the value between the quotes, save, done. Do not touch anything else in t
 5. Click the **Source Control** icon in the far-left toolbar (branching-line icon, blue badge).
 6. Type a short message, click **Commit & Push**.
 
-Live in ~30 seconds.
+Live in ~30 seconds. The ✓ or ✗ that appears next to your commit on GitHub is
+the deploy result — green check means it's on the live site.
 
 **Only edit the sentences.** Leave everything inside `class="..."` alone, that is styling.
 
@@ -67,13 +68,16 @@ Live in ~30 seconds.
 
 ## Preview before it goes live
 
-For anything structural. Vercel builds a private preview URL for every branch.
+For anything structural. Vercel builds a preview URL for every branch.
 
 1. In the browser editor, click `main` in the bottom-left, **Create new branch**, name it.
 2. Edit and Commit & Push as normal. The live site is untouched.
 3. On github.com a banner offers **Compare & pull request**. Click through.
 4. The Vercel bot posts a preview link in the pull request. Check it.
 5. Happy: **Merge pull request**. Not happy: close it, nothing happened.
+
+If the preview link asks you to sign in to Vercel, tell Sam — that is a
+one-toggle fix on his side, not something wrong with your change.
 
 ---
 
