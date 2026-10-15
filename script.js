@@ -77,3 +77,14 @@ if (navbar) {
   gtag('js', new Date());
   gtag('config', id);
 })();
+
+// PromptWatch visitor analytics (loads only when PROMPTWATCH_PROJECT_ID is set in /site-config.js)
+(function () {
+  const cfg = window.SC_CONFIG;
+  const id = cfg && cfg.PROMPTWATCH_PROJECT_ID;
+  if (!id || typeof id !== 'string') return;
+  const s = document.createElement('script');
+  s.setAttribute('data-project-id', id);
+  s.src = 'https://ingest.promptwatch.com/js/client.min.js';
+  document.head.appendChild(s);
+})();
