@@ -29,15 +29,20 @@ Full list of folders: `about`, `agencies`, `blog`, `case-studies`, `compare`,
 
 ## Common edits that do NOT need HTML
 
-Open **`site-config.js`** in the repo root. It is 17 lines and controls values that
+Open **`site-config.js`** in the repo root. It is 21 lines and controls values that
 appear across every page:
 
 - `NEXT_OPENING` – the "next slot opens" date in the hero and pricing card. Set to `null` to hide the line.
 - `CLIENT_COUNT` – shows "Current roster: 4/6" on the homepage. At `MAX_CLIENTS` the booking buttons switch to "Join the waitlist".
 - `MAX_CLIENTS` – roster size.
 - `GA4_MEASUREMENT_ID` – paste a `G-XXXXXXXXXX` here once and analytics turns on site-wide. `null` means no tracking.
+- `PROMPTWATCH_PROJECT_ID` – turns on PromptWatch visitor analytics (visits from ChatGPT, Claude, Perplexity and other AI tools). `null` switches it off.
 
 Change the value between the quotes, save, done. Do not touch anything else in that file.
+
+AI crawler visits are sent to PromptWatch by `middleware.ts` in the repo root. It
+needs `PROMPTWATCH_LOGS_API_KEY` set in Vercel (Project → Settings → Environment
+Variables) and does nothing without it.
 
 ---
 
