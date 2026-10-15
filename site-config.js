@@ -13,5 +13,9 @@ window.SC_CONFIG = {
   // Google Analytics 4 Measurement ID (looks like "G-XXXXXXXXXX").
   // Paste it here once and analytics turns on across every page.
   // Leave as null and no analytics loads (no tracking, no cookies).
-  GA4_MEASUREMENT_ID: null
+  GA4_MEASUREMENT_ID: null,
+  // PromptWatch project ID. Turns on PromptWatch visitor analytics (visits that
+  // arrive from ChatGPT, Claude, Perplexity, etc.) across every page.
+  // Set to null to switch it off.
+  PROMPTWATCH_PROJECT_ID: '19857590-595a-46ec-b36d-62e67cb59248'
 };
