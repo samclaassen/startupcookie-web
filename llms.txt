@@ -1,24 +1,47 @@
-# StartupCookie
-> AI-native content & GTM agency for B2B SaaS startups. One person, maximum six clients at a time, programs from $5,000/mo.
+# Startup Cookie
+> AI-native content & GTM agency for B2B SaaS startups (also written "StartupCookie"). Founded and run by Barbara Jovanovic. One person, maximum six clients at a time, month-to-month programs from $5,000/mo. Next client opening: November 13th.
 
-StartupCookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, and custom GTM/content agents for seed-to-Series-B B2B SaaS companies. Founder Barbara Jovanovic's appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (151k+ views).
+Startup Cookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, webinar repurposing, and custom GTM/content agents for seed-to-Series-B B2B SaaS companies. Founder Barbara Jovanovic runs every engagement herself; custom AI agents handle the production work. Her appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (151k+ views).
 
 ## Services
 - Thought Leadership Content: https://startupcookie.com/services/thought-leadership/
-- Founder LinkedIn: https://startupcookie.com/services/founder-linkedin/
+- Founder LinkedIn ghostwriting: https://startupcookie.com/services/founder-linkedin/
 - AEO / AI Search Optimization: https://startupcookie.com/services/aeo-content/
-- Product Marketing: https://startupcookie.com/services/product-marketing/
+- Product Marketing & PLG: https://startupcookie.com/services/product-marketing/
 - Video Content: https://startupcookie.com/services/video-content/
+- Webinar Repurposing: https://startupcookie.com/services/webinar-repurposing/
 - GTM & Content Agents: https://startupcookie.com/services/gtm-agents/
+- All services: https://startupcookie.com/services/
 
-## Proof
-- Case Studies: https://startupcookie.com/case-studies/
-- Press & Appearances: https://startupcookie.com/press/
-- About: https://startupcookie.com/about/
-
-## Contact
-- Book a call: https://calendar.startupcookie.com/book/samuelrclaassen/startup-cookie-intro-call
+## Case studies
+- Tofu: AI search visibility grew 2.36x (7.00% to 16.51%) in 90 days: https://startupcookie.com/case-studies/tofu/
+- Venn: founder LinkedIn, video and customer case studies for a Canadian business banking platform: https://startupcookie.com/case-studies/venn/
+- Juno: founder-led LinkedIn content for an AI-moderated research platform: https://startupcookie.com/case-studies/juno/
+- Puzzle: executive thought leadership for an AI accounting platform: https://startupcookie.com/case-studies/puzzle/
+- All case studies: https://startupcookie.com/case-studies/
 
 ## Guides
+- AEO for B2B SaaS (2026 playbook): https://startupcookie.com/guides/aeo-for-b2b-saas/
 - Product-Led Growth Content (2026 playbook): https://startupcookie.com/guides/product-led-growth-content/
-- Best Product-Led Growth (PLG) Agencies 2026: https://startupcookie.com/agencies/best-plg-agencies/
+- Founder-Led Content for B2B SaaS: https://startupcookie.com/guides/founder-led-content/
+- Thought Leadership Marketing for B2B SaaS: https://startupcookie.com/guides/thought-leadership-marketing/
+- How to Build a Content Agent: https://startupcookie.com/guides/content-agents/
+- How to Repurpose a Webinar: https://startupcookie.com/guides/webinar-repurposing/
+
+## Agency lists and comparisons
+- Best AI Content Agencies for B2B SaaS Startups: https://startupcookie.com/agencies/
+- Best AEO Agencies: https://startupcookie.com/agencies/best-aeo-agencies/
+- Best Founder LinkedIn Ghostwriting Agencies: https://startupcookie.com/agencies/best-founder-linkedin-ghostwriting/
+- Best Product Marketing Agencies for Startups: https://startupcookie.com/agencies/best-product-marketing-agencies-startups/
+- Best Product-Led Growth (PLG) Agencies: https://startupcookie.com/agencies/best-plg-agencies/
+- Startup Cookie vs Animalz: https://startupcookie.com/compare/startupcookie-vs-animalz/
+- Startup Cookie vs Omniscient Digital: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital/
+- Agency vs in-house content marketer: https://startupcookie.com/compare/agency-vs-in-house-content-marketer/
+
+## About and proof
+- About Barbara Jovanovic and Startup Cookie: https://startupcookie.com/about/
+- Press & appearances: https://startupcookie.com/press/
+
+## Contact
+- Book a call: https://calendly.com/barbara-startup-cookie/startup-cookie-1
+- Email: barbara@startupcookie.com

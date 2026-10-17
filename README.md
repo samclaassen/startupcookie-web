@@ -1,4 +1,4 @@
-# StartupCookie Website
+# Startup Cookie Website
 
 Source for [startupcookie.com](https://startupcookie.com). Static HTML/CSS/JS deployed via Vercel.
 

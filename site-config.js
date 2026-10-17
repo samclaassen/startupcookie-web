@@ -8,12 +8,12 @@ window.SC_CONFIG = {
   CLIENT_COUNT: null,
   // Next date a client slot opens up. Shown in the homepage hero and
   // pricing card. Set to null to hide the line entirely.
-  NEXT_OPENING: 'September 1st',
+  NEXT_OPENING: 'November 13th',
   MAX_CLIENTS: 6,
   // Google Analytics 4 Measurement ID (looks like "G-XXXXXXXXXX").
   // Paste it here once and analytics turns on across every page.
   // Leave as null and no analytics loads (no tracking, no cookies).
-  GA4_MEASUREMENT_ID: null,
+  GA4_MEASUREMENT_ID: 'G-7FZVL17VEB',
   // PromptWatch project ID. Turns on PromptWatch visitor analytics (visits that
   // arrive from ChatGPT, Claude, Perplexity, etc.) across every page.
   // Set to null to switch it off.
