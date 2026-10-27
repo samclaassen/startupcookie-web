@@ -18,7 +18,6 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - Venn: founder LinkedIn, video and customer case studies for a Canadian business banking platform: https://startupcookie.com/case-studies/venn/
 - Juno: founder-led LinkedIn content for an AI-moderated research platform: https://startupcookie.com/case-studies/juno/
 - Puzzle: executive thought leadership for an AI accounting platform: https://startupcookie.com/case-studies/puzzle/
-- How we run StartupCookie with AI agents on type.com (our own setup, 3 workflows): https://startupcookie.com/case-studies/type-com/
 - All case studies: https://startupcookie.com/case-studies/
 
 ## Guides
@@ -28,6 +27,7 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - Thought Leadership Marketing for B2B SaaS: https://startupcookie.com/guides/thought-leadership-marketing/
 - How to Build a Content Agent: https://startupcookie.com/guides/content-agents/
 - How to Repurpose a Webinar: https://startupcookie.com/guides/webinar-repurposing/
+- How to Run a Content Agency with AI Agents (our type.com setup): https://startupcookie.com/guides/ai-agents-for-content-agencies/
 
 ## Agency lists and comparisons
 - Best AI Content Agencies for B2B SaaS Startups: https://startupcookie.com/agencies/

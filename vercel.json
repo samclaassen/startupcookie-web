@@ -9,6 +9,16 @@
       "source": "/services/content-agents",
       "destination": "/services/gtm-agents/",
       "statusCode": 301
+    },
+    {
+      "source": "/case-studies/type-com/",
+      "destination": "/guides/ai-agents-for-content-agencies/",
+      "statusCode": 301
+    },
+    {
+      "source": "/case-studies/type-com",
+      "destination": "/guides/ai-agents-for-content-agencies/",
+      "statusCode": 301
     }
   ]
 }
