@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520" role="img" aria-label="Blog and AEO content in one thread">
+<rect width="1200" height="520" fill="#ffffff"/>
+<text x="40" y="64" font-family="Lustria, Georgia, serif" font-size="30" fill="#111">Blog and AEO content in one thread</text>
+<rect x="40.0" y="130" width="171.7" height="230" rx="12" fill="#ffffff" stroke="#dcdcdc" stroke-width="1.5"/>
+<circle cx="66.0" cy="160" r="14" fill="#4f69eb"/>
+<text x="66.0" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">1</text>
+<text x="56.0" y="206" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">Data</text>
+<text x="56.0" y="240" font-family="system-ui, sans-serif" font-size="14" fill="#555">Analytics baseline,</text>
+<text x="56.0" y="260" font-family="system-ui, sans-serif" font-size="14" fill="#555">AI-search audit</text>
+<path d="M213.7 245 l12 0" stroke="#4f69eb" stroke-width="2"/>
+<path d="M223.7 240 l6 5 l-6 5" fill="none" stroke="#4f69eb" stroke-width="2"/>
+<rect x="229.7" y="130" width="171.7" height="230" rx="12" fill="#ffffff" stroke="#dcdcdc" stroke-width="1.5"/>
+<circle cx="255.7" cy="160" r="14" fill="#4f69eb"/>
+<text x="255.7" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">2</text>
+<text x="245.7" y="206" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">Brief +</text>
+<text x="245.7" y="228" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">plan</text>
+<text x="245.7" y="262" font-family="system-ui, sans-serif" font-size="14" fill="#555">Editorial plan</text>
+<text x="245.7" y="282" font-family="system-ui, sans-serif" font-size="14" fill="#555">from the data</text>
+<path d="M403.3 245 l12 0" stroke="#4f69eb" stroke-width="2"/>
+<path d="M413.3 240 l6 5 l-6 5" fill="none" stroke="#4f69eb" stroke-width="2"/>
+<rect x="419.3" y="130" width="171.7" height="230" rx="12" fill="#ffffff" stroke="#dcdcdc" stroke-width="1.5"/>
+<circle cx="445.3" cy="160" r="14" fill="#4f69eb"/>
+<text x="445.3" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">3</text>
+<text x="435.3" y="206" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">Draft +</text>
+<text x="435.3" y="228" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">checks</text>
+<text x="435.3" y="262" font-family="system-ui, sans-serif" font-size="14" fill="#555">Writer skill, lint,</text>
+<text x="435.3" y="282" font-family="system-ui, sans-serif" font-size="14" fill="#555">reviewer agent</text>
+<path d="M593.0 245 l12 0" stroke="#4f69eb" stroke-width="2"/>
+<path d="M603.0 240 l6 5 l-6 5" fill="none" stroke="#4f69eb" stroke-width="2"/>
+<rect x="609.0" y="130" width="171.7" height="230" rx="12" fill="#ffffff" stroke="#dcdcdc" stroke-width="1.5"/>
+<circle cx="635.0" cy="160" r="14" fill="#4f69eb"/>
+<text x="635.0" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">4</text>
+<text x="625.0" y="206" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">Fact-check</text>
+<text x="625.0" y="240" font-family="system-ui, sans-serif" font-size="14" fill="#555">Every number</text>
+<text x="625.0" y="260" font-family="system-ui, sans-serif" font-size="14" fill="#555">against its source</text>
+<path d="M782.7 245 l12 0" stroke="#4f69eb" stroke-width="2"/>
+<path d="M792.7 240 l6 5 l-6 5" fill="none" stroke="#4f69eb" stroke-width="2"/>
+<rect x="798.7" y="130" width="171.7" height="230" rx="12" fill="#ffffff" stroke="#dcdcdc" stroke-width="1.5"/>
+<circle cx="824.7" cy="160" r="14" fill="#4f69eb"/>
+<text x="824.7" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">5</text>
+<text x="814.7" y="206" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">Visuals</text>
+<text x="814.7" y="240" font-family="system-ui, sans-serif" font-size="14" fill="#555">Designer works in</text>
+<text x="814.7" y="260" font-family="system-ui, sans-serif" font-size="14" fill="#555">the same thread</text>
+<path d="M972.3 245 l12 0" stroke="#4f69eb" stroke-width="2"/>
+<path d="M982.3 240 l6 5 l-6 5" fill="none" stroke="#4f69eb" stroke-width="2"/>
+<rect x="988.3" y="130" width="171.7" height="230" rx="12" fill="#ffffff" stroke="#dcdcdc" stroke-width="1.5"/>
+<circle cx="1014.3" cy="160" r="14" fill="#4f69eb"/>
+<text x="1014.3" y="165" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#fff">6</text>
+<text x="1004.3" y="206" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">CMS</text>
+<text x="1004.3" y="228" font-family="system-ui, sans-serif" font-size="17" font-weight="600" fill="#111">fields</text>
+<text x="1004.3" y="262" font-family="system-ui, sans-serif" font-size="14" fill="#555">Title, meta,</text>
+<text x="1004.3" y="282" font-family="system-ui, sans-serif" font-size="14" fill="#555">slug</text>
+<text x="40" y="420" font-family="system-ui, sans-serif" font-size="15" fill="#555">Connected tools</text>
+<rect x="40" y="436" width="154" height="34" rx="17" fill="#ffffff" stroke="#dcdcdc"/>
+<text x="117" y="458" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#333">Google Analytics</text>
+<rect x="203.6" y="436" width="222" height="34" rx="17" fill="#ffffff" stroke="#dcdcdc"/>
+<text x="315" y="458" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" fill="#333">Search Console (browser)</text>
+<text x="1160" y="500" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" fill="#999">StartupCookie on type.com</text>
+</svg>
