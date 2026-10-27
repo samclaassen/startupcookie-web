@@ -76,6 +76,18 @@ if (navbar) {
   window.gtag = gtag;
   gtag('js', new Date());
   gtag('config', id);
+
+  // Report "Book a call" (Calendly) clicks as a GA4 event, so it can be marked a key event
+  // in GA4 and compared against AI referrers (chatgpt.com, claude.ai, perplexity.ai).
+  document.addEventListener('click', function (e) {
+    const a = e.target && e.target.closest ? e.target.closest('a[href*="calendly.com"]') : null;
+    if (!a) return;
+    gtag('event', 'book_call_click', {
+      link_url: a.href,
+      link_text: (a.textContent || '').trim().slice(0, 80),
+      page_path: location.pathname
+    });
+  });
 })();
 
 // PromptWatch visitor analytics (loads only when PROMPTWATCH_PROJECT_ID is set in /site-config.js)
