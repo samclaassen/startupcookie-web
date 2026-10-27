@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How We Run Our Agency on type.com | StartupCookie</title>
+  <link rel="icon" href="/assets/cookie-hero.svg" type="image/svg+xml">
+  <meta name="description" content="How our content agency runs on type.com: 3 real AI agent workflows for founder posts, blog content and client review, with real numbers.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://startupcookie.com/case-studies/type-com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="How StartupCookie Runs a Content Marketing Agency with AI Agents on type.com">
+  <meta property="og:description" content="How our content agency runs on type.com: 3 real AI agent workflows for founder posts, blog content and client review, with real numbers.">
+  <meta property="og:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+  <meta property="og:url" content="https://startupcookie.com/case-studies/type-com/">
+  <meta property="og:site_name" content="StartupCookie">
+  <meta property="article:published_time" content="2026-10-27T09:00:00-07:00">
+  <meta property="article:modified_time" content="2026-10-27T09:00:00-07:00">
+  <meta property="article:author" content="Barbara Jovanovic">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="How StartupCookie Runs a Content Marketing Agency with AI Agents on type.com">
+  <meta name="twitter:description" content="How our content agency runs on type.com: 3 real AI agent workflows for founder posts, blog content and client review, with real numbers.">
+  <meta name="twitter:image" content="https://startupcookie.com/assets/social-sharing-image.png">
+
+  <!-- Fonts + Tailwind (matches index.html) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lustria&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            lustria: ['Lustria', 'serif'],
+            sans: ['ui-sans-serif', 'system-ui', 'sans-serif']
+          },
+          colors: {
+            'green-highlight': 'transparent',
+            'blue-link': '#4f69eb',
+            'border-gray': '#dcdcdc',
+          },
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="/styles.css">
+
+  <style>
+    /* Article-specific styles. Keep small, defer to Tailwind. */
+    .article-body h2 { font-family: 'Lustria', serif; font-size: 32px; line-height: 1.18; letter-spacing: -0.5px; margin-top: 72px; margin-bottom: 24px; color: rgba(0,0,0,0.9); }
+    .article-body h3 { font-family: 'Lustria', serif; font-size: 22px; line-height: 1.2; letter-spacing: -0.3px; margin-top: 44px; margin-bottom: 14px; color: rgba(0,0,0,0.9); }
+    .article-body p { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.7; color: rgba(0,0,0,0.8); margin-bottom: 22px; }
+    .article-body ul, .article-body ol { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 18px; line-height: 1.7; color: rgba(0,0,0,0.8); margin: 20px 0 28px 24px; }
+    .article-body ul li { list-style: disc; margin-bottom: 10px; }
+    .article-body ol li { list-style: decimal; margin-bottom: 10px; }
+    .article-body a { color: #4F69EB; text-decoration: underline; }
+    .article-body a:hover { opacity: 0.8; }
+    .article-body table { width: 100%; border-collapse: collapse; margin: 32px 0; font-family: ui-sans-serif, system-ui, sans-serif; font-size: 16px; }
+    .article-body th, .article-body td { border: 1px solid #DCDCDC; padding: 10px 14px; text-align: left; vertical-align: top; }
+    .article-body th { background: transparent; font-weight: 600; }
+    .article-body figure { margin: 32px 0; }
+    .article-body figure img { width: 100%; height: auto; border: 1px solid #DCDCDC; border-radius: 8px; display: block; }
+    .article-body figure figcaption { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 8px; text-align: center; }
+    .article-body blockquote { border-left: 3px solid #4F69EB; padding-left: 16px; margin: 28px 0; font-style: italic; color: rgba(0,0,0,0.7); }
+    .article-body aside.disclosure { background: transparent; border: 1px solid #DCDCDC; padding: 16px 20px; border-radius: 8px; margin: 32px 0; font-size: 15px; color: rgba(0,0,0,0.8); }
+    .article-body aside.cta-block { background: transparent; border: 1px solid #DCDCDC; padding: 32px; border-radius: 12px; margin: 48px 0 24px; }
+    .article-body aside.cta-block h2 { margin-top: 0; }
+    .article-body aside.cta-block > a { display: inline-block; background: #000; color: #fff; padding: 12px 24px; border-radius: 8px; text-decoration: none; margin-top: 12px; font-family: 'Lustria', serif; font-size: 16px; }
+    .article-body aside.cta-block > a:hover { opacity: 0.85; }
+    .article-body .updated { font-size: 14px; color: rgba(0,0,0,0.5); margin-bottom: 32px; }
+    .article-body .footer { font-size: 14px; color: rgba(0,0,0,0.5); margin-top: 64px; padding-top: 24px; border-top: 1px solid #DCDCDC; }
+  </style>
+
+  <!-- Site-wide Organization schema (identical on every page) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "StartupCookie",
+  "alternateName": "Startup Cookie",
+  "url": "https://startupcookie.com",
+  "logo": "https://startupcookie.com/assets/logo-nav.svg",
+  "description": "AI-native content and GTM agency for B2B SaaS startups. Thought leadership, product marketing, video, AEO, and custom GTM agents.",
+  "founder": {
+    "@type": "Person",
+    "name": "Barbara Jovanovic",
+    "url": "https://startupcookie.com/about/",
+    "sameAs": "https://www.linkedin.com/in/barbara-startup-cookie/"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "San Francisco",
+    "addressRegion": "CA",
+    "addressCountry": "US"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/startup-cookie",
+    "https://www.linkedin.com/in/barbara-startup-cookie/",
+    "https://www.youtube.com/@startupcookie",
+    "https://www.crunchbase.com/organization/startup-cookie",
+    "https://www.g2.com/products/startupcookie/reviews"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "email": "barbara@startupcookie.com",
+    "contactType": "Sales",
+    "availableLanguage": ["English"]
+  }
+}
+  </script>
+</head>
+<body class="font-lustria bg-white text-[rgba(0,0,0,0.8)] text-[18px] leading-[1.18] tracking-[-0.36px] overflow-x-hidden">
+
+  <!-- Navigation (shared — identical on every page; root-absolute paths) -->
+  <nav id="navbar" class="fixed top-[10px] md:top-[24px] left-1/2 -translate-x-1/2 w-[calc(100%-40px)] max-w-[1648px] z-[100] bg-[rgba(255,255,255,0.8)] backdrop-blur-[25px] p-[20px]">
+    <div class="flex items-center justify-between">
+      <a href="/" class="shrink-0">
+        <img src="/assets/logo-nav.svg" alt="StartupCookie" class="w-[115px] h-[19px]">
+      </a>
+      <ul class="hidden md:flex items-center gap-[16px] lg:gap-[24px]">
+        <li><a href="/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Home</a></li>
+        <li class="relative group">
+          <a href="/services/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+            Services
+            <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/services/thought-leadership/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Thought Leadership Content</a>
+              <a href="/services/founder-linkedin/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Founder LinkedIn</a>
+              <a href="/services/aeo-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">AEO / AI Search</a>
+              <a href="/services/product-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Product Marketing</a>
+              <a href="/services/video-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Video Content</a>
+              <a href="/services/gtm-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">GTM &amp; Content Agents</a>
+              <div class="border-t border-border-gray my-[6px]"></div>
+              <a href="/services/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All services →</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="/case-studies/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Case Studies</a></li>
+        <li class="relative group">
+          <a href="/guides/" class="inline-flex items-center gap-[5px] text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors py-[8px]">
+            Guides
+            <svg class="w-[10px] h-[10px] opacity-50 group-hover:opacity-100 transition-opacity" viewBox="0 0 10 10" fill="none"><path d="M2 4l3 3 3-3" stroke="currentColor" stroke-width="1.5"/></svg>
+          </a>
+          <div class="absolute top-full left-0 pt-[6px] hidden group-hover:block z-[200]">
+            <div class="bg-white border border-border-gray rounded-[12px] shadow-[0_8px_28px_rgba(0,0,0,0.08)] p-[8px] min-w-[300px]">
+              <a href="/guides/product-led-growth-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Product-Led Growth Content</a>
+              <a href="/guides/aeo-for-b2b-saas/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">AEO for B2B SaaS</a>
+              <a href="/guides/content-agents/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Build a Content Agent</a>
+              <a href="/guides/founder-led-content/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Founder-Led Content</a>
+              <a href="/guides/thought-leadership-marketing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Thought Leadership Marketing</a>
+              <a href="/guides/webinar-repurposing/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Webinar Repurposing</a>
+              <a href="/agencies/" class="block px-[14px] py-[10px] text-[15px] text-[rgba(0,0,0,0.8)] hover:bg-[rgba(0,0,0,0.05)] rounded-[8px] transition-colors">Agency Lists &amp; Comparisons</a>
+              <div class="border-t border-border-gray my-[6px]"></div>
+              <a href="/guides/" class="block px-[14px] py-[10px] text-[14px] text-[rgba(0,0,0,0.5)] hover:text-black transition-colors">All guides →</a>
+            </div>
+          </div>
+        </li>
+        <li><a href="/about/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">About</a></li>
+        <li><a href="/press/" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Press</a></li>
+        <li><a href="/#pricing" class="text-[17px] text-[rgba(0,0,0,0.8)] tracking-[-0.36px] hover:text-black transition-colors">Pricing</a></li>
+      </ul>
+      <div class="flex items-center gap-[14px] shrink-0">
+        <a href="https://calendly.com/barbara-startup-cookie/startup-cookie-1" target="_blank" class="inline-block bg-black text-white rounded-[10px] px-[14px] py-[8px] text-[14px] md:px-[20px] md:py-[10px] md:text-[16px] text-center tracking-[-0.32px] hover:bg-[#222] transition-colors js-capacity-cta">Book a Call</a>
+      <button id="hamburger" class="hamburger flex md:hidden flex-col gap-[5px] bg-transparent border-none cursor-pointer p-1" aria-label="Toggle menu">
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-opacity duration-300"></span>
+        <span class="block w-[24px] h-[2px] bg-black transition-transform duration-300"></span>
+      </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav Overlay (shared) -->
+  <div id="mobile-nav-overlay" class="mobile-nav-overlay fixed inset-0 bg-[rgba(255,255,255,0.95)] backdrop-blur-[25px] z-[99] hidden items-center justify-center">
+    <ul class="flex flex-col items-center gap-[24px]">
+      <li><a href="/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Home</a></li>
+      <li><a href="/services/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Services</a></li>
+      <li><a href="/case-studies/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Case Studies</a></li>
+      <li><a href="/guides/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Guides</a></li>
+      <li><a href="/about/" class="text-[24px] text-[rgba(0,0,0,0.8)]">About</a></li>
+      <li><a href="/press/" class="text-[24px] text-[rgba(0,0,0,0.8)]">Press</a></li>
+      <li><a href="/#pricing" class="text-[24px] text-[rgba(0,0,0,0.8)]">Pricing</a></li>
+      <li><a href="https://calendly.com/barbara-startup-cookie/startup-cookie-1" target="_blank" class="text-[24px] text-[rgba(0,0,0,0.8)] underline js-capacity-cta">Book a Call</a></li>
+    </ul>
+  </div>
+
+  <!-- Article container -->
+  <article class="max-w-[820px] mx-auto px-[20px] md:px-[40px] pt-[140px] md:pt-[200px] pb-[80px]">
+
+    <!-- Breadcrumb -->
+    <nav class="text-[14px] text-[rgba(0,0,0,0.5)] mb-[24px]">
+      <a href="/" class="hover:text-black">Home</a>
+      <span class="mx-[6px]">/</span>
+      <a href="/case-studies/" class="hover:text-black">Case Studies</a>
+      <span class="mx-[6px]">/</span>
+      <span>How StartupCookie Runs a Content Marketing Agency with AI Agents on type.com</span>
+    </nav>
+
+    <!-- Title -->
+    <h1 class="font-lustria text-[36px] md:text-[56px] leading-[1.05] tracking-[-0.7px] md:tracking-[-1.1px] text-black mb-[24px]">How StartupCookie Runs a Content Marketing Agency with AI Agents on type.com</h1>
+
+    <!-- Byline + publish date -->
+    <div class="flex flex-wrap items-center gap-[12px] text-[14px] text-[rgba(0,0,0,0.5)] mb-[32px]">
+      <span>By <a href="/about/" class="underline hover:text-black">Barbara Jovanovic</a> at StartupCookie</span>
+      <span class="text-[rgba(0,0,0,0.2)]">|</span>
+      <span class="updated">Published <time datetime="2026-10-27">October 27, 2026</time> [CONFIRM: publish date]</span>
+      <span class="text-[rgba(0,0,0,0.2)]">|</span>
+      <a href="/case-studies/" class="underline hover:text-black">All case studies</a>
+    </div>
+
+    <!-- Summary strip -->
+    <div class="flex items-center gap-[20px] border border-border-gray rounded-[12px] bg-green-highlight p-[16px] md:p-[20px] mb-[24px]"><img src="/assets/illustrations/gtm-agents.svg" class="w-[72px] md:w-[96px] shrink-0" alt=""><p class="text-[14px] md:text-[16px] text-[rgba(0,0,0,0.7)] m-0">Our own stack, written up honestly: 5 client spaces, 3 workflows we run every week, the numbers we can verify, and what still doesn't work.</p></div>
+
+    <!-- Article body -->
+    <div class="article-body">
+
+<p>type.com is an AI workspace where teams and AI agents work together in shared threads, connected to the tools you already use, like Slack, Gmail, Google Docs and your analytics. We started using the <a href="https://type.com">type.com AI workspace</a> on August 23, 2026, and it now runs most of our client content work. This is our own write-up of what we do in it, with the numbers we could verify from our workspace and the parts that still need work.</p>
+
+<h2>Who we are</h2>
+<p>StartupCookie is a small, AI-native content and GTM agency for B2B SaaS startups. We do founder LinkedIn ghostwriting, thought leadership, product marketing, AEO (AI search) content, video and custom GTM agents. We cap the roster at six clients and programs start at $5,000 a month.</p>
+<p>Barbara runs strategy, writing and every client relationship. Jelena Vojnović handles design production: blog visuals, data tables and video name tags [CONFIRM: Jelena's title, and that she's OK being named]. In type.com today we support 5 clients, each in its own space.</p>
+
+<h2>The problem before type.com</h2>
+<p>In 2025 our process was, in Barbara's words, "a ChatGPT chat box that I prompted for every single task." Every chat started from zero. Voice, banned phrases and client background had to be pasted in again, every time.</p>
+<p>Early in 2026 we moved to Claude Code, with custom skills and a context folder for each client. Quality went up a lot. But everything lived on one laptop: the skills, the memory files, the client context. When Jelena needed brand context for a visual, someone had to re-explain it. Call transcripts sat in Granola, and email and Slack were separate from where the writing happened.</p>
+<p>[CONFIRM: hours per week we lost to re-briefing, copy-pasting context and handoffs before type.com]</p>
+
+<h2>Why we chose type.com</h2>
+<p>We weren't looking for another AI writing tool. We wanted the setup we already had, but shared. [CONFIRM: the main reason you chose type.com, in your own words.] Three things mattered in practice:</p>
+<ul>
+  <li><strong>One space per client.</strong> Each client's skills, docs and context sit together, and both of us work from the same place.</li>
+  <li><strong>We kept what we'd built.</strong> We uploaded our zipped Claude Code skill folders and they became skills inside each client space. For one client, 7 skills came over in a single thread.</li>
+  <li><strong>Connected tools.</strong> Gmail, Slack and Google Analytics are connected, and the agent can use a browser for LinkedIn and Search Console.</li>
+</ul>
+
+<h2>The 3 workflows we run every week</h2>
+<p>These are the three workflows that do the most for us. Today, every one starts by hand in a thread. We don't have them on a schedule yet.</p>
+
+<h3>1. Founder LinkedIn posts from real call transcripts</h3>
+<p><strong>Connects:</strong> Granola (call transcripts), Gmail, Slack, and LinkedIn through the built-in browser.</p>
+<ol>
+  <li>We pull the transcript of a founder call from Granola into the client's space.</li>
+  <li>The agent loads that client's ghostwriter skill: voice notes, a ban list and a bank of the founder's own quotes.</li>
+  <li>It drafts posts and checks every claim against the transcript and our sources.</li>
+  <li>Barbara edits. Each correction is written back into the skill's feedback log, so the same mistake doesn't come back.</li>
+  <li>The founder reviews, then we publish.</li>
+</ol>
+<figure>
+  <img src="founder-posts-workflow.svg" alt="Diagram of the founder LinkedIn workflow on type.com: a Granola call transcript goes into the client's ghostwriter skill, the agent drafts and fact-checks posts in a shared thread, Barbara's edits are saved back to the skill, and the founder reviews before publishing" width="1200" height="520" loading="lazy">
+  <figcaption>Founder posts: transcript in, edits saved back to the client's skill.</figcaption>
+</figure>
+<p><strong>Result:</strong> one founder call produced 17 post drafts. One client's feedback log now holds 77 corrections [CONFIRM: current count], which is why the drafts keep getting closer to the founder's voice. [CONFIRM: engagement result for these posts, e.g. average impressions before vs. after.]</p>
+
+<h3>2. Blog and AEO content, with design in the same thread</h3>
+<p><strong>Connects:</strong> Google Analytics, and Google Search Console through the browser.</p>
+<ol>
+  <li>We start from data: a Google Analytics baseline and an audit of 30 buyer questions in AI search.</li>
+  <li>That becomes a brief and an editorial plan.</li>
+  <li>A blog-writer skill drafts the post. A lint script blocks phrasing we've banned, and a separate reviewer agent reads it cold.</li>
+  <li>A fact-check pass checks every number and claim against the source.</li>
+  <li>Jelena makes the hero image and data tables in the same thread, using a visuals skill that already knows the brand.</li>
+  <li>The agent writes the CMS fields: title, meta description and slug.</li>
+</ol>
+<figure>
+  <img src="blog-aeo-workflow.svg" alt="Diagram of the blog and AEO content workflow on type.com: analytics and AI-search audit, brief, draft with lint script and reviewer agent, fact-check, designer visuals in the same thread, then CMS-ready fields" width="1200" height="520" loading="lazy">
+  <figcaption>Blog and AEO content: research, draft, checks and visuals in one thread.</figcaption>
+</figure>
+<p><strong>Result:</strong> one fact-check pass on 4 drafts caught and fixed 45 errors before the client saw them. That client moved to 4 blog posts a week on October 22 [CONFIRM: weekly volume actually delivered since then]. [CONFIRM: average turnaround from brief to approved post.]</p>
+
+<h3>3. Client review and updates</h3>
+<p><strong>Connects:</strong> type.com apps and docs, plus Gmail and Slack for client updates [CONFIRM: which channels you actually use for client updates].</p>
+<ol>
+  <li>We drop a source document, like a product one-pager, into the client's space.</li>
+  <li>The agent writes posts for each channel and makes the visuals.</li>
+  <li>It builds a small review app: a weekly calendar and a list view, with a copy button on every caption.</li>
+  <li>The client reviews it, and their feedback goes back into the same thread.</li>
+  <li>We publish the approved posts.</li>
+</ol>
+<figure>
+  <img src="client-review-workflow.svg" alt="Diagram of the client review workflow on type.com: one source document becomes channel-specific posts and visuals, which go into a review calendar app with copy-ready captions, then client feedback and publishing" width="1200" height="520" loading="lazy">
+  <figcaption>Client review: one source doc, one review app, feedback in the same thread.</figcaption>
+</figure>
+<p><strong>Result:</strong> one client one-pager became 9 posts across X, the brand's LinkedIn page and a spokesperson's LinkedIn, with 12 visuals [CONFIRM: visual count]. On September 17 we saved that calendar format as a skill, and we've reused it for other clients since.</p>
+
+<h2>Results</h2>
+<p>Every number below comes from our type.com workspace as of October 27, 2026, counting only Barbara's and Jelena's activity. Where we don't have a measured number, we've left it open instead of guessing.</p>
+<table>
+  <thead><tr><th>Metric</th><th>Number</th></tr></thead>
+  <tbody>
+    <tr><td>Clients supported in type.com</td><td>5, each in its own space</td></tr>
+    <tr><td>Team messages per week</td><td>1 (week of Aug 22) → 240 (week of Oct 17)</td></tr>
+    <tr><td>Threads we started per month</td><td>1 in August, 8 in September, 32 in October</td></tr>
+    <tr><td>Client-specific skills</td><td>[CONFIRM: count]</td></tr>
+    <tr><td>Active scheduled automations</td><td>0. Everything starts by hand in a thread.</td></tr>
+    <tr><td>Post drafts from one founder call</td><td>17</td></tr>
+    <tr><td>Errors caught in one 4-post fact-check</td><td>45</td></tr>
+    <tr><td>Invoices reconciled against bank and card records</td><td>69, in one session of 2 h 16 min</td></tr>
+    <tr><td>Hours saved per week</td><td>[CONFIRM: hours saved per week]</td></tr>
+    <tr><td>Turnaround, brief to approved draft</td><td>[CONFIRM: before vs. after]</td></tr>
+  </tbody>
+</table>
+<p>One thing we won't claim: our agency's growth over the past year started before type.com, with Claude Code. type.com is where that work became shareable across clients and between the two of us.</p>
+
+<h3>What we'd improve</h3>
+<ul>
+  <li><strong>We don't automate client reporting with AI yet.</strong> We have zero scheduled automations. A weekly analytics and AI-search report for each client is the obvious next step.</li>
+  <li><strong>Skills only help if they're in the space.</strong> We lost time on one client before we'd moved its skills over.</li>
+  <li><strong>Usage limits.</strong> We run on our own Claude subscription, and its session limits have stopped long runs a few times.</li>
+  <li><strong>Drafts still need a hard edit.</strong> Ban lists and lint scripts help, but they don't replace an editor.</li>
+</ul>
+
+<h2>Who type.com is a good fit for, and who it isn't</h2>
+<p><strong>A good fit if</strong> you're a small agency or content team handling several clients or brands with different voices, and you want AI agents that work from shared context instead of a blank chat. It's especially useful if you already have prompts or Claude Code skills you want your whole team to use, and your work lives in Gmail, Slack and your analytics.</p>
+<p><strong>Not a fit if</strong> you want finished content with no editing, or you only need help with one document at a time. It also takes setup: skills, ban lists and review formats get better because you keep correcting them. And if a client contract limits AI tools, check that before you move their work in.</p>
+
+<h2>Frequently asked questions</h2>
+
+<h3>What is type.com?</h3>
+<p>type.com is an AI workspace where teams and AI agents work together in shared threads. It connects to tools like Slack, Gmail, Google Docs and your analytics. Skills, documents and context are shared inside a space, so everyone on the team works from the same setup.</p>
+
+<h3>How do content marketing agencies use type.com?</h3>
+<p>We give each client their own space with its own skills, documents and connected tools. AI agents research, draft, fact-check and build review apps inside client threads, and the team edits and approves there. Our biggest uses are founder LinkedIn posts, blog and AEO content, and client review calendars.</p>
+
+<h3>What tools does type.com integrate with?</h3>
+<p>We use it with Gmail, Slack, Google Analytics, Granola and GitHub, and the agent can work in a browser for sites like LinkedIn and Search Console. type.com also connects to Google Docs and other apps, so check its integrations list for your own stack.</p>
+
+<h3>Is type.com the same as type.ai?</h3>
+<p>No. type.ai is a separate AI writing editor. type.com is an AI workspace for teams and agents.</p>
+
+<h3>How long did it take to set up?</h3>
+<p>We opened our first client space on August 23, 2026 and had four client spaces running by September 23. Moving a client's Claude Code skills over took one thread: we uploaded the zipped folders and the agent turned them into space skills. [CONFIRM: hours it took to get the first client space working.]</p>
+
+<aside class="disclosure">
+  <strong>Disclosure:</strong> StartupCookie is our agency, and this is our own editorial write-up, not a sponsored post. Numbers come from our type.com workspace as of October 27, 2026. Client names are left out on purpose. [CONFIRM: disclose any business or personal relationship between StartupCookie and type.com.]
+</aside>
+
+<aside class="cta-block">
+  <h2>Want AI agents running your content like this?</h2>
+  <p>We build founder LinkedIn, AEO content and custom GTM agents for B2B SaaS startups, and we run them on the same setup described here. To try it for your own team, start with the <a href="https://type.com">type.com AI workspace</a>. If you want us to run it for you, book a call.</p>
+  <a href="https://calendly.com/barbara-startup-cookie/startup-cookie-1">Book a 20-minute intro call</a>
+</aside>
+
+<footer class="footer">
+  <p>By <a href="/about/">Barbara Jovanovic</a> at StartupCookie. Published <time datetime="2026-10-27">October 27, 2026</time>. Numbers taken from our type.com workspace on October 27, 2026.</p>
+</footer>
+
+    </div>
+
+  </article>
+
+  <!-- Footer (shared — identical on every page; root-absolute paths) -->
+  <footer class="bg-black py-[60px] px-[20px] md:py-[100px] md:px-[60px]">
+    <div class="max-w-[1608px] mx-auto grid grid-cols-2 md:grid-cols-4 gap-[40px]">
+      <div class="col-span-2 md:col-span-1 flex flex-col gap-[23px]">
+        <h2 class="text-[24px] md:text-[40px] font-normal text-white tracking-[-0.48px] md:tracking-[-0.8px] leading-[1.18]">StartupCookie</h2>
+        <p class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.7)] tracking-[-0.32px] leading-[1.4]">AI-native content &amp; GTM agency for B2B SaaS.</p>
+        <a href="https://calendly.com/barbara-startup-cookie/startup-cookie-1" target="_blank" class="self-start inline-block bg-white border border-[rgba(0,0,0,0.8)] rounded-[8px] md:rounded-[12px] px-[25px] py-[12px] text-[14px] md:text-[18px] text-[rgba(0,0,0,0.8)] text-center tracking-[-0.36px] hover:bg-gray-100 transition-colors js-capacity-cta">Book a call</a>
+        <span class="text-[14px] md:text-[16px] text-[rgba(255,255,255,0.5)] tracking-[-0.36px] mt-[10px]">San Francisco, CA</span>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Services</span>
+        <a href="/services/thought-leadership/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Thought Leadership Content</a>
+        <a href="/services/founder-linkedin/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Founder LinkedIn</a>
+        <a href="/services/aeo-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">AEO / AI Search</a>
+        <a href="/services/product-marketing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Product Marketing</a>
+        <a href="/services/video-content/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Video Content</a>
+        <a href="/services/webinar-repurposing/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Webinar Repurposing</a>
+        <a href="/services/gtm-agents/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">GTM &amp; Content Agents</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Resources</span>
+        <a href="/guides/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Guides</a>
+        <a href="/blog/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Blog</a>
+        <a href="/agencies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Agency Lists &amp; Comparisons</a>
+        <a href="/press/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Press</a>
+        <a href="https://twogirlsoneclaude.com/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Two girls, one Claude</a>
+      </div>
+      <div class="flex flex-col gap-[12px] md:gap-[15px]">
+        <span class="text-[14px] md:text-[15px] text-[rgba(255,255,255,0.5)] tracking-[0.08em] uppercase">Company</span>
+        <a href="/about/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">About</a>
+        <a href="/case-studies/" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Case Studies</a>
+        <a href="/#pricing" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Pricing</a>
+        <a href="https://www.linkedin.com/in/barbara-startup-cookie/" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">LinkedIn</a>
+        <a href="https://www.g2.com/products/startupcookie/reviews" target="_blank" rel="noopener" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">G2 Reviews</a>
+        <a href="mailto:barbara@startupcookie.com" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity">Email</a>
+        <a href="https://calendly.com/barbara-startup-cookie/startup-cookie-1" target="_blank" class="text-[14px] md:text-[16px] text-white tracking-[-0.36px] hover:opacity-70 transition-opacity js-capacity-cta">Book a call</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JSON-LD schema blocks: Article, BreadcrumbList, FAQPage. -->
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://startupcookie.com/case-studies/type-com/"
+  },
+  "headline": "How StartupCookie Runs a Content Marketing Agency with AI Agents on type.com",
+  "description": "How our content agency runs on type.com: 3 real AI agent workflows for founder posts, blog content and client review, with real numbers.",
+  "image": "https://startupcookie.com/assets/social-sharing-image.png",
+  "author": {
+    "@type": "Person",
+    "name": "Barbara Jovanovic",
+    "url": "https://startupcookie.com/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "StartupCookie",
+    "url": "https://startupcookie.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://startupcookie.com/assets/logo-nav.svg"
+    }
+  },
+  "datePublished": "2026-10-27T09:00:00-07:00",
+  "dateModified": "2026-10-27T09:00:00-07:00",
+  "articleSection": "Case Studies",
+  "keywords": "type.com, AI tools for content marketing agencies, AI agents for agencies, automate client reporting with AI, AI workspace, founder LinkedIn, AEO, case study",
+  "about": {
+    "@type": "SoftwareApplication",
+    "name": "type.com",
+    "url": "https://type.com",
+    "applicationCategory": "BusinessApplication"
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://startupcookie.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Case Studies",
+      "item": "https://startupcookie.com/case-studies/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How We Run Our Agency on type.com",
+      "item": "https://startupcookie.com/case-studies/type-com/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is type.com?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "type.com is an AI workspace where teams and AI agents work together in shared threads. It connects to tools like Slack, Gmail, Google Docs and your analytics. Skills, documents and context are shared inside a space, so everyone on the team works from the same setup."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do content marketing agencies use type.com?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We give each client their own space with its own skills, documents and connected tools. AI agents research, draft, fact-check and build review apps inside client threads, and the team edits and approves there. Our biggest uses are founder LinkedIn posts, blog and AEO content, and client review calendars."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What tools does type.com integrate with?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We use it with Gmail, Slack, Google Analytics, Granola and GitHub, and the agent can work in a browser for sites like LinkedIn and Search Console. type.com also connects to Google Docs and other apps, so check its integrations list for your own stack."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is type.com the same as type.ai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. type.ai is a separate AI writing editor. type.com is an AI workspace for teams and agents."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long did it take to set up?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We opened our first client space on August 23, 2026 and had four client spaces running by September 23. Moving a client's Claude Code skills over took one thread: we uploaded the zipped folders and the agent turned them into space skills. [CONFIRM: hours it took to get the first client space working.]"
+      }
+    }
+  ]
+}
+  </script>
+
+  <script src="/site-config.js"></script>
+  <script src="/script.js" defer></script>
+</body>
+</html>
