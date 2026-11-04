@@ -35,7 +35,7 @@ if (navbar) {
 (function () {
   const cfg = window.SC_CONFIG;
   if (!cfg) return;
-  const max = typeof cfg.MAX_CLIENTS === 'number' ? cfg.MAX_CLIENTS : 6;
+  const max = typeof cfg.MAX_CLIENTS === 'number' ? cfg.MAX_CLIENTS : 8;
   const roster = document.getElementById('capacity-roster');
   if (roster && typeof cfg.CLIENT_COUNT === 'number') {
     roster.textContent = 'Current roster: ' + cfg.CLIENT_COUNT + '/' + max + '.';

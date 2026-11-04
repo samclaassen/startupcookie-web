@@ -33,7 +33,7 @@ Open **`site-config.js`** in the repo root. It is 21 lines and controls values t
 appear across every page:
 
 - `NEXT_OPENING` – the "next slot opens" date in the hero and pricing card. Set to `null` to hide the line.
-- `CLIENT_COUNT` – shows "Current roster: 4/6" on the homepage. At `MAX_CLIENTS` the booking buttons switch to "Join the waitlist".
+- `CLIENT_COUNT` – shows "Current roster: 4/8" on the homepage. At `MAX_CLIENTS` the booking buttons switch to "Join the waitlist".
 - `MAX_CLIENTS` – roster size.
 - `GA4_MEASUREMENT_ID` – paste a `G-XXXXXXXXXX` here once and analytics turns on site-wide. `null` means no tracking.
 - `PROMPTWATCH_PROJECT_ID` – turns on PromptWatch visitor analytics (visits from ChatGPT, Claude, Perplexity and other AI tools). `null` switches it off.
