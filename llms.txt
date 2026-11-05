@@ -14,7 +14,7 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - All services: https://startupcookie.com/services/
 
 ## Case studies
-- Tofu: AI search visibility grew 2.36x (7.00% to 16.51%) in 90 days: https://startupcookie.com/case-studies/tofu/
+- Tofu: AI search visibility grew from 7.00% to 16.51% in the first 90 days (2.36x) and reached 67.38% within six months: https://startupcookie.com/case-studies/tofu/
 - Venn: founder LinkedIn, video and customer case studies for a Canadian business banking platform: https://startupcookie.com/case-studies/venn/
 - Juno: founder-led LinkedIn content for an AI-moderated research platform: https://startupcookie.com/case-studies/juno/
 - Puzzle: executive thought leadership for an AI accounting platform: https://startupcookie.com/case-studies/puzzle/
