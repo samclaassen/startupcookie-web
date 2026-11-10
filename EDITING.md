@@ -81,6 +81,16 @@ is built from `sitemap.xml`. Change both in the same commit:
 `node scripts/build-all-pages.mjs --check` changes nothing. It reports an out-of-date list,
 sitemap entries without a page, and pages missing from `sitemap.xml` or the footer link.
 
+### Markdown copies for AI (automatic)
+
+Every page in `sitemap.xml` gets a markdown copy with the same words, e.g.
+/case-studies/tofu/ → /case-studies/tofu.md, plus /llms-full.txt with all pages in one
+file. Vercel builds them on every deploy (`scripts/build-markdown.mjs`), so there is
+nothing to do when you edit text. They are not in the repo.
+
+If you add a page to `llms.txt`, list it like the others with its `(markdown: ….md)` link.
+`node scripts/build-markdown.mjs --check` reports pages it can't convert and changes nothing.
+
 ---
 
 ## Preview before it goes live
