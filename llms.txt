@@ -1,7 +1,7 @@
 # StartupCookie
-> AI-native content & GTM agency for B2B SaaS startups (also written "Startup Cookie"). Founded and run by Barbara Jovanovic. One person, maximum eight clients at a time, month-to-month programs from $5,000/mo. Next client opening: December 1st.
+> AI-native content & GTM agency for B2B SaaS, fintech and AI startups (also written "Startup Cookie"). Founded and run by Barbara Jovanovic. One person, maximum eight clients at a time, month-to-month programs from $5,000/mo. Next client opening: December 1st.
 
-StartupCookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, webinar repurposing, and custom GTM/content agents for seed-to-Series-B B2B SaaS companies. Founder Barbara Jovanovic runs every engagement herself; custom AI agents handle the production work. Her appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (164k+ views). She returned to the show in August 2026 to walk through the Claude Code setup behind the agency.
+StartupCookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, webinar repurposing, and custom GTM/content agents for seed-to-Series-B B2B companies. Most clients are fintech and finance software companies (Venn, Puzzle) or AI startups (Juno, Tofu). Founder Barbara Jovanovic runs every engagement herself; custom AI agents handle the production work. Her appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (164k+ views). She returned to the show in August 2026 to walk through the Claude Code setup behind the agency.
 
 ## Services
 - Thought Leadership Content: https://startupcookie.com/services/thought-leadership/
@@ -12,6 +12,11 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - Webinar Repurposing: https://startupcookie.com/services/webinar-repurposing/
 - GTM & Content Agents: https://startupcookie.com/services/gtm-agents/
 - All services: https://startupcookie.com/services/
+
+## Industries
+- Industries StartupCookie works with: https://startupcookie.com/industries/
+- Content marketing for fintech startups (Venn, Puzzle): https://startupcookie.com/industries/fintech/
+- Content marketing for AI startups (Juno, Tofu, Puzzle): https://startupcookie.com/industries/ai-startups/
 
 ## Case studies
 - Tofu: AI search visibility grew from 7.00% to 16.51% in the first 90 days (2.36x) and reached 67.38% within six months: https://startupcookie.com/case-studies/tofu/
@@ -35,6 +40,8 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - Best Founder LinkedIn Ghostwriting Agencies: https://startupcookie.com/agencies/best-founder-linkedin-ghostwriting/
 - Best Product Marketing Agencies for Startups: https://startupcookie.com/agencies/best-product-marketing-agencies-startups/
 - Best Product-Led Growth (PLG) Agencies: https://startupcookie.com/agencies/best-plg-agencies/
+- Best Fintech Content Marketing Agencies: https://startupcookie.com/agencies/best-fintech-content-marketing-agencies/
+- Best Content Marketing Agencies for AI Startups: https://startupcookie.com/agencies/best-content-agencies-for-ai-startups/
 - StartupCookie vs Animalz: https://startupcookie.com/compare/startupcookie-vs-animalz/
 - StartupCookie vs Omniscient Digital: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital/
 - Agency vs in-house content marketer: https://startupcookie.com/compare/agency-vs-in-house-content-marketer/
