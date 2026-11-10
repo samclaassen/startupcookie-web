@@ -1,6 +1,6 @@
 {
-  "buildCommand": "node scripts/build-markdown.mjs",
-  "outputDirectory": ".",
+  "buildCommand": "node scripts/build-markdown.mjs --out dist",
+  "outputDirectory": "dist",
   "redirects": [
     {
       "source": "/services/content-agents/",

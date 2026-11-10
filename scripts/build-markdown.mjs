@@ -1,11 +1,13 @@
 #!/usr/bin/env node
 // Builds a markdown copy of every page in sitemap.xml, plus /llms-full.txt.
 //
-//   node scripts/build-markdown.mjs           write the .md files and llms-full.txt
-//   node scripts/build-markdown.mjs --check   write nothing; exit 1 if a page can't be converted
+//   node scripts/build-markdown.mjs --out dist   copy the site to dist/ and add the .md files and llms-full.txt
+//   node scripts/build-markdown.mjs --check      write nothing; exit 1 if a page can't be converted
 //
-// Vercel runs this on every deploy (vercel.json → buildCommand), so the markdown
-// always matches the HTML that ships. Nothing it writes is committed (.gitignore).
+// Vercel runs the first one on every deploy (vercel.json → buildCommand, outputDirectory
+// dist), so the markdown always matches the HTML that ships. dist/ gets the same files
+// Vercel published before this script existed: everything except README.md and the
+// repo/deploy config listed in NOT_PUBLISHED. The repo itself is never modified.
 //
 //   /                         → /index.md
 //   /case-studies/tofu/       → /case-studies/tofu.md
@@ -21,7 +23,7 @@
 // markdown copy is built on the next deploy.
 // Plain Node 18+, no dependencies.
 
-import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { cpSync, existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -31,6 +33,13 @@ const CONTENT_START = /<!-- Mobile Nav Overlay \(shared\)[\s\S]*?<\/ul>\s*<\/div
 const CONTENT_END = '<!-- Footer (shared';
 
 const check = process.argv.includes('--check');
+const outArg = process.argv[process.argv.indexOf('--out') + 1];
+if (!check && (!process.argv.includes('--out') || !outArg || outArg.startsWith('-'))) {
+  console.error('Usage: node scripts/build-markdown.mjs --out dist   (or --check)');
+  process.exit(2);
+}
+const OUT = check ? null : join(ROOT, outArg);
+const NOT_PUBLISHED = new Set(['.git', '.gitignore', '.vercel', '.type', '.claude', '.DS_Store', 'node_modules', 'README.md', 'vercel.json', 'middleware.ts', outArg]);
 const read = (file) => readFileSync(join(ROOT, file), 'utf8');
 const errors = [];
 
@@ -241,18 +250,22 @@ const full = [
   ...pages.map((p) => p.md.trim()),
 ].join('\n\n---\n\n') + '\n';
 
+if (!check) {
+  rmSync(OUT, { recursive: true, force: true });
+  mkdirSync(OUT, { recursive: true });
+  for (const name of readdirSync(ROOT)) {
+    if (!NOT_PUBLISHED.has(name)) cpSync(join(ROOT, name), join(OUT, name), { recursive: true });
+  }
+}
 for (const p of pages) {
   const link = `<link rel="alternate" type="text/markdown" href="${SITE}${p.mdPath}">`;
   if (check) continue;
-  writeFileSync(join(ROOT, p.mdPath.slice(1)), p.md);
+  writeFileSync(join(OUT, p.mdPath.slice(1)), p.md);
   if (!p.html.includes('type="text/markdown"')) {
-    writeFileSync(join(ROOT, p.file), p.html.replace(/(<link\s+rel="canonical"[^>]*>)/i, `$1\n  ${link}`));
+    writeFileSync(join(OUT, p.file), p.html.replace(/(<link\s+rel="canonical"[^>]*>)/i, `$1\n  ${link}`));
   }
 }
-if (!check) writeFileSync(join(ROOT, 'llms-full.txt'), full);
-// With a build step Vercel publishes the whole folder; without one it hid README.md.
-// Keep it hidden. Only on Vercel (VERCEL=1), never on someone's own machine.
-if (!check && process.env.VERCEL === '1') rmSync(join(ROOT, 'README.md'), { force: true });
+if (!check) writeFileSync(join(OUT, 'llms-full.txt'), full);
 
 // llms.txt should link the markdown copy of every page it lists.
 for (const m of llms.matchAll(/https:\/\/startupcookie\.com(\/[^\s)]*)/g)) {
