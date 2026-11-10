@@ -10,7 +10,7 @@ Nothing is ever lost, any change can be reverted in three clicks (see the bottom
 
 ## Finding the page you want to edit
 
-The site is 33 pages. **The URL tells you the file.** Take the part after
+The site is 32 pages. **The URL tells you the file.** Take the part after
 startupcookie.com, add `/index.html`.
 
 | Page on the site | File in the repo |
@@ -22,7 +22,7 @@ startupcookie.com, add `/index.html`.
 | /case-studies/venn | `case-studies/venn/index.html` |
 | /guides/founder-led-content | `guides/founder-led-content/index.html` |
 
-Full list of folders: `about`, `agencies`, `blog`, `case-studies`, `compare`,
+Full list of folders: `about`, `agencies`, `case-studies`, `compare`,
 `guides`, `press`, `services`.
 
 ---
