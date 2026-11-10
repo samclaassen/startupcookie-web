@@ -21,7 +21,7 @@
 // markdown copy is built on the next deploy.
 // Plain Node 18+, no dependencies.
 
-import { existsSync, readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -250,6 +250,9 @@ for (const p of pages) {
   }
 }
 if (!check) writeFileSync(join(ROOT, 'llms-full.txt'), full);
+// With a build step Vercel publishes the whole folder; without one it hid README.md.
+// Keep it hidden. Only on Vercel (VERCEL=1), never on someone's own machine.
+if (!check && process.env.VERCEL === '1') rmSync(join(ROOT, 'README.md'), { force: true });
 
 // llms.txt should link the markdown copy of every page it lists.
 for (const m of llms.matchAll(/https:\/\/startupcookie\.com(\/[^\s)]*)/g)) {
