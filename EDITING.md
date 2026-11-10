@@ -69,6 +69,18 @@ the deploy result — green check means it's on the live site.
 3. **Always click Fetch origin / Pull origin in GitHub Desktop before you start.**
 4. Describe the change in plain English, review it, then Commit and Push.
 
+### Adding, removing or renaming a page
+
+The [All pages](https://startupcookie.com/all-pages/) list, linked in every footer,
+is built from `sitemap.xml`. Change both in the same commit:
+
+1. Start a new page from a copy of a similar page, so it keeps the shared footer and its **All pages** link.
+2. Add (or remove) the page's `<url>` entry in `sitemap.xml`.
+3. Regenerate the list: `node scripts/build-all-pages.mjs` (Node 18+). Commit the updated `all-pages/index.html` with the page.
+
+`node scripts/build-all-pages.mjs --check` changes nothing. It reports an out-of-date list,
+sitemap entries without a page, and pages missing from `sitemap.xml` or the footer link.
+
 ---
 
 ## Preview before it goes live

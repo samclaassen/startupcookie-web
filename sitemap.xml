@@ -97,6 +97,12 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://startupcookie.com/all-pages/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
     <loc>https://startupcookie.com/guides/</loc>
     <lastmod>2026-11-10</lastmod>
     <changefreq>weekly</changefreq>
