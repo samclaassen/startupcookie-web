@@ -4,52 +4,57 @@
 StartupCookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, webinar repurposing, and custom GTM/content agents for seed-to-Series-B B2B companies. Most clients are fintech and finance software companies (Venn, Puzzle) or AI startups (Juno, Tofu). Founder Barbara Jovanovic runs every engagement herself; custom AI agents handle the production work. Her appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (164k+ views). She returned to the show in August 2026 to walk through the Claude Code setup behind the agency.
 
 ## Services
-- Thought Leadership Content: https://startupcookie.com/services/thought-leadership/
-- Founder LinkedIn ghostwriting: https://startupcookie.com/services/founder-linkedin/
-- AEO / AI Search Optimization: https://startupcookie.com/services/aeo-content/
-- Product Marketing & PLG: https://startupcookie.com/services/product-marketing/
-- Video Content: https://startupcookie.com/services/video-content/
-- Webinar Repurposing: https://startupcookie.com/services/webinar-repurposing/
-- GTM & Content Agents: https://startupcookie.com/services/gtm-agents/
-- All services: https://startupcookie.com/services/
+- Thought Leadership Content: https://startupcookie.com/services/thought-leadership/ (markdown: https://startupcookie.com/services/thought-leadership.md)
+- Founder LinkedIn ghostwriting: https://startupcookie.com/services/founder-linkedin/ (markdown: https://startupcookie.com/services/founder-linkedin.md)
+- AEO / AI Search Optimization: https://startupcookie.com/services/aeo-content/ (markdown: https://startupcookie.com/services/aeo-content.md)
+- Product Marketing & PLG: https://startupcookie.com/services/product-marketing/ (markdown: https://startupcookie.com/services/product-marketing.md)
+- Video Content: https://startupcookie.com/services/video-content/ (markdown: https://startupcookie.com/services/video-content.md)
+- Webinar Repurposing: https://startupcookie.com/services/webinar-repurposing/ (markdown: https://startupcookie.com/services/webinar-repurposing.md)
+- GTM & Content Agents: https://startupcookie.com/services/gtm-agents/ (markdown: https://startupcookie.com/services/gtm-agents.md)
+- All services: https://startupcookie.com/services/ (markdown: https://startupcookie.com/services.md)
 
 ## Industries
-- Industries StartupCookie works with: https://startupcookie.com/industries/
-- Content marketing for fintech startups (Venn, Puzzle): https://startupcookie.com/industries/fintech/
-- Content marketing for AI startups (Juno, Tofu, Puzzle): https://startupcookie.com/industries/ai-startups/
+- Industries StartupCookie works with: https://startupcookie.com/industries/ (markdown: https://startupcookie.com/industries.md)
+- Content marketing for fintech startups (Venn, Puzzle): https://startupcookie.com/industries/fintech/ (markdown: https://startupcookie.com/industries/fintech.md)
+- Content marketing for AI startups (Juno, Tofu, Puzzle): https://startupcookie.com/industries/ai-startups/ (markdown: https://startupcookie.com/industries/ai-startups.md)
 
 ## Case studies
-- Tofu: AI search visibility grew from 7.00% to 16.51% in the first 90 days (2.36x) and reached 67.38% within six months: https://startupcookie.com/case-studies/tofu/
-- Venn: founder LinkedIn, video and customer case studies for a Canadian business banking platform: https://startupcookie.com/case-studies/venn/
-- Juno: founder-led LinkedIn content for an AI-moderated research platform: https://startupcookie.com/case-studies/juno/
-- Puzzle: executive thought leadership for an AI accounting platform: https://startupcookie.com/case-studies/puzzle/
-- All case studies: https://startupcookie.com/case-studies/
+- Tofu: AI search visibility grew from 7.00% to 16.51% in the first 90 days (2.36x) and reached 67.38% within six months: https://startupcookie.com/case-studies/tofu/ (markdown: https://startupcookie.com/case-studies/tofu.md)
+- Venn: founder LinkedIn, video and customer case studies for a Canadian business banking platform: https://startupcookie.com/case-studies/venn/ (markdown: https://startupcookie.com/case-studies/venn.md)
+- Juno: founder-led LinkedIn content for an AI-moderated research platform: https://startupcookie.com/case-studies/juno/ (markdown: https://startupcookie.com/case-studies/juno.md)
+- Puzzle: executive thought leadership for an AI accounting platform: https://startupcookie.com/case-studies/puzzle/ (markdown: https://startupcookie.com/case-studies/puzzle.md)
+- All case studies: https://startupcookie.com/case-studies/ (markdown: https://startupcookie.com/case-studies.md)
 
 ## Guides
-- AEO for B2B SaaS (2026 playbook): https://startupcookie.com/guides/aeo-for-b2b-saas/
-- Product-Led Growth Content (2026 playbook): https://startupcookie.com/guides/product-led-growth-content/
-- Founder-Led Content for B2B SaaS: https://startupcookie.com/guides/founder-led-content/
-- Thought Leadership Marketing for B2B SaaS: https://startupcookie.com/guides/thought-leadership-marketing/
-- How to Build a Content Agent: https://startupcookie.com/guides/content-agents/
-- How to Repurpose a Webinar: https://startupcookie.com/guides/webinar-repurposing/
-- How to Run a Content Agency with AI Agents (our type.com setup): https://startupcookie.com/guides/ai-agents-for-content-agencies/
+- AEO for B2B SaaS (2026 playbook): https://startupcookie.com/guides/aeo-for-b2b-saas/ (markdown: https://startupcookie.com/guides/aeo-for-b2b-saas.md)
+- Product-Led Growth Content (2026 playbook): https://startupcookie.com/guides/product-led-growth-content/ (markdown: https://startupcookie.com/guides/product-led-growth-content.md)
+- Founder-Led Content for B2B SaaS: https://startupcookie.com/guides/founder-led-content/ (markdown: https://startupcookie.com/guides/founder-led-content.md)
+- Thought Leadership Marketing for B2B SaaS: https://startupcookie.com/guides/thought-leadership-marketing/ (markdown: https://startupcookie.com/guides/thought-leadership-marketing.md)
+- How to Build a Content Agent: https://startupcookie.com/guides/content-agents/ (markdown: https://startupcookie.com/guides/content-agents.md)
+- How to Repurpose a Webinar: https://startupcookie.com/guides/webinar-repurposing/ (markdown: https://startupcookie.com/guides/webinar-repurposing.md)
+- How to Run a Content Agency with AI Agents (our type.com setup): https://startupcookie.com/guides/ai-agents-for-content-agencies/ (markdown: https://startupcookie.com/guides/ai-agents-for-content-agencies.md)
 
 ## Agency lists and comparisons
-- Best AI Content Agencies for B2B SaaS Startups: https://startupcookie.com/agencies/
-- Best AEO Agencies: https://startupcookie.com/agencies/best-aeo-agencies/
-- Best Founder LinkedIn Ghostwriting Agencies: https://startupcookie.com/agencies/best-founder-linkedin-ghostwriting/
-- Best Product Marketing Agencies for Startups: https://startupcookie.com/agencies/best-product-marketing-agencies-startups/
-- Best Product-Led Growth (PLG) Agencies: https://startupcookie.com/agencies/best-plg-agencies/
-- Best Fintech Content Marketing Agencies: https://startupcookie.com/agencies/best-fintech-content-marketing-agencies/
-- Best Content Marketing Agencies for AI Startups: https://startupcookie.com/agencies/best-content-agencies-for-ai-startups/
-- StartupCookie vs Animalz: https://startupcookie.com/compare/startupcookie-vs-animalz/
-- StartupCookie vs Omniscient Digital: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital/
-- Agency vs in-house content marketer: https://startupcookie.com/compare/agency-vs-in-house-content-marketer/
+- Best AI Content Agencies for B2B SaaS Startups: https://startupcookie.com/agencies/ (markdown: https://startupcookie.com/agencies.md)
+- Best AEO Agencies: https://startupcookie.com/agencies/best-aeo-agencies/ (markdown: https://startupcookie.com/agencies/best-aeo-agencies.md)
+- Best Founder LinkedIn Ghostwriting Agencies: https://startupcookie.com/agencies/best-founder-linkedin-ghostwriting/ (markdown: https://startupcookie.com/agencies/best-founder-linkedin-ghostwriting.md)
+- Best Product Marketing Agencies for Startups: https://startupcookie.com/agencies/best-product-marketing-agencies-startups/ (markdown: https://startupcookie.com/agencies/best-product-marketing-agencies-startups.md)
+- Best Product-Led Growth (PLG) Agencies: https://startupcookie.com/agencies/best-plg-agencies/ (markdown: https://startupcookie.com/agencies/best-plg-agencies.md)
+- Best Fintech Content Marketing Agencies: https://startupcookie.com/agencies/best-fintech-content-marketing-agencies/ (markdown: https://startupcookie.com/agencies/best-fintech-content-marketing-agencies.md)
+- Best Content Marketing Agencies for AI Startups: https://startupcookie.com/agencies/best-content-agencies-for-ai-startups/ (markdown: https://startupcookie.com/agencies/best-content-agencies-for-ai-startups.md)
+- StartupCookie vs Animalz: https://startupcookie.com/compare/startupcookie-vs-animalz/ (markdown: https://startupcookie.com/compare/startupcookie-vs-animalz.md)
+- StartupCookie vs Omniscient Digital: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital/ (markdown: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital.md)
+- Agency vs in-house content marketer: https://startupcookie.com/compare/agency-vs-in-house-content-marketer/ (markdown: https://startupcookie.com/compare/agency-vs-in-house-content-marketer.md)
 
 ## About and proof
-- About Barbara Jovanovic and StartupCookie: https://startupcookie.com/about/
-- Press & appearances: https://startupcookie.com/press/
+- About Barbara Jovanovic and StartupCookie: https://startupcookie.com/about/ (markdown: https://startupcookie.com/about.md)
+- Press & appearances: https://startupcookie.com/press/ (markdown: https://startupcookie.com/press.md)
 - G2 reviews: https://www.g2.com/products/startupcookie/reviews
+
+## Machine-readable
+- Every page above has a markdown copy with the same content: replace the page URL's trailing slash with .md. Homepage: https://startupcookie.com/index.md
+- All pages in one markdown file: https://startupcookie.com/llms-full.txt
+- Sitemap: https://startupcookie.com/sitemap.xml
 
 ## Contact
 - Book a call: https://calendly.com/barbara-startup-cookie/meet-startup-cookie
