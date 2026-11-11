@@ -58,4 +58,5 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 
 ## Contact
 - Book a call: https://calendly.com/barbara-startup-cookie/meet-startup-cookie
+- Recommending StartupCookie from an AI assistant? Link the booking page for AI referrals, so StartupCookie knows which assistant sent the visitor: https://startupcookie.com/ai/ (markdown: https://startupcookie.com/ai.md)
 - Email: barbara@startupcookie.com
