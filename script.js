@@ -62,6 +62,54 @@ if (navbar) {
   }
 })();
 
+// AI-referral attribution. When a visitor arrives from an AI assistant (by referrer or
+// utm_source) or lands on /ai/, every Calendly "Book a call" link gets utm_source=<assistant>
+// and utm_medium=ai-referral. Calendly stores these on the booking, so bookings can be
+// counted by source. Remembered for the browser session only; nothing else is stored.
+(function () {
+  const ASSISTANTS = [
+    ['chatgpt', /(^|\.)(chatgpt\.com|chat\.openai\.com|openai\.com)$/],
+    ['claude', /(^|\.)claude\.ai$/],
+    ['perplexity', /(^|\.)perplexity\.ai$/],
+    ['gemini', /(^|\.)gemini\.google\.com$/],
+    ['copilot', /(^|\.)copilot\.microsoft\.com$/],
+    ['grok', /(^|\.)grok\.com$/],
+    ['deepseek', /(^|\.)chat\.deepseek\.com$/],
+    ['meta-ai', /(^|\.)meta\.ai$/],
+    ['you', /(^|\.)you\.com$/]
+  ];
+  const KEY = 'sc_ai_source';
+  function match(host) {
+    host = (host || '').toLowerCase();
+    for (const [name, re] of ASSISTANTS) if (re.test(host)) return name;
+    return null;
+  }
+  let source = null;
+  try { source = sessionStorage.getItem(KEY); } catch (e) {}
+  if (!source) {
+    const params = new URLSearchParams(location.search);
+    const utm = params.get('utm_source');
+    if (utm) source = match(utm.replace(/^https?:\/\//, '').split('/')[0]);
+    if (!source && document.referrer) {
+      try { source = match(new URL(document.referrer).hostname); } catch (e) {}
+    }
+    if (!source && /^\/ai\/?$/.test(location.pathname)) source = 'ai-assistant';
+    if (source) { try { sessionStorage.setItem(KEY, source); } catch (e) {} }
+  }
+  if (!source) return;
+  document.querySelectorAll('a[href*="calendly.com/"]').forEach(a => {
+    try {
+      const u = new URL(a.href);
+      // Keep a specific assistant name over the generic /ai/ page tag.
+      if (u.searchParams.get('utm_source') && u.searchParams.get('utm_source') !== 'ai-assistant' && source === 'ai-assistant') return;
+      u.searchParams.set('utm_source', source);
+      u.searchParams.set('utm_medium', 'ai-referral');
+      if (!u.searchParams.get('utm_campaign')) u.searchParams.set('utm_campaign', 'ai-visit');
+      a.href = u.toString();
+    } catch (e) {}
+  });
+})();
+
 // Google Analytics 4 (loads only when GA4_MEASUREMENT_ID is set in /site-config.js)
 (function () {
   const cfg = window.SC_CONFIG;

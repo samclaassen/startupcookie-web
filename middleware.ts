@@ -1,4 +1,10 @@
-// PromptWatch crawler logs (Vercel Routing Middleware).
+// PromptWatch crawler logs + markdown negotiation (Vercel Routing Middleware).
+//
+// Markdown: a page request whose Accept header prefers text/markdown over text/html
+// (some AI agents send this) is served the page's markdown copy, e.g. /about/ →
+// /about.md, built by scripts/build-markdown.mjs. Browsers, curl and link previews
+// send */* or text/html and always get the HTML. Same content either way, chosen by
+// what the client asks for, never by who it is.
 //
 // When an AI crawler (GPTBot, ClaudeBot, PerplexityBot, ...) requests a page, this
 // sends one log line to PromptWatch so the visit shows up under Analytics → Crawler
@@ -29,6 +35,7 @@ type Context = { waitUntil?: (promise: Promise<unknown>) => void };
 
 function contentTypeFor(pathname: string): string {
   if (pathname.endsWith('.txt')) return 'text/plain';
+  if (pathname.endsWith('.md')) return 'text/markdown';
   if (pathname.endsWith('.xml')) return 'application/xml';
   if (pathname.endsWith('.json')) return 'application/json';
   return 'text/html';
@@ -39,6 +46,25 @@ function clientIp(request: Request): string | null {
   if (realIp) return realIp;
   const forwarded = request.headers.get('x-forwarded-for');
   return forwarded ? forwarded.split(',')[0].trim() : null;
+}
+
+// q-value of the first media range in an Accept header that matches `type` exactly.
+function quality(accept: string, type: string): number {
+  for (const part of accept.split(',')) {
+    const [range, ...params] = part.trim().toLowerCase().split(';');
+    if (range.trim() !== type) continue;
+    const q = params.map((p) => p.trim()).find((p) => p.startsWith('q='));
+    const value = q ? parseFloat(q.slice(2)) : 1;
+    return Number.isFinite(value) ? value : 0;
+  }
+  return 0;
+}
+
+// /about/ → /about.md, / → /index.md. Only page URLs (trailing slash), never files.
+function markdownPathFor(pathname: string): string | null {
+  if (pathname === '/') return '/index.md';
+  if (!pathname.endsWith('/') || pathname.startsWith('/assets/')) return null;
+  return pathname.slice(0, -1) + '.md';
 }
 
 // Same as next() from @vercel/functions: continue to the static file unchanged.
@@ -75,6 +101,16 @@ export default async function middleware(request: Request, context?: Context) {
       context.waitUntil(send);
     } else {
       await send;
+    }
+  }
+
+  const accept = request.headers.get('accept') || '';
+  if ((request.method === 'GET' || request.method === 'HEAD') && accept.toLowerCase().includes('text/markdown')) {
+    const url = new URL(request.url);
+    const mdPath = markdownPathFor(url.pathname);
+    if (mdPath && quality(accept, 'text/markdown') > quality(accept, 'text/html')) {
+      // Same as rewrite() from @vercel/functions: serve the .md file at this URL.
+      return new Response(null, { headers: { 'x-middleware-rewrite': new URL(mdPath, url).href } });
     }
   }
 

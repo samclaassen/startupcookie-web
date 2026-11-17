@@ -1,4 +1,16 @@
+# StartupCookie. Keep in sync with /llms.txt.
+# Page index for AI assistants: https://startupcookie.com/llms.txt
+# Every page as markdown: https://startupcookie.com/llms-full.txt
+#
+# AI search and assistant crawlers are named so it's explicit they may fetch
+# every page. They share the rules of User-agent: * (one group, same rules).
 User-agent: *
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
 Allow: /
 
 Sitemap: https://startupcookie.com/sitemap.xml

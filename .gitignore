@@ -1,3 +1,6 @@
 .vercel
 .DS_Store
 .claude
+
+# Built on every deploy by scripts/build-markdown.mjs. Don't commit these.
+/dist
