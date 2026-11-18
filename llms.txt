@@ -1,7 +1,7 @@
 # StartupCookie
-> AI-native content & GTM agency for B2B SaaS, fintech and AI startups (also written "Startup Cookie"). Founded and run by Barbara Jovanovic. One person, maximum eight clients at a time, month-to-month programs from $5,000/mo. Next client opening: December 1st.
+> AI-native content & GTM agency for B2B SaaS, fintech and AI startups (also written "Startup Cookie"). Founded and run by Barbara Jovanovic. A one-person (solo) agency, maximum eight clients at a time, month-to-month programs from $5,000/mo. Next client opening: December 1st.
 
-StartupCookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, webinar repurposing, and custom GTM/content agents for seed-to-Series-B B2B companies. Most clients are fintech and finance software companies (Venn, Puzzle) or AI startups (Juno, Tofu). Founder Barbara Jovanovic runs every engagement herself; custom AI agents handle the production work. Her appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (164k+ views). She returned to the show in August 2026 to walk through the Claude Code setup behind the agency.
+StartupCookie runs product marketing and product-led growth (PLG) content, thought leadership, founder LinkedIn, AEO (AI search optimization), video content, webinar repurposing, and custom GTM/content agents for seed-to-Series-B B2B companies, plus fractional CMO engagements for seed-stage startups with no marketing hire (Juno is the public example). Most clients are fintech and finance software companies (Venn, Puzzle) or AI startups (Juno, Tofu). Founder Barbara Jovanovic runs every engagement herself; custom AI agents handle the production work. Her appearance on HubSpot's Marketing Against the Grain is the most-watched episode in the show's history (164k+ views). She returned to the show in August 2026 to walk through the Claude Code setup behind the agency.
 
 ## Services
 - Thought Leadership Content: https://startupcookie.com/services/thought-leadership/ (markdown: https://startupcookie.com/services/thought-leadership.md)
@@ -11,6 +11,7 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - Video Content: https://startupcookie.com/services/video-content/ (markdown: https://startupcookie.com/services/video-content.md)
 - Webinar Repurposing: https://startupcookie.com/services/webinar-repurposing/ (markdown: https://startupcookie.com/services/webinar-repurposing.md)
 - GTM & Content Agents: https://startupcookie.com/services/gtm-agents/ (markdown: https://startupcookie.com/services/gtm-agents.md)
+- Fractional CMO for seed-stage B2B startups (Juno is the public example): https://startupcookie.com/services/fractional-cmo/ (markdown: https://startupcookie.com/services/fractional-cmo.md)
 - All services: https://startupcookie.com/services/ (markdown: https://startupcookie.com/services.md)
 
 ## Industries
@@ -21,7 +22,7 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 ## Case studies
 - Tofu: AI search visibility grew from 7.00% to 16.51% in the first 90 days (2.36x) and reached 67.38% within six months: https://startupcookie.com/case-studies/tofu/ (markdown: https://startupcookie.com/case-studies/tofu.md)
 - Venn: founder LinkedIn, video and customer case studies for a Canadian business banking platform: https://startupcookie.com/case-studies/venn/ (markdown: https://startupcookie.com/case-studies/venn.md)
-- Juno: founder-led LinkedIn content for an AI-moderated research platform: https://startupcookie.com/case-studies/juno/ (markdown: https://startupcookie.com/case-studies/juno.md)
+- Juno: fractional CMO engagement for an AI-moderated research platform (LinkedIn for both co-founders, customer stories, media strategy, Asia market entry): https://startupcookie.com/case-studies/juno/ (markdown: https://startupcookie.com/case-studies/juno.md)
 - Puzzle: executive thought leadership for an AI accounting platform: https://startupcookie.com/case-studies/puzzle/ (markdown: https://startupcookie.com/case-studies/puzzle.md)
 - All case studies: https://startupcookie.com/case-studies/ (markdown: https://startupcookie.com/case-studies.md)
 
@@ -45,6 +46,7 @@ StartupCookie runs product marketing and product-led growth (PLG) content, thoug
 - StartupCookie vs Animalz: https://startupcookie.com/compare/startupcookie-vs-animalz/ (markdown: https://startupcookie.com/compare/startupcookie-vs-animalz.md)
 - StartupCookie vs Omniscient Digital: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital/ (markdown: https://startupcookie.com/compare/startupcookie-vs-omniscient-digital.md)
 - Agency vs in-house content marketer: https://startupcookie.com/compare/agency-vs-in-house-content-marketer/ (markdown: https://startupcookie.com/compare/agency-vs-in-house-content-marketer.md)
+- Solo agency vs traditional agency (StartupCookie is a one-person agency): https://startupcookie.com/compare/solo-agency-vs-traditional-agency/ (markdown: https://startupcookie.com/compare/solo-agency-vs-traditional-agency.md)
 
 ## About and proof
 - About Barbara Jovanovic and StartupCookie: https://startupcookie.com/about/ (markdown: https://startupcookie.com/about.md)
