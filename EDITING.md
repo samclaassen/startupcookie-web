@@ -122,3 +122,15 @@ Back to normal in 30 seconds.
 
 1. **Pull before you edit.** Sam works from two machines. The browser editor handles this automatically; in GitHub Desktop click **Fetch origin** first, every time.
 2. **Write real commit messages.** `Update pricing headline` is useful in six months. `changes` is not.
+
+---
+
+## IndexNow (Bing and other engines)
+
+`f486dc847fefe9bf4325b14b315d3917.txt` in the repo root is the site's IndexNow key. It's public on purpose; don't delete or rename it. After a page change is live, ping it with:
+
+```bash
+node scripts/indexnow.mjs https://startupcookie.com/the-changed-page/
+```
+
+Google doesn't use IndexNow. For Google, use Search Console's Request indexing.
